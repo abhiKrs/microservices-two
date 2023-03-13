@@ -1,0 +1,118 @@
+starting PostgreSQL 15.1 on x86_64-pc-linux-musl, compiled by gcc (Alpine 12.2.1_git20220924-r4) 12.2.1 20220924, 64-bit
+listening on IPv4 address "0.0.0.0", port 5432
+listening on IPv6 address "::", port 5432
+listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+database system was shut down at 2023-01-30 14:53:43 UTC
+database system is ready to accept connections
+checkpoint starting: time
+checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.104 s, sync=0.004 s, total=0.113 s; sync files=3, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB
+unexpected EOF on client connection with an open transaction
+unexpected EOF on client connection with an open transaction
+relation "userd" does not exist at character 15
+select * from userd;
+checkpoint starting: time
+checkpoint complete: wrote 15 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.407 s, sync=0.008 s, total=1.424 s; sync files=10, longest=0.002 s, average=0.001 s; distance=2 kB, estimate=2 kB
+checkpoint starting: time
+checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.806 s, sync=0.007 s, total=0.821 s; sync files=9, longest=0.003 s, average=0.001 s; distance=2 kB, estimate=2 kB
+checkpoint starting: time
+checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.805 s, sync=0.007 s, total=0.820 s; sync files=9, longest=0.003 s, average=0.001 s; distance=3 kB, estimate=3 kB
+checkpoint starting: time
+checkpoint complete: wrote 6 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.504 s, sync=0.006 s, total=0.518 s; sync files=6, longest=0.002 s, average=0.001 s; distance=1 kB, estimate=3 kB
+checkpoint starting: time
+checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.806 s, sync=0.004 s, total=0.814 s; sync files=9, longest=0.002 s, average=0.001 s; distance=3 kB, estimate=3 kB
+checkpoint starting: time
+checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.806 s, sync=0.006 s, total=0.818 s; sync files=9, longest=0.002 s, average=0.001 s; distance=4 kB, estimate=4 kB
+checkpoint starting: time
+checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.807 s, sync=0.007 s, total=0.823 s; sync files=9, longest=0.002 s, average=0.001 s; distance=4 kB, estimate=4 kB
+trailing junk after numeric literal at or near "0a" at character 28
+delete from users where id 0af31380-1a87-45a2-a342-ee4b78328bbb;
+syntax error at or near ""0af31380-1a87-45a2-a342-ee4b78328bbb"" at character 28
+delete from users where id "0af31380-1a87-45a2-a342-ee4b78328bbb";
+column "0af31380-1a87-45a2-a342-ee4b78328bbb" does not exist at character 30
+delete from users where id = "0af31380-1a87-45a2-a342-ee4b78328bbb";
+checkpoint starting: time
+checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.304 s, sync=0.004 s, total=0.314 s; sync files=4, longest=0.002 s, average=0.001 s; distance=1 kB, estimate=4 kB
+checkpoint starting: time
+checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.808 s, sync=0.008 s, total=0.823 s; sync files=9, longest=0.004 s, average=0.001 s; distance=5 kB, estimate=5 kB
+checkpoint starting: time
+checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.806 s, sync=0.008 s, total=0.821 s; sync files=9, longest=0.003 s, average=0.001 s; distance=5 kB, estimate=5 kB
+syntax error at or near "*" at character 12
+drop table *;
+syntax error at or near "all" at character 12
+drop table all;
+syntax error at or near "-" at character 46
+drop table users, emails, credentials, access-requests;
+checkpoint starting: time
+checkpoint complete: wrote 21 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.017 s, sync=0.006 s, total=2.032 s; sync files=10, longest=0.003 s, average=0.001 s; distance=146 kB, estimate=146 kB
+checkpoint starting: time
+checkpoint complete: wrote 74 buffers (0.5%); 0 WAL file(s) added, 0 removed, 0 recycled; write=7.327 s, sync=0.011 s, total=7.345 s; sync files=34, longest=0.002 s, average=0.001 s; distance=369 kB, estimate=369 kB
+checkpoint starting: time
+checkpoint complete: wrote 16 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.508 s, sync=0.004 s, total=1.520 s; sync files=11, longest=0.002 s, average=0.001 s; distance=9 kB, estimate=333 kB
+checkpoint starting: time
+checkpoint complete: wrote 22 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.110 s, sync=0.010 s, total=2.127 s; sync files=16, longest=0.002 s, average=0.001 s; distance=29 kB, estimate=303 kB
+checkpoint starting: time
+
+Welcome to the Bitnami kafka container
+Subscribe to project updates by watching https://github.com/bitnami/containers
+Submit issues and feature requests at https://github.com/bitnami/containers/issues
+
+** Starting Kafka setup **
+You set the environment variable ALLOW_PLAINTEXT_LISTENER=yes. For safety reasons, do not use this flag in a production environment.
+Initializing Kafka...
+No injected configuration files found, creating default config files
+Configuring Kafka for inter-broker communications with PLAINTEXT authentication.
+Inter-broker communications are configured as PLAINTEXT. This is not safe for production environments.
+Configuring Kafka for client communications with PLAINTEXT authentication.
+Client communications are configured using PLAINTEXT listeners. For safety reasons, do not use this in a production environment.
+** Kafka setup finished! **
+
+** Starting Kafka **[LeaderConnector-zookeeper-1.zookeeper-headless.kafka.svc.cluster.local/172.17.0.14:2888:o.a.z.s.q.Learner$LeaderConnector@392] - Failed connect to zookeeper-1.zookeeper-headless.kafka.svc.cluster.local/172.17.0.14:2888
+[ThrottledChannelReaper-Fetch]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[ThrottledChannelReaper-Produce]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[ThrottledChannelReaper-Request]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[ThrottledChannelReaper-ControllerMutation]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+Loading logs from log dirs ArrayBuffer(/bitnami/kafka/data) (kafka.log.LogManager)
+Skipping recovery for all logs in /bitnami/kafka/data since clean shutdown file was found (kafka.log.LogManager)
+Loaded 0 logs in 45ms. (kafka.log.LogManager)
+Starting log cleanup with a period of 300000 ms. (kafka.log.LogManager)
+Starting log flusher with a default period of 9223372036854775807 ms. (kafka.log.LogManager)
+Starting the log cleaner (kafka.log.LogCleaner)
+[kafka-log-cleaner-thread-0]: Starting (kafka.log.LogCleaner)
+[feature-zk-node-event-process-thread]: Starting (kafka.server.FinalizedFeatureChangeListener$ChangeNotificationProcessorThread)
+[MetadataCache brokerId=2] Updated cache from existing <empty> to latest FinalizedFeaturesAndEpoch(features=Map(), epoch=0). (kafka.server.metadata.ZkMetadataCache)
+[BrokerToControllerChannelManager broker=2 name=forwarding]: Starting (kafka.server.BrokerToControllerRequestThread)
+Updated connection-accept-rate max connection creation rate to 2147483647 (kafka.network.ConnectionQuotas)
+Awaiting socket connections on 0.0.0.0:9093. (kafka.network.DataPlaneAcceptor)
+[SocketServer listenerType=ZK_BROKER, nodeId=2] Created data-plane acceptor and processors for endpoint : ListenerName(INTERNAL) (kafka.network.SocketServer)
+Updated connection-accept-rate max connection creation rate to 2147483647 (kafka.network.ConnectionQuotas)
+Awaiting socket connections on 0.0.0.0:9092. (kafka.network.DataPlaneAcceptor)
+[SocketServer listenerType=ZK_BROKER, nodeId=2] Created data-plane acceptor and processors for endpoint : ListenerName(CLIENT) (kafka.network.SocketServer)
+[BrokerToControllerChannelManager broker=2 name=alterPartition]: Starting (kafka.server.BrokerToControllerRequestThread)
+[ExpirationReaper-2-Produce]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[ExpirationReaper-2-Fetch]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[ExpirationReaper-2-DeleteRecords]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[ExpirationReaper-2-ElectLeader]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[LogDirFailureHandler]: Starting (kafka.server.ReplicaManager$LogDirFailureHandler)
+Creating /brokers/ids/2 (is it secure? false) (kafka.zk.KafkaZkClient)
+Stat of the created znode at /brokers/ids/2 is: 4294967471,4294967471,1675222338642,1675222338642,1,0,0,216568047523463172,358,0,4294967471
+ (kafka.zk.KafkaZkClient)
+Registered broker 2 at path /brokers/ids/2 with addresses: INTERNAL://kafka-2.kafka-headless.kafka.svc.cluster.local:9093,CLIENT://kafka-2.kafka-headless.kafka.svc.cluster.local:9092, czxid (broker epoch): 4294967471 (kafka.zk.KafkaZkClient)
+[ControllerEventThread controllerId=2] Starting (kafka.controller.ControllerEventManager$ControllerEventThread)
+[ExpirationReaper-2-topic]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[ExpirationReaper-2-Heartbeat]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[ExpirationReaper-2-Rebalance]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[Controller id=2] Broker 1 has been elected as the controller, so stopping the election process. (kafka.controller.KafkaController)
+[GroupCoordinator 2]: Starting up. (kafka.coordinator.group.GroupCoordinator)
+[GroupCoordinator 2]: Startup complete. (kafka.coordinator.group.GroupCoordinator)
+[TransactionCoordinator id=2] Starting up. (kafka.coordinator.transaction.TransactionCoordinator)
+[TransactionCoordinator id=2] Startup complete. (kafka.coordinator.transaction.TransactionCoordinator)
+[Transaction Marker Channel Manager 2]: Starting (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[ExpirationReaper-2-AlterAcls]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[/config/changes-event-process-thread]: Starting (kafka.common.ZkNodeChangeNotificationListener$ChangeEventProcessThread)
+[SocketServer listenerType=ZK_BROKER, nodeId=2] Enabling request processing. (kafka.network.SocketServer)
+Kafka version: 3.3.1 (org.apache.kafka.common.utils.AppInfoParser)
+Kafka commitId: e23c59d00e687ff5 (org.apache.kafka.common.utils.AppInfoParser)
+Kafka startTimeMs: 1675222339162 (org.apache.kafka.common.utils.AppInfoParser)
+[KafkaServer id=2] started (kafka.server.KafkaServer)
+[BrokerToControllerChannelManager broker=2 name=forwarding]: Recorded new controller, from now on will use broker kafka-1.kafka-headless.kafka.svc.cluster.local:9093 (id: 1 rack: null) (kafka.server.BrokerToControllerRequestThread)
+[BrokerToControllerChannelManager broker=2 name=alterPartition]: Recorded new controller, from now on will use broker kafka-1.kafka-headless.kafka.svc.cluster.local:9093 (id: 1 rack: null) (kafka.server.BrokerToControllerRequestThread)

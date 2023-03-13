@@ -1,0 +1,111 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "flink-chart.fullname" . }}-link-jobmanager
+  labels:
+  {{- include "flink-chart.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.linkJobmanager.replicas }}
+  selector:
+    matchLabels:
+      app: flink
+      component: jobmanager
+    {{- include "flink-chart.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        app: flink
+        component: jobmanager
+      {{- include "flink-chart.selectorLabels" . | nindent 8 }}
+    spec:
+      containers:
+      - args:
+        - jobmanager
+        env:
+        - name: KUBERNETES_CLUSTER_DOMAIN
+          value: {{ .Values.kubernetesClusterDomain }}
+        image: {{ .Values.linkJobmanager.jobmanager.image.repository }}:{{ .Values.linkJobmanager.jobmanager.image.tag
+          | default .Chart.AppVersion }}
+        livenessProbe:
+          initialDelaySeconds: 30
+          periodSeconds: 60
+          tcpSocket:
+            port: 6123
+        name: jobmanager
+        ports:
+        - containerPort: 6123
+          name: rpc
+        - containerPort: 6124
+          name: blob-server
+        - containerPort: 8081
+          name: webui
+        resources: {}
+        securityContext:
+          runAsUser: 9999
+        volumeMounts:
+        - mountPath: /opt/flink/conf
+          name: flink-config-volume
+      volumes:
+      - configMap:
+          items:
+          - key: flink-conf.yaml
+            path: flink-conf.yaml
+          - key: log4j-console.properties
+            path: log4j-console.properties
+          name: flink-config
+        name: flink-config-volume
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "flink-chart.fullname" . }}-link-taskmanager
+  labels:
+  {{- include "flink-chart.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.linkTaskmanager.replicas }}
+  selector:
+    matchLabels:
+      app: flink
+      component: taskmanager
+    {{- include "flink-chart.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        app: flink
+        component: taskmanager
+      {{- include "flink-chart.selectorLabels" . | nindent 8 }}
+    spec:
+      containers:
+      - args:
+        - taskmanager
+        env:
+        - name: KUBERNETES_CLUSTER_DOMAIN
+          value: {{ .Values.kubernetesClusterDomain }}
+        image: {{ .Values.linkTaskmanager.taskmanager.image.repository }}:{{ .Values.linkTaskmanager.taskmanager.image.tag
+          | default .Chart.AppVersion }}
+        livenessProbe:
+          initialDelaySeconds: 30
+          periodSeconds: 60
+          tcpSocket:
+            port: 6122
+        name: taskmanager
+        ports:
+        - containerPort: 6122
+          name: rpc
+        - containerPort: 6125
+          name: query-state
+        resources: {}
+        securityContext:
+          runAsUser: 9999
+        volumeMounts:
+        - mountPath: /opt/flink/conf/
+          name: flink-config-volume
+      volumes:
+      - configMap:
+          items:
+          - key: flink-conf.yaml
+            path: flink-conf.yaml
+          - key: log4j-console.properties
+            path: log4j-console.properties
+          name: flink-config
+        name: flink-config-volume

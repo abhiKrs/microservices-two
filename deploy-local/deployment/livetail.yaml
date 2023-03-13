@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: livetail-deployment
+  labels:
+    app: livetail
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: livetail
+  template:
+    metadata:
+      labels:
+        app: livetail
+      # annotations:
+      #   dapr.io/enabled: "true"
+      #   dapr.io/app-id: "livetail"
+      #   dapr.io/app-port: "4000"
+    spec:
+      containers:
+      - name: livetail
+        image: logfire/livetail
+        imagePullPolicy: Never
+        ports:
+        - name: http
+          containerPort: 4000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: livetail
+spec:
+  selector:
+    app: livetail
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: http

@@ -1,0 +1,30 @@
+kubernetesClusterDomain: cluster.local
+operator:
+  eckYaml:
+    caCertRotateBefore: 24h
+    caCertValidity: 8760h
+    certRotateBefore: 24h
+    certValidity: 8760h
+    containerRegistry: docker.elastic.co
+    disableTelemetry: false
+    distributionChannel: all-in-one
+    elasticsearchClientTimeout: 180s
+    elasticsearchObservationInterval: 10s
+    enableLeaderElection: true
+    enableWebhook: true
+    exposedNodeLabels:
+    - topology.kubernetes.io/.*
+    - failure-domain.beta.kubernetes.io/.*
+    kubeClientTimeout: 60s
+    logVerbosity: 0
+    maxConcurrentReconciles: 3
+    metricsPort: 0
+    setDefaultSecurityContext: auto-detect
+    validateStorageClass: true
+    webhookName: elastic-webhook.k8s.elastic.co
+webhookServer:
+  ports:
+  - name: https
+    port: 443
+    targetPort: 9443
+  type: ClusterIP

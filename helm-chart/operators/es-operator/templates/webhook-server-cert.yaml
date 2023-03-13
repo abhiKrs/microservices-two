@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: {{ include "operator.fullname" . }}-webhook-server-cert
+  labels:
+    control-plane: elastic-operator
+  {{- include "operator.labels" . | nindent 4 }}

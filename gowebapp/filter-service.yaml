@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: filterservice-deployment
+  labels:
+    app: filterservice
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: filterservice
+  template:
+    metadata:
+      labels:
+        app: filterservice
+      # annotations:
+      #   dapr.io/enabled: "true"
+      #   dapr.io/app-id: "filterservice"
+      #   dapr.io/app-port: "8005"
+    spec:
+      containers:
+      - name: filterservice
+        image: logfire/filter-service
+        imagePullPolicy: Never
+        ports:
+        - name: http
+          containerPort: 8005
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: filterservice
+spec:
+  selector:
+    app: filterservice
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: http

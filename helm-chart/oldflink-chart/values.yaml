@@ -1,0 +1,24 @@
+kubernetesClusterDomain: cluster.local
+linkJobmanager:
+  jobmanager:
+    image:
+      repository: apache/flink
+      tag: 1.16.0-scala_2.12
+  ports:
+  - name: rpc
+    port: 6123
+    targetPort: 0
+  - name: blob-server
+    port: 6124
+    targetPort: 0
+  - name: webui
+    port: 8081
+    targetPort: 0
+  replicas: 1
+  type: ClusterIP
+linkTaskmanager:
+  replicas: 2
+  taskmanager:
+    image:
+      repository: apache/flink
+      tag: 1.16.0-scala_2.12

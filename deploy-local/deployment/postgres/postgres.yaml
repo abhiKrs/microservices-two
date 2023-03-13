@@ -1,0 +1,52 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: postgres-deployment
+  labels:
+    app: postgres
+spec:
+  replicas: 1
+  serviceName: postgres-app
+  selector:
+    matchLabels:
+      app: postgres-pod
+  template:
+    metadata:
+      labels:
+        app: postgres-pod
+      # annotations:
+      #   dapr.io/enabled: "true"
+      #   dapr.io/app-id: "postgresdb"
+      #   dapr.io/app-port: "5432"
+    spec:
+      containers:
+        - name: postgresdb-container
+          image: postgres:15.1-alpine
+          ports:
+            - containerPort: 5432
+          envFrom:
+            - configMapRef:
+                name: postgres-config
+            - secretRef:
+                name: postgres-secret
+          volumeMounts:
+            # name must match the volume name below
+            - name: postgresdb-volume
+              mountPath: /var/lib/postgresql/data
+      # The secret data is exposed to Containers in the Pod through a Volume.
+      volumes:
+        - name: postgresdb-volume
+          persistentVolumeClaim:
+            claimName: postgres-pv-claim           
+
+
+
+
+
+
+
+
+
+
+
+

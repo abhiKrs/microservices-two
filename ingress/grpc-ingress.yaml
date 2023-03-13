@@ -1,0 +1,32 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: grpc-ingress
+  namespace: logfire-local
+  annotations:
+    nginx.ingress.kubernetes.io/backend-protocol: "GRPC"
+    # nginx.ingress.kubernetes.io/rewrite-target: /$2
+spec:
+  ingressClassName: nginx
+  tls:
+  - hosts:
+    - api.logfire.sh
+    secretName: api-logfire-prod-tls-secret
+  rules:
+    - host: api.logfire.sh
+      http:
+        paths:
+          - path: /logfilter
+            pathType: Prefix
+            backend:
+              service:
+                name: filter-service
+                port:
+                  number: 80
+          # - path: /api(/|$)(.*)
+          #   pathType: Prefix   
+          #   backend:   
+          #     service:   
+          #       name: gowebapi
+          #       port:   
+          #         number: 8080

@@ -1,0 +1,9 @@
+config:
+  postgresDriver: postgres
+  postgresHost: postgres-service
+  postgresPort: "5432"
+kubernetesClusterDomain: cluster.local
+pvc:
+  pvClaim:
+    storageClass: local-storage
+    storageRequest: 5Gi

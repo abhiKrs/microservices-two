@@ -1,0 +1,54 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gowebapi-deployment
+  labels:
+    app: gowebapi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gowebapi
+  template:
+    metadata:
+      labels:
+        app: gowebapi
+      # annotations:
+      #   dapr.io/enabled: "true"
+      #   dapr.io/app-id: "gowebapi"
+      #   dapr.io/app-port: "8000"
+    spec:
+      containers:
+      - name: gowebapi
+        # image: docker.io/rahulprakash11/gowebapi:latest
+        image: logfire/gowebapi
+        imagePullPolicy: Never
+        ports:
+        - name: http
+          containerPort: 8000
+        envFrom:
+          - configMapRef:
+              name: postgres-config
+          - configMapRef:
+              name: gowebapi-config
+          - secretRef:
+              name: postgres-secret
+          - secretRef:
+              name: aws-secret
+          - secretRef:
+              name: google-secret
+      # restartPolicy: OnFailure
+      # imagePullSecrets:
+      #   - name: regcred
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: gowebapi
+spec:
+  selector:
+    app: gowebapi
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: http

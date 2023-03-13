@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: {{ include "postgres-prod1.fullname" . }}-deployment
+  labels:
+    app: postgres
+  {{- include "postgres-prod1.labels" . | nindent 4 }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: postgres-pod
+  serviceName: postgres-app
+  template:
+    metadata:
+      labels:
+        app: postgres-pod
+    spec:
+      containers:
+      - envFrom:
+        - configMapRef:
+            name: postgres-config
+        - secretRef:
+            name: postgres-secret
+        image: postgres:15.1-alpine
+        name: postgresdb-container
+        ports:
+        - containerPort: 5432
+        volumeMounts:
+        - mountPath: /var/lib/postgresql/data
+          name: postgresdb-volume
+      volumes:
+      - name: postgresdb-volume
+        persistentVolumeClaim:
+          claimName: postgres-pv-claim

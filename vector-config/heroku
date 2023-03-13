@@ -1,0 +1,5 @@
+Add the Logtail drain:
+
+heroku drains:add \
+"https://in.logtail.com:6515/events?source_token=YdjKKoDUWNKxJTWv1fkL8US3" \
+-a <YOUR_HEROKU_APP_SLUG>

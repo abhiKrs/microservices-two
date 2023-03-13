@@ -1,0 +1,29 @@
+apiVersion: flink.apache.org/v1beta1
+kind: FlinkDeployment
+metadata:
+  name: {{ include "flink-chart.fullname" . }}-flink-session-deployment
+  labels:
+  {{- include "flink-chart.labels" . | nindent 4 }}
+spec:
+  flinkConfiguration:
+    kubernetes.client.io-pool.size: "10"
+    kubernetes.jobmanager.cpu.limit-factor: "2"
+    kubernetes.jobmanager.memory.limit-factor: "2"
+    kubernetes.rest-service.exposed.type: NodePort
+    kubernetes.taskmanager.cpu.limit-factor: "2"
+    kubernetes.taskmanager.memory.limit-factor: "2"
+    kubernetes.transactional-operation.max-retries: "10"
+    resourcemanager.taskmanager-timeout: "300000"
+    slotmanager.redundant-taskmanager-num: "2"
+    taskmanager.numberOfTaskSlots: "4"
+  flinkVersion: v1_16
+  image: logfire/flink
+  jobManager:
+    resource:
+      cpu: 1
+      memory: 2048m
+  serviceAccount: flink
+  taskManager:
+    resource:
+      cpu: 1
+      memory: 2048m

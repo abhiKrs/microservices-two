@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../../../kubernetes/terraform/Aws-Ec2"
+		},
+		{
+			"path": "../../../kubernetes/terraform/EC2-Testing-Scenerio/Ec2-testing-Scenerio2"
+		},
+		{
+			"path": "../../../kubernetes/terraform/AWS-VPC"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {}
+}

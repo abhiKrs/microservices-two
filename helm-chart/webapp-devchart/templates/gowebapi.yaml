@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: gowebapi
+  labels:
+  {{- include "webapp-chart.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.gowebapi.type }}
+  selector:
+    app: gowebapi
+  {{- include "webapp-chart.selectorLabels" . | nindent 4 }}
+  ports:
+	{{- .Values.gowebapi.ports | toYaml | nindent 2 -}}

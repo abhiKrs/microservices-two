@@ -1,0 +1,14 @@
+# image:
+#   repository: redislabs/rejson
+#   tag: 2.0.6
+
+# master:
+#   extraFlags:
+#   - --loadmodule
+#   - /usr/lib/redis/modules/rejson.so
+#   - --loadmodule
+#   - /usr/lib/redis/modules/redisearch.so
+
+# networkPolicy:
+#   enabled: false # change networkPolicy enabled to 'false' from 'true'. This enables the app to discover the cluster easily.
+#   allowExternal: true

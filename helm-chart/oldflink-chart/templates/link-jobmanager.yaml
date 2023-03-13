@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: flink-jobmanager
+  labels:
+  {{- include "flink-chart.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.linkJobmanager.type }}
+  selector:
+    app: flink
+    component: jobmanager
+  {{- include "flink-chart.selectorLabels" . | nindent 4 }}
+  ports:
+	{{- .Values.linkJobmanager.ports | toYaml | nindent 2 -}}

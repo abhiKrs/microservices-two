@@ -1,0 +1,78 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: prod-ingress
+  labels:
+  {{- include "ingress-prodchart.labels" . | nindent 4 }}
+  annotations: 
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
+    cert-manager.io/cluster-issuer: letsencrypt-production
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: apibeta2.logfire.sh
+    http:
+      paths:
+      - backend:
+          service:
+            name: hello
+            port:
+              number: 80
+        path: /
+        pathType: Prefix
+      - backend:
+          service:
+            name: livetail
+            port:
+              number: 80
+        path: /livetail(/|$)(.*)
+        pathType: Prefix
+      - backend:
+          service:
+            name: filterservice
+            port:
+              number: 80
+        path: /logfilter(/|$)(.*)
+        pathType: Prefix
+      - backend:
+          service:
+            name: api-gateway-dapr
+            port:
+              number: 80
+        path: /dapr(/|$)(.*)
+        pathType: Prefix
+      - backend:
+          service:
+            name: gowebapi
+            port:
+              number: 8080
+        path: /api(/|$)(.*)
+        pathType: Prefix
+  tls:
+  - hosts:
+    - apibeta2.logfire.sh
+    secretName: letsencrypt-prod
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: prod-ingress2
+  labels:
+  {{- include "ingress-prodchart.labels" . | nindent 4 }}
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /logfire.sh
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: beta2logs.logfire.sh
+    http:
+      paths:
+        #- path: /api/logfire.sh
+      - backend:
+          service:
+            name: gowebapi
+            port:
+              number: 8080
+        path: /
+        pathType: Prefix
+

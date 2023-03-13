@@ -1,0 +1,15 @@
+https://betterstack.com/docs/logs/http-rest-api/
+
+- Initialize a new POST HTTP request in your programming language of choice
+- Serialize a single log object or an array of your logs into JSON or MessagePack and use it as the request body
+- Set the Content-Type header to application/json or application/msgpack
+- Set the Authorization header to Bearer L5dej3smLJZAHAv4PZYucu82
+- Send the request to https://in.logtail.com/
+- Wait for a 202 response
+
+curl -X POST \
+-H 'Content-Type: application/json' \
+-H 'Authorization: Bearer L5dej3smLJZAHAv4PZYucu82' \
+-d '{"dt":"'"$(date -u +'%Y-%m-%d %T UTC')"'","message":"Hello from Logtail!"}' \
+-k \
+https://in.logtail.com

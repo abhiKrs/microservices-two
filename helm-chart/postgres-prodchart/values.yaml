@@ -1,0 +1,10 @@
+kubernetesClusterDomain: cluster.local
+pvc:
+  pvClaim:
+    storageClass: local-storage
+    storageRequest: 5Gi
+service:
+  ports:
+  - port: 5432
+    targetPort: 5432
+  type: ClusterIP

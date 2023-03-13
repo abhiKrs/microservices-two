@@ -1,0 +1,12 @@
+target/*
+.idea
+spark-warehouse/
+project/project
+*/target
+null
+.bsp
+project/target
+.bloop
+.vscode
+.metals
+

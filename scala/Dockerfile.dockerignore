@@ -1,0 +1,3 @@
+target
+filter-job/target
+!filter-job/target/scala-2.12/*.jar

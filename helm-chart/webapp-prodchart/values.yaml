@@ -1,0 +1,43 @@
+filterservice:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: http
+  type: ClusterIP
+filterserviceDeployment:
+  filterservice:
+    image:
+      repository: logfire/filter-service
+      tag: latest
+  replicas: 1
+gowebapi:
+  ports:
+  - port: 8080
+    protocol: TCP
+    targetPort: http
+  type: ClusterIP
+gowebapiDeployment:
+  gowebapi:
+    image:
+      repository: logfire/gowebapi
+      tag: latest
+  replicas: 1
+kubernetesClusterDomain: cluster.local
+livetail:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: http
+  type: ClusterIP
+livetailDeployment:
+  livetail:
+    image:
+      repository: logfire/livetail
+      tag: latest
+  replicas: 1
+notificationDeployment:
+  notification:
+    image:
+      repository: logfire/notification
+      tag: latest
+  replicas: 1

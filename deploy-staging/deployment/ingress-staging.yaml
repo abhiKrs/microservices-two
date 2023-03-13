@@ -1,0 +1,59 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: staging-ingress
+  namespace: logfire-staging
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
+spec:
+  ingressClassName: nginx
+  tls:
+  - hosts:
+    - apibeta.logfire.sh
+    secretName: apibeta-logfire-tls-secret
+  rules:
+    - host: apibeta.logfire.sh
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: hello
+                port:
+                  number: 80
+          - path: /logfilter(/|$)(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: filterservice
+                port:
+                  number: 80
+          - path: /livetail(/|$)(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: livetail
+                port:
+                  number: 80
+          # - path: /v1.0/invoke
+          #   pathType: Prefix
+          #   backend:
+          #     service:
+          #       name: api-gateway-dapr
+          #       port:
+          #         number: 80
+          # - path: /dapr(/|$)(.*)
+          #   pathType: Prefix   
+          #   backend:   
+          #     service:   
+          #       name: api-gateway-dapr
+          #       port:   
+          #         number: 80
+          - path: /api(/|$)(.*)
+            pathType: Prefix   
+            backend:   
+              service:   
+                name: gowebapi
+                port:   
+                  number: 8080

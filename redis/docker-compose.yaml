@@ -1,0 +1,22 @@
+# version: "3"
+# services:
+#   placement:
+#     image: daprio/dapr:1.0.0
+#     command: [ "./placement","-port","50006" ]
+#   devices:
+#     build:
+#       args:
+#         SERVICE: devices
+#       dockerfile: images/Dockerfile
+#       target: production
+#       context: .
+#   devices-daprd:
+#     image: daprio/daprd:1.0.0
+#     command: [ "./daprd","-app-id","devices","-app-port","80","-placement-host-address","placement:50006","-components-path","/components" ]
+#     volumes:
+#       - ./components-compose:/components
+#     depends_on:
+#       - devices
+#     network_mode: service:devices
+#   redis:
+#     image: redis

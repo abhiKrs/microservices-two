@@ -1,0 +1,116 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gowebapi-deployment
+  labels:
+    app: gowebapi
+  {{- include "webapp-chart.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.gowebapiDeployment.replicas }}
+  selector:
+    matchLabels:
+      app: gowebapi
+    {{- include "webapp-chart.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        app: gowebapi
+      {{- include "webapp-chart.selectorLabels" . | nindent 8 }}
+    spec:
+      containers:
+      - env:
+        - name: KUBERNETES_CLUSTER_DOMAIN
+          value: {{ .Values.kubernetesClusterDomain }}
+        envFrom:
+        - configMapRef:
+            name: postgres-config
+        - configMapRef:
+            name: gowebapi-config
+        - secretRef:
+            name: postgres-secret
+        - secretRef:
+            name: aws-secret
+        - secretRef:
+            name: google-secret
+        image: {{ .Values.gowebapiDeployment.gowebapi.image.repository }}:{{ .Values.gowebapiDeployment.gowebapi.image.tag
+          | default .Chart.AppVersion }}
+        imagePullPolicy: Never
+        name: gowebapi
+        ports:
+        - containerPort: 8000
+          name: http
+        resources: {}
+      restartPolicy: Always
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: livetail-deployment
+  labels:
+    app: livetail
+  {{- include "webapp-chart.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.livetailDeployment.replicas }}
+  selector:
+    matchLabels:
+      app: livetail
+    {{- include "webapp-chart.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        app: livetail
+      {{- include "webapp-chart.selectorLabels" . | nindent 8 }}
+    spec:
+      containers:
+      - env:
+        - name: KUBERNETES_CLUSTER_DOMAIN
+          value: {{ .Values.kubernetesClusterDomain }}
+        image: {{ .Values.livetailDeployment.livetail.image.repository }}:{{ .Values.livetailDeployment.livetail.image.tag
+          | default .Chart.AppVersion }}
+        imagePullPolicy: Never
+        name: livetail
+        ports:
+        - containerPort: 4000
+          name: http
+        resources: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: notification-deployment
+  labels:
+    app: notification
+  {{- include "webapp-chart.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.notificationDeployment.replicas }}
+  selector:
+    matchLabels:
+      app: notification
+    {{- include "webapp-chart.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        app: notification
+      {{- include "webapp-chart.selectorLabels" . | nindent 8 }}
+    spec:
+      containers:
+      - env:
+        - name: KUBERNETES_CLUSTER_DOMAIN
+          value: {{ .Values.kubernetesClusterDomain }}
+        envFrom:
+        - configMapRef:
+            name: gowebapi-config
+        - secretRef:
+            name: aws-secret
+        - secretRef:
+            name: google-secret
+        - secretRef:
+            name: mailgun-secret
+        image: {{ .Values.notificationDeployment.notification.image.repository }}:{{ .Values.notificationDeployment.notification.image.tag
+          | default .Chart.AppVersion }}
+        imagePullPolicy: Never
+        name: notification
+        ports:
+        - containerPort: 6002
+          name: http
+        resources: {}

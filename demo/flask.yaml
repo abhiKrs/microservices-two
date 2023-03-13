@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask
+  namespace: logfire-staging
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flask
+  template:
+    metadata:
+      labels:
+        app: flask
+      annotations:
+        dapr.io/app-id: "flask"
+        dapr.io/app-port: "5000"
+        dapr.io/enabled: "true"
+    spec:
+      containers:
+        - name: flask
+          image: tarrantro/flask:0.1.6

@@ -1,0 +1,110 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "operator.fullname" . }}-operator
+  labels:
+    control-plane: elastic-operator
+  {{- include "operator.labels" . | nindent 4 }}
+data:
+  eck.yaml: |
+    ca-cert-rotate-before: {{ .Values.operator.eckYaml.caCertRotateBefore | quote }}
+    ca-cert-validity: {{ .Values.operator.eckYaml.caCertValidity | quote }}
+    cert-rotate-before: {{ .Values.operator.eckYaml.certRotateBefore | quote }}
+    cert-validity: {{ .Values.operator.eckYaml.certValidity | quote }}
+    container-registry: {{ .Values.operator.eckYaml.containerRegistry | quote }}
+    container-suffix: null
+    disable-telemetry: {{ .Values.operator.eckYaml.disableTelemetry }}
+    distribution-channel: {{ .Values.operator.eckYaml.distributionChannel | quote }}
+    elasticsearch-client-timeout: {{ .Values.operator.eckYaml.elasticsearchClientTimeout
+      | quote }}
+    elasticsearch-observation-interval: {{ .Values.operator.eckYaml.elasticsearchObservationInterval
+      | quote }}
+    enable-leader-election: {{ .Values.operator.eckYaml.enableLeaderElection }}
+    enable-webhook: {{ .Values.operator.eckYaml.enableWebhook }}
+    exposed-node-labels: {{ toYaml .Values.operator.eckYaml.exposedNodeLabels | nindent
+      6 }}
+    kube-client-timeout: {{ .Values.operator.eckYaml.kubeClientTimeout | quote }}
+    log-verbosity: {{ .Values.operator.eckYaml.logVerbosity }}
+    max-concurrent-reconciles: {{ .Values.operator.eckYaml.maxConcurrentReconciles }}
+    metrics-port: {{ .Values.operator.eckYaml.metricsPort }}
+    set-default-security-context: {{ .Values.operator.eckYaml.setDefaultSecurityContext
+      | quote }}
+    validate-storage-class: {{ .Values.operator.eckYaml.validateStorageClass }}
+    webhook-name: {{ .Values.operator.eckYaml.webhookName | quote }}
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: {{ include "operator.fullname" . }}-operator
+  labels:
+    control-plane: elastic-operator
+  {{- include "operator.labels" . | nindent 4 }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      control-plane: elastic-operator
+  serviceName: elastic-operator
+  template:
+    metadata:
+      annotations:
+        checksum/config: 0167077654d0c8023b9201c09b02b9213c73d47b50aab990b1e2e8cd41653ca7
+        co.elastic.logs/raw: '[{"type":"container","json.keys_under_root":true,"paths":["/var/log/containers/*${data.kubernetes.container.id}.log"],"processors":[{"convert":{"mode":"rename","ignore_missing":true,"fields":[{"from":"error","to":"_error"}]}},{"convert":{"mode":"rename","ignore_missing":true,"fields":[{"from":"_error","to":"error.message"}]}},{"convert":{"mode":"rename","ignore_missing":true,"fields":[{"from":"source","to":"_source"}]}},{"convert":{"mode":"rename","ignore_missing":true,"fields":[{"from":"_source","to":"event.source"}]}}]}]'
+      labels:
+        control-plane: elastic-operator
+    spec:
+      containers:
+      - args:
+        - manager
+        - --config=/conf/eck.yaml
+        env:
+        - name: OPERATOR_NAMESPACE
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.namespace
+        - name: POD_IP
+          valueFrom:
+            fieldRef:
+              fieldPath: status.podIP
+        - name: WEBHOOK_SECRET
+          value: elastic-webhook-server-cert
+        image: docker.elastic.co/eck/eck-operator:2.6.1
+        imagePullPolicy: IfNotPresent
+        name: manager
+        ports:
+        - containerPort: 9443
+          name: https-webhook
+          protocol: TCP
+        resources:
+          limits:
+            cpu: 1
+            memory: 1Gi
+          requests:
+            cpu: 100m
+            memory: 150Mi
+        securityContext:
+          allowPrivilegeEscalation: false
+          capabilities:
+            drop:
+            - ALL
+          readOnlyRootFilesystem: true
+          runAsNonRoot: true
+        volumeMounts:
+        - mountPath: /conf
+          name: conf
+          readOnly: true
+        - mountPath: /tmp/k8s-webhook-server/serving-certs
+          name: cert
+          readOnly: true
+      securityContext:
+        runAsNonRoot: true
+      serviceAccountName: elastic-operator
+      terminationGracePeriodSeconds: 10
+      volumes:
+      - configMap:
+          name: elastic-operator
+        name: conf
+      - name: cert
+        secret:
+          defaultMode: 420
+          secretName: elastic-webhook-server-cert

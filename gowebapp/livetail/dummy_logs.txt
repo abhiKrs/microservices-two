@@ -1,0 +1,119 @@
+2023-01-30 14:53:50.505 UTC [1] LOG:  starting PostgreSQL 15.1 on x86_64-pc-linux-musl, compiled by gcc (Alpine 12.2.1_git20220924-r4) 12.2.1 20220924, 64-bit
+2023-01-30 14:53:50.505 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2023-01-30 14:53:50.505 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2023-01-30 14:53:50.509 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2023-01-30 14:53:50.517 UTC [24] LOG:  database system was shut down at 2023-01-30 14:53:43 UTC
+2023-01-30 14:53:50.528 UTC [1] LOG:  database system is ready to accept connections
+2023-01-30 14:58:50.615 UTC [22] LOG:  checkpoint starting: time
+2023-01-30 14:58:50.727 UTC [22] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.104 s, sync=0.004 s, total=0.113 s; sync files=3, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB
+2023-01-30 14:58:51.930 UTC [45] LOG:  unexpected EOF on client connection with an open transaction
+2023-01-30 15:27:48.431 UTC [53] LOG:  unexpected EOF on client connection with an open transaction
+2023-01-30 15:30:56.386 UTC [41] ERROR:  relation "userd" does not exist at character 15
+2023-01-30 15:30:56.386 UTC [41] STATEMENT:  select * from userd;
+2023-01-30 15:33:51.397 UTC [22] LOG:  checkpoint starting: time
+2023-01-30 15:33:52.820 UTC [22] LOG:  checkpoint complete: wrote 15 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.407 s, sync=0.008 s, total=1.424 s; sync files=10, longest=0.002 s, average=0.001 s; distance=2 kB, estimate=2 kB
+2023-01-30 15:38:51.920 UTC [22] LOG:  checkpoint starting: time
+2023-01-30 15:38:52.740 UTC [22] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.806 s, sync=0.007 s, total=0.821 s; sync files=9, longest=0.003 s, average=0.001 s; distance=2 kB, estimate=2 kB
+2023-01-30 15:48:51.938 UTC [22] LOG:  checkpoint starting: time
+2023-01-30 15:48:52.757 UTC [22] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.805 s, sync=0.007 s, total=0.820 s; sync files=9, longest=0.003 s, average=0.001 s; distance=3 kB, estimate=3 kB
+2023-01-31 08:44:11.103 UTC [22] LOG:  checkpoint starting: time
+2023-01-31 08:44:11.620 UTC [22] LOG:  checkpoint complete: wrote 6 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.504 s, sync=0.006 s, total=0.518 s; sync files=6, longest=0.002 s, average=0.001 s; distance=1 kB, estimate=3 kB
+2023-01-31 08:49:11.687 UTC [22] LOG:  checkpoint starting: time
+2023-01-31 08:49:12.501 UTC [22] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.806 s, sync=0.004 s, total=0.814 s; sync files=9, longest=0.002 s, average=0.001 s; distance=3 kB, estimate=3 kB
+2023-01-31 08:54:11.596 UTC [22] LOG:  checkpoint starting: time
+2023-01-31 08:54:12.414 UTC [22] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.806 s, sync=0.006 s, total=0.818 s; sync files=9, longest=0.002 s, average=0.001 s; distance=4 kB, estimate=4 kB
+2023-01-31 09:29:12.095 UTC [22] LOG:  checkpoint starting: time
+2023-01-31 09:29:12.918 UTC [22] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.807 s, sync=0.007 s, total=0.823 s; sync files=9, longest=0.002 s, average=0.001 s; distance=4 kB, estimate=4 kB
+2023-01-31 09:33:52.255 UTC [3260] ERROR:  trailing junk after numeric literal at or near "0a" at character 28
+2023-01-31 09:33:52.255 UTC [3260] STATEMENT:  delete from users where id 0af31380-1a87-45a2-a342-ee4b78328bbb;
+2023-01-31 09:34:08.444 UTC [3260] ERROR:  syntax error at or near ""0af31380-1a87-45a2-a342-ee4b78328bbb"" at character 28
+2023-01-31 09:34:08.444 UTC [3260] STATEMENT:  delete from users where id "0af31380-1a87-45a2-a342-ee4b78328bbb";
+2023-01-31 09:34:40.580 UTC [3260] ERROR:  column "0af31380-1a87-45a2-a342-ee4b78328bbb" does not exist at character 30
+2023-01-31 09:34:40.580 UTC [3260] STATEMENT:  delete from users where id = "0af31380-1a87-45a2-a342-ee4b78328bbb";
+2023-01-31 09:39:13.115 UTC [22] LOG:  checkpoint starting: time
+2023-01-31 09:39:13.428 UTC [22] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.304 s, sync=0.004 s, total=0.314 s; sync files=4, longest=0.002 s, average=0.001 s; distance=1 kB, estimate=4 kB
+2023-01-31 09:44:13.528 UTC [22] LOG:  checkpoint starting: time
+2023-01-31 09:44:14.350 UTC [22] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.808 s, sync=0.008 s, total=0.823 s; sync files=9, longest=0.004 s, average=0.001 s; distance=5 kB, estimate=5 kB
+2023-01-31 10:14:13.926 UTC [22] LOG:  checkpoint starting: time
+2023-01-31 10:14:14.746 UTC [22] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.806 s, sync=0.008 s, total=0.821 s; sync files=9, longest=0.003 s, average=0.001 s; distance=5 kB, estimate=5 kB
+2023-01-31 10:57:04.998 UTC [3260] ERROR:  syntax error at or near "*" at character 12
+2023-01-31 10:57:04.998 UTC [3260] STATEMENT:  drop table *;
+2023-01-31 10:57:10.872 UTC [3260] ERROR:  syntax error at or near "all" at character 12
+2023-01-31 10:57:10.872 UTC [3260] STATEMENT:  drop table all;
+2023-01-31 10:57:37.895 UTC [3260] ERROR:  syntax error at or near "-" at character 46
+2023-01-31 10:57:37.895 UTC [3260] STATEMENT:  drop table users, emails, credentials, access-requests;
+2023-01-31 10:59:14.578 UTC [22] LOG:  checkpoint starting: time
+2023-01-31 10:59:16.610 UTC [22] LOG:  checkpoint complete: wrote 21 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.017 s, sync=0.006 s, total=2.032 s; sync files=10, longest=0.003 s, average=0.001 s; distance=146 kB, estimate=146 kB
+2023-01-31 11:04:14.711 UTC [22] LOG:  checkpoint starting: time
+2023-01-31 11:04:22.055 UTC [22] LOG:  checkpoint complete: wrote 74 buffers (0.5%); 0 WAL file(s) added, 0 removed, 0 recycled; write=7.327 s, sync=0.011 s, total=7.345 s; sync files=34, longest=0.002 s, average=0.001 s; distance=369 kB, estimate=369 kB
+2023-01-31 11:09:14.154 UTC [22] LOG:  checkpoint starting: time
+2023-01-31 11:09:15.673 UTC [22] LOG:  checkpoint complete: wrote 16 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.508 s, sync=0.004 s, total=1.520 s; sync files=11, longest=0.002 s, average=0.001 s; distance=9 kB, estimate=333 kB
+2023-01-31 11:14:14.770 UTC [22] LOG:  checkpoint starting: time
+2023-01-31 11:14:16.896 UTC [22] LOG:  checkpoint complete: wrote 22 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.110 s, sync=0.010 s, total=2.127 s; sync files=16, longest=0.002 s, average=0.001 s; distance=29 kB, estimate=303 kB
+2023-01-31 11:29:15.189 UTC [22] LOG:  checkpoint starting: time
+
+kafka 03:32:12.20 Welcome to the Bitnami kafka container
+kafka 03:32:12.20 Subscribe to project updates by watching https://github.com/bitnami/containers
+kafka 03:32:12.20 Submit issues and feature requests at https://github.com/bitnami/containers/issues
+kafka 03:32:12.20 
+kafka 03:32:12.20 INFO  ==> ** Starting Kafka setup **
+kafka 03:32:12.29 WARN  ==> You set the environment variable ALLOW_PLAINTEXT_LISTENER=yes. For safety reasons, do not use this flag in a production environment.
+kafka 03:32:12.31 INFO  ==> Initializing Kafka...
+kafka 03:32:12.32 INFO  ==> No injected configuration files found, creating default config files
+kafka 03:32:13.00 INFO  ==> Configuring Kafka for inter-broker communications with PLAINTEXT authentication.
+kafka 03:32:13.00 WARN  ==> Inter-broker communications are configured as PLAINTEXT. This is not safe for production environments.
+kafka 03:32:13.00 INFO  ==> Configuring Kafka for client communications with PLAINTEXT authentication.
+kafka 03:32:13.01 WARN  ==> Client communications are configured using PLAINTEXT listeners. For safety reasons, do not use this in a production environment.
+kafka 03:32:13.03 INFO  ==> ** Kafka setup finished! **
+
+kafka 03:32:13.05 INFO  ==> ** Starting Kafka **
+2023-02-01 02:30:58,149 [myid:] - ERROR [LeaderConnector-zookeeper-1.zookeeper-headless.kafka.svc.cluster.local/172.17.0.14:2888:o.a.z.s.q.Learner$LeaderConnector@392] - Failed connect to zookeeper-1.zookeeper-headless.kafka.svc.cluster.local/172.17.0.14:2888
+[2023-02-01 03:32:16,673] INFO [ThrottledChannelReaper-Fetch]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-02-01 03:32:16,673] INFO [ThrottledChannelReaper-Produce]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-02-01 03:32:16,687] INFO [ThrottledChannelReaper-Request]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-02-01 03:32:16,699] INFO [ThrottledChannelReaper-ControllerMutation]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-02-01 03:32:16,755] INFO Loading logs from log dirs ArrayBuffer(/bitnami/kafka/data) (kafka.log.LogManager)
+[2023-02-01 03:32:16,762] INFO Skipping recovery for all logs in /bitnami/kafka/data since clean shutdown file was found (kafka.log.LogManager)
+[2023-02-01 03:32:16,801] INFO Loaded 0 logs in 45ms. (kafka.log.LogManager)
+[2023-02-01 03:32:16,802] INFO Starting log cleanup with a period of 300000 ms. (kafka.log.LogManager)
+[2023-02-01 03:32:16,814] INFO Starting log flusher with a default period of 9223372036854775807 ms. (kafka.log.LogManager)
+[2023-02-01 03:32:16,837] INFO Starting the log cleaner (kafka.log.LogCleaner)
+[2023-02-01 03:32:17,072] INFO [kafka-log-cleaner-thread-0]: Starting (kafka.log.LogCleaner)
+[2023-02-01 03:32:17,103] INFO [feature-zk-node-event-process-thread]: Starting (kafka.server.FinalizedFeatureChangeListener$ChangeNotificationProcessorThread)
+[2023-02-01 03:32:17,237] INFO [MetadataCache brokerId=2] Updated cache from existing <empty> to latest FinalizedFeaturesAndEpoch(features=Map(), epoch=0). (kafka.server.metadata.ZkMetadataCache)
+[2023-02-01 03:32:17,333] INFO [BrokerToControllerChannelManager broker=2 name=forwarding]: Starting (kafka.server.BrokerToControllerRequestThread)
+[2023-02-01 03:32:18,252] INFO Updated connection-accept-rate max connection creation rate to 2147483647 (kafka.network.ConnectionQuotas)
+[2023-02-01 03:32:18,259] INFO Awaiting socket connections on 0.0.0.0:9093. (kafka.network.DataPlaneAcceptor)
+[2023-02-01 03:32:18,305] INFO [SocketServer listenerType=ZK_BROKER, nodeId=2] Created data-plane acceptor and processors for endpoint : ListenerName(INTERNAL) (kafka.network.SocketServer)
+[2023-02-01 03:32:18,306] INFO Updated connection-accept-rate max connection creation rate to 2147483647 (kafka.network.ConnectionQuotas)
+[2023-02-01 03:32:18,307] INFO Awaiting socket connections on 0.0.0.0:9092. (kafka.network.DataPlaneAcceptor)
+[2023-02-01 03:32:18,319] INFO [SocketServer listenerType=ZK_BROKER, nodeId=2] Created data-plane acceptor and processors for endpoint : ListenerName(CLIENT) (kafka.network.SocketServer)
+[2023-02-01 03:32:18,341] INFO [BrokerToControllerChannelManager broker=2 name=alterPartition]: Starting (kafka.server.BrokerToControllerRequestThread)
+[2023-02-01 03:32:18,369] INFO [ExpirationReaper-2-Produce]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-02-01 03:32:18,372] INFO [ExpirationReaper-2-Fetch]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-02-01 03:32:18,421] INFO [ExpirationReaper-2-DeleteRecords]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-02-01 03:32:18,422] INFO [ExpirationReaper-2-ElectLeader]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-02-01 03:32:18,497] INFO [LogDirFailureHandler]: Starting (kafka.server.ReplicaManager$LogDirFailureHandler)
+[2023-02-01 03:32:18,623] INFO Creating /brokers/ids/2 (is it secure? false) (kafka.zk.KafkaZkClient)
+[2023-02-01 03:32:18,700] INFO Stat of the created znode at /brokers/ids/2 is: 4294967471,4294967471,1675222338642,1675222338642,1,0,0,216568047523463172,358,0,4294967471
+ (kafka.zk.KafkaZkClient)
+[2023-02-01 03:32:18,701] INFO Registered broker 2 at path /brokers/ids/2 with addresses: INTERNAL://kafka-2.kafka-headless.kafka.svc.cluster.local:9093,CLIENT://kafka-2.kafka-headless.kafka.svc.cluster.local:9092, czxid (broker epoch): 4294967471 (kafka.zk.KafkaZkClient)
+[2023-02-01 03:32:18,830] INFO [ControllerEventThread controllerId=2] Starting (kafka.controller.ControllerEventManager$ControllerEventThread)
+[2023-02-01 03:32:18,861] INFO [ExpirationReaper-2-topic]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-02-01 03:32:18,863] INFO [ExpirationReaper-2-Heartbeat]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-02-01 03:32:18,864] INFO [ExpirationReaper-2-Rebalance]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-02-01 03:32:18,880] DEBUG [Controller id=2] Broker 1 has been elected as the controller, so stopping the election process. (kafka.controller.KafkaController)
+[2023-02-01 03:32:18,907] INFO [GroupCoordinator 2]: Starting up. (kafka.coordinator.group.GroupCoordinator)
+[2023-02-01 03:32:18,933] INFO [GroupCoordinator 2]: Startup complete. (kafka.coordinator.group.GroupCoordinator)
+[2023-02-01 03:32:19,010] INFO [TransactionCoordinator id=2] Starting up. (kafka.coordinator.transaction.TransactionCoordinator)
+[2023-02-01 03:32:19,019] INFO [TransactionCoordinator id=2] Startup complete. (kafka.coordinator.transaction.TransactionCoordinator)
+[2023-02-01 03:32:19,037] INFO [Transaction Marker Channel Manager 2]: Starting (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2023-02-01 03:32:19,093] INFO [ExpirationReaper-2-AlterAcls]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-02-01 03:32:19,135] INFO [/config/changes-event-process-thread]: Starting (kafka.common.ZkNodeChangeNotificationListener$ChangeEventProcessThread)
+[2023-02-01 03:32:19,148] INFO [SocketServer listenerType=ZK_BROKER, nodeId=2] Enabling request processing. (kafka.network.SocketServer)
+[2023-02-01 03:32:19,168] INFO Kafka version: 3.3.1 (org.apache.kafka.common.utils.AppInfoParser)
+[2023-02-01 03:32:19,168] INFO Kafka commitId: e23c59d00e687ff5 (org.apache.kafka.common.utils.AppInfoParser)
+[2023-02-01 03:32:19,168] INFO Kafka startTimeMs: 1675222339162 (org.apache.kafka.common.utils.AppInfoParser)
+[2023-02-01 03:32:19,170] INFO [KafkaServer id=2] started (kafka.server.KafkaServer)
+[2023-02-01 03:32:49,069] INFO [BrokerToControllerChannelManager broker=2 name=forwarding]: Recorded new controller, from now on will use broker kafka-1.kafka-headless.kafka.svc.cluster.local:9093 (id: 1 rack: null) (kafka.server.BrokerToControllerRequestThread)
+[2023-02-01 03:32:49,103] INFO [BrokerToControllerChannelManager broker=2 name=alterPartition]: Recorded new controller, from now on will use broker kafka-1.kafka-headless.kafka.svc.cluster.local:9093 (id: 1 rack: null) (kafka.server.BrokerToControllerRequestThread)

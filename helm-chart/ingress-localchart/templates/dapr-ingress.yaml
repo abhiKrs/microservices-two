@@ -1,0 +1,35 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: dapr-ingress
+  labels:
+  {{- include "ingress-localchart.labels" . | nindent 4 }}
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
+spec:
+  ingressClassName: dapr
+  rules:
+  - host: localhost
+    http:
+      paths:
+      - backend:
+          service:
+            name: filterservice
+            port:
+              number: 80
+        path: /logfilter(/|$)(.*)
+        pathType: Prefix
+      - backend:
+          service:
+            name: livetail
+            port:
+              number: 80
+        path: /livetail(/|$)(.*)
+        pathType: Prefix
+      - backend:
+          service:
+            name: gowebapi
+            port:
+              number: 8080
+        path: /api(/|$)(.*)
+        pathType: Prefix

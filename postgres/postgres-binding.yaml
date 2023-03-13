@@ -1,0 +1,12 @@
+# apiVersion: dapr.io/v1alpha1
+# kind: Component
+# metadata:
+#   name: postgresdb
+# spec:
+#   type: bindings.postgres
+#   version: v1
+#   metadata:
+#   - name: url # Required
+#     secretKeyRef:
+#       name: postgres-secret
+#       key:  connString
