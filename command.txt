@@ -1,0 +1,2795 @@
+docker ps -a
+  587  docker images
+  588  docker rmi logfire/livetail logfire/gowebapi logfire/filter-service
+  589  docker images 
+  590  ls -la
+  591  docker images
+  592  docker rmi gcr.io/k8s-minikube/kicbase
+  593  docker rmi 01c0ce65fff7
+  594  docker rmi gcr.io/k8s-minikube/kicbase
+  595  docker images
+  596  ls -al
+  597  cat requirment-install.sh 
+  598  ./requirment-install.sh 
+  599  minikube delete
+  600  docker ps
+  601  docker ps -a
+  602  docker images
+  603  docker rmi 01c0ce65fff7
+  604  ./requirment-install.sh 
+  605  ls -la
+  606  ./application-start.sh 
+  607  kubectl get pods -n logfire-locl
+  608  kubectl get pods -n logfire-local
+  609  docker ps
+  610  docker ps -a
+  611  eval $(minikube -p minikube docker-env)
+  612  docker ps 
+  613  docker images list
+  614  docker image list
+  615  cat application-start.sh 
+  616  pr -n application-start.sh 
+  617  docker image list
+  618  docker build -t logfire/filter-service:latest gowebapp/filter-service 
+  619  docker image list
+  620  kubectl apply -f gowebapp/filter-service.yaml -n logfire-local
+  621  cat application-start.sh 
+  622  docker image list
+  623  docker image prune
+  624  docker image list
+  625  minikube delete
+  626  docker images
+  627  docker ps -a
+  628  docker image list
+  629  docker
+  630  docker image list
+  631  docker images
+  632  docker image
+  633  docker image list
+  634  docker ls
+  635  docker image ls
+  636  nano application-start.sh 
+  637  ./application-start.sh 
+  638  docker images
+  639  minikube delete
+  640  docker ps
+  641  nano application-start.sh 
+  642  ./application-start.sh 
+  643  docker ps
+  644  minikube delete
+  645  docker ps
+  646  kubectl logs flink-jobmanager-6f94cd759c-vr2nc -n logfire-local -f
+  647  kubectl logs gowebapi-deployment-7955558bb6-qwc9g -n logfire-local -f
+  648  kubectl logs gowebapi-deployment-7955558bb6-hghh6 -n logfire-local -f
+  649  kubectl logs gowebapi-deployment-7955558bb6-q668q -n logfire-local -f
+  650  kubectl logs gowebapi-deployment-7955558bb6-86v67 -n logfire-local -f
+  651  kubectl logs livetail-deployment-5f4cdf74b6-btsvf -n logfire-local -f
+  652  kubectl logs livetail-deployment-5f4cdf74b6-m2skq -n logfire-local -f
+  653  kubectl logs notification-deployment-79d549cd64-4ggx7 -n logfire-local -f
+  654  kubectl logs postgres-deployment-0 -n logfire-local -f
+  655  kubectl get pods -nlogfire-local
+  656  kubectl get pods -n logfirelocal
+  657  kubectl get pods -n logfire-local
+  658  eval $(minikube -p minikube docker-env)
+  659  docker ps 
+  660  docker ps  | grep postgres/
+  661  docker ps  | grep postgres
+  662  docker exec -it 331e5294db93 psql -d logfire-dev -U postgresuser
+  663  cat application-start.sh 
+  664  cd
+  665  history
+  666  cd microservices/
+  667  history
+  668  kubectl get pods -nlogfire-local
+  669  cat application-start.sh 
+  670  sudo systemctl status docker
+  671  kubectl get pods -nlogfire-local
+  672  docker ps
+  673  docker ps -a
+  674  helm upgrade --install dapr dapr/dapr --version=1.9 --namespace dapr-system --create-namespace --wait
+  675  helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+  676  helm upgrade --install api-gateway ingress-nginx/ingress-nginx --values ingress/dapr-annotations.yaml --namespace logfire-local --wait
+  677  helm upgrade --install api-gateway ingress-nginx/ingress-nginx --values ingress/dapr-annotations.yaml --namespace logfire-local
+  678  kubectl delete -f gowebapp/goweb-api.yaml -n logfire-local
+  679  docker build -t logfire/gowebapi:latest gowebapp/web-api
+  680  kubectl apply -f gowebapp -n logfir-local
+  681  kubectl apply -f gowebapp -n logfire-local
+  682  kubectl apply -f gowebapp/goweb-api.yaml -n logfire-local
+  683  kubectl delete -f gowebapp/livetail.yaml -n logfire-local
+  684  docker build -t logfire/livetail:latest gowebapp/livetail
+  685  kubectl apply -f gowebapp/livetail.yaml -n logfire-local
+  686  kubectl delete -f gowebapp/filter-service.yaml -n logfire-local
+  687  docker build -t logfire/filter-service:latest gowebapp/filter-service 
+  688  kubectl apply -f gowebapp/filter-service.yaml -n logfire-local
+  689  kubectl delete -f gowebapp/filter-service.yaml -n logfire-local
+  690  docker build -t logfire/filter-service:latest gowebapp/filter-service 
+  691  kubectl apply -f gowebapp/filter-service.yaml -n logfire-local
+  692  kubectl delete -f gowebapp/filter-service.yaml -n logfire-local
+  693  docker build -t logfire/filter-service:latest gowebapp/filter-service 
+  694  kubectl apply -f gowebapp/filter-service.yaml -n logfire-local
+  695  ls -la
+  696  cd flink-filter-service/
+  697  ls -la
+  698  cd go-filter-service/
+  699  ls -la
+  700  cd ..
+  701  ls -la
+  702  nano filter-service.yaml
+  703  docker build -t logfire/filter-service:latest gowebapp/filter-service 
+  704  kubectl delete -f gowebapp/filter-service.yaml -n logfire-local
+  705  docker build -t logfire/filter-service:latest gowebapp/filter-service 
+  706  kubectl apply -f gowebapp/filter-service.yaml -n logfire-local
+  707  kubectl delete -f gowebapp/filter-service.yaml -n logfire-local
+  708  kubectl apply -f gowebapp/filter-service.yaml -n logfire-local
+  709  ls -la
+  710  sudo systemctl status docker
+  711  docker ps
+  712  docker ps -a
+  713  docker image list
+  714  docker rmi 01c0ce65fff7
+  715  docker image list
+  716  docker ps -a
+  717  docker ps
+  718  docker ps -a
+  719  docker images
+  720  docker rmi 01c0ce65fff7
+  721  docker images
+  722  docker rmi 01c0ce65fff7
+  723  docker image list
+  724  docker ps -a
+  725  docker ps 
+  726  docker image
+  727  docker images
+  728  docker rmi 01c0ce65fff7
+  729  docker images
+  730  docker ps
+  731  docker ps -a
+  732  cat application-start.sh 
+  733  kubectl logs api-gateway-ingress-nginx-controller-9889858cb-r7mgv -n logfire-local -f
+  734  kubectl logs filterservice-deployment-8ccff465-ql474 -n logfire-local -f
+  735  kubectl logs flink-jobmanager-6f94cd759c-2wnsj -n logfire-local -f
+  736  kubectl logs gowebapi-deployment-7955558bb6-c57gj -n logfire-local -f
+  737  kubectl logs livetail-deployment-5f4cdf74b6-llmw9 -n logfire-local -f
+  738  kubectl logs notification-deployment-79d549cd64-srxnz -n logfire-local -f
+  739  kubectl logs postgres-deployment-0 -n logfire-local -f
+  740  minikube tunnel
+  741  kubectl get pods -n logfire-local
+  742  cd microservices/
+  743  helm repo add dapr https://dapr.github.io/helm-charts/
+  744  helm repo update
+  745  helm upgrade --install dapr dapr/dapr --version=1.9 --namespace dapr-system --create-namespace --wait
+  746  # to verify installation
+  747  kubectl get all -n dapr-system
+  748  helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+  749  helm repo update
+  750  cd secrets/
+  751  ls -la
+  752  helm upgrade --install api-gateway ingress-nginx/ingress-nginx --values ingress/dapr-annotations.yaml --namespace $namespace --wait
+  753  cd ..
+  754  helm upgrade --install api-gateway ingress-nginx/ingress-nginx --values ingress/dapr-annotations.yaml --namespace $namespace --wait
+  755  helm upgrade --install api-gateway ingress-nginx/ingress-nginx --values ingress/dapr-annotations.yaml --namespace logfire-local --wait
+  756  minikube service list
+  757  eval $(minikube -p minikube docker-env)
+  758  kubectl apply -f secrets -n logfire-local
+  759  kubectl svc -A
+  760  kubectl get  svc -A
+  761  kubectl get pods -n logfire-local
+  762  kubectl delete -f gowebapp/goweb-api.yaml -n logfire-local
+  763  kubectl apply -f gowebapp/goweb-api.yaml -n logfire-local
+  764  kubectl get pods -n logfire-local
+  765  eval $(minikube -p minikube docker-env)
+  766  kubectl delete -f gowebapp/goweb-api.yaml -n logfire-local
+  767  kubectl apply -f gowebapp/goweb-api.yaml -n logfire-local
+  768  kubectl get pods -n logfire-local
+  769  minikube config set
+  770  minikube set config 
+  771  minikube -help
+  772  minikube --help
+  773  kubectl get nodes
+  774  eval $(minikube -p minikube docker-env)
+  775  kubectl delete -f gowebapp/goweb-api.yaml -n logfire-local
+  776  docker build -t logfire/gowebapi:latest gowebapp/web-api 
+  777  kubectl apply -f gowebapp/goweb-api.yaml -n logfire-local
+  778  kubectl get pods -n logfire-local
+  779  kubectl delete -f gowebapp/filter-service.yaml -n logfire-local
+  780  docker build -t logfire/filter-service:latest gowebapp/filter-service 
+  781  kubectl apply -f gowebapp/filter-service.yaml -n logfire-local
+  782  kubectl get pods -n logfire-local
+  783  eval $(minikube -p minikube docker-env)
+  784  kubectl delete -f gowebapp/livetail.yaml -n logfire-local
+  785  docker build -t logfire/livetail:latest gowebapp/livetail 
+  786  kubectl apply -f gowebapp/livetail.yaml -n logfire-local
+  787  kubectl get pods -n logfire-local
+  788  kubectl get svc -A
+  789  kubectl get pods -n logfire-local
+  790  kubectl port-forward service/api-gateway-ingress-nginx-controller 8080:80
+  791  kubectl port-forward service/api-gateway-ingress-nginx-controller-9889858cb-snsbk 8080:80
+  792  kubectl get deployment -n logfire-local
+  793  kubectl port-forward service/api-gateway-ingress-nginx-controller 8080:80
+  794  kubectl port-forward deployment api-gateway-ingress-nginx-controller 8080:80
+  795  kubectl port-forward deployment api-gateway-ingress-nginx-controller-9889858cb-snsbk 8080:80
+  796  kubectl port-forward -n logfire-local  --address 0.0.0.0 service/api-gateway-ingress-nginx-controller 80:80 443:443
+  797  kubectl port-forward service/api-gateway-ingress-nginx-controller 8080:80
+  798  kubectl get svc
+  799  kubectl get svc -A
+  800  curl localhost
+  801  kubectl expose deployment kubernetes --type=LoadBalancer --port=8080
+  802  kubectl port-forward service/api-gateway-ingress-nginx-controller 8080:80
+  803  kubectl get svc -A
+  804  kubectl get deployment -n logfire-local
+  805  kubectl get -n logfire-local
+  806  kubectl get svc -n logfire-local
+  807  kubectl get validatingwebhookconfigurations
+  808  minikube service list
+  809  kubectl apply -f ingress/webapp-ingress.yaml
+  810  kubectl get -n logfire-local
+  811  kubectl get pods -n logfire-local
+  812  kubectl logs api-gateway-ingress-nginx-controller-9889858cb-snsbk -n logfire-local -f
+  813  kubectl logs api-gateway-ingress-nginx-controller-9889858cb-6z4qk -n logfire-local -f
+  814  kubectl logs api-gateway-ingress-nginx-controller-9889858cb-2d27j -n logfire-local -f
+  815  nano application-start.sh 
+  816  ./application-start.sh 
+  817  docker ps
+  818  docker image list
+  819  docker images
+  820  minikube delete
+  821  docker images
+  822  nano application-start.sh 
+  823  ./application-start.sh 
+  824  kubectl get pods -n logfire-local
+  825  kubectl get all -n dapr-system
+  826  helm upgrade --install dapr dapr/dapr --version=1.9 --namespace dapr-system --create-namespace --wai
+  827  helm upgrade --install dapr dapr/dapr --version=1.9 --namespace dapr-system --create-namespace --wait
+  828  kubectl get all -n dapr-system
+  829  helm repo update
+  830  kubectl get ingress
+  831  kubectl get ingress -n logfire-local
+  832  helm upgrade --install api-gateway ingress-nginx/ingress-nginx --values ingress/dapr-annotations.yaml --namespace logfire-local
+  833  kubectl apply -f ingress/local-ingress.yaml
+  834  kubectl get ingress
+  835  kubectl get ingress -n logfire-local
+  836  kubectl get pods -n logfire-local
+  837  docker image list
+  838  kubectl delete -f gowebapp/goweb-api.yaml -n logfire-local
+  839  docker build -t logfire/gowebapi:latest gowebapp/web-api 
+  840  kubectl apply -f gowebapp/goweb-api.yaml -n logfire-local
+  841  kubectl get pods -n logfire-local
+  842  kubectl delete -f gowebapp/livetail.yaml -n logfire-local
+  843  docker build -t logfire/livetail:latest gowebapp/livetail 
+  844  kubectl apply -f gowebapp/livetail.yaml -n logfire-local
+  845  kubectl get pods -n logfire-local
+  846  kubectl delete -f gowebapp/filter-service.yaml -n logfire-local
+  847  docker build -t logfire/filter-service:latest gowebapp/filter-service 
+  848  kubectl apply -f gowebapp/filter-service.yaml -n logfire-local
+  849  kubectl get pods -n logfire-local
+  850  kubectl port-forward service/api-gateway-ingress-nginx-controller 8080:80 -n logfire-local
+  851  kubectl get deployment
+  852  kubectl get deployment -n logfire-local
+  853  kubectl port-forward api-gateway-ingress-nginx-controller 8080:80 -n logfire-local
+  854  kubectl get pods -n logfire-local
+  855  kubectl port-forward api-gateway-ingress-nginx-controller-9889858cb-r7mgv 8080:80 -n logfire-local
+  856  kubectl port-forward service/api-gateway-ingress-nginx-controller 8080:80 -n logfire-local
+  857  eval $(minikube -p minikube docker-env)
+  858  helm upgrade --install api-gateway ingress-nginx/ingress-nginx --values ingress/dapr-annotations.yaml --namespace logfire-local
+  859  kubectl apply -f ingress/local-ingress.yaml
+  860  kubectl port-forward service/api-gateway-ingress-nginx-controller 8080:80 -n logfire-local
+  861  docker images
+  862  cat /etc/proc/meminfo
+  863  cat /proc/meminfo
+  864  cat application-start.sh 
+  865  kubectl logs filterservice-deployment-8ccff465-88lv7 -n logfire-local -f
+  866  kubectl logs filterservice-deployment-8ccff465-88lv7 -n logfire-local -f
+  867  kubectl logs flink-jobmanager-6f94cd759c-knm8s -n logfire-local -f
+  868  kubectl logs flink-taskmanager-7d57d94465-vblkq -n logfire-local -f
+  869  kubectl logs gowebapi-deployment-7955558bb6-r9fdq -n logfire-local -f
+  870  kubectl logs livetail-deployment-5f4cdf74b6-4p6rd -n logfire-local -f
+  871  kubectl logs notification-deployment-79d549cd64-d74bx -n logfire-local -f
+  872  kubectl logs postgres-deployment-0 -f
+  873  kubectl logs postgres-deployment-0 -n logfire-local-f
+  874  kubectl logs postgres-deployment-0 -n logfire-local -f
+  875  cd ../Downloads/
+  876  ssh -i "microservice.pem" ubuntu@ec2-13-126-205-142.ap-south-1.compute.amazonaws.com
+  877  ssh -i "microservice.pem" ubuntu@ec2-13-126-205-142.ap-south-1.compute.amazonaws.com
+  878  cd Downloads/
+  879  ssh -i "microservice.pem" ubuntu@ec2-3-6-88-234.ap-south-1.compute.amazonaws.com
+  880  kubectl get pods -n logfire-local --watch
+  881  ssh root@65.109.233.154
+  882  ssh root@135.181.155.133
+  883  kubectl get pods -n logfire-local --watch
+  884  cd /usr/share/
+  885  ls -ls
+  886  cd ..
+  887  cd
+  888  cd microservices/
+  889  kubectl get pods -n logfire-local 
+  890  kubectl exec it my-elasticsearch-es-default-2 -n logfire-local sh
+  891  kubectl exec it my-elasticsearch-es-default-1 -n logfire-local sh
+  892  kubectl exec -it my-elasticsearch-es-default-2 -n logfire-local sh
+  893  kubectl get pods -n logfire-local 
+  894  kubectl describe my-elasticsearch-es-default-2 -n logfire-local 
+  895  kubectl describe pods my-elasticsearch-es-default-2 -n logfire-local 
+  896  kubectl get pods -n logfire-local --watch
+  897  kubectl get all -n
+  898  kubectl get All -n
+  899  kubectl get pods -n logfire-local
+  900  kubectl exec -it gowebapi-deployment-7955558bb6-t6xll -n logfire-local sh
+  901  kubectl get pods -n logfire-local
+  902  kubectl port-forward -n logfire-local  --address 0.0.0.0 service/api-gateway-ingress-nginx-controller 80:80 443:443
+  903  kubectl port-forward service/api-gateway-ingress-nginx-controller 80:80
+  904  kubectl port-forward service/api-gateway-ingress-nginx-controller 8000:80
+  905  kubectl get pods -n logfire-local
+  906  kubectl port-forward service/api-gateway-ingress-nginx-controller 8080:80
+  907  kubectl port-forward service/api-gateway-ingress-nginx-controller 8080:80 -n logfire-local
+  908  kubectl port-forward service/api-gateway-ingress-nginx-controller 7070:80 -n logfire-local
+  909  kubectl get svc -n logfire-local
+  910  kubectl edit svc livetail -n logfire-local
+  911  kubectl port-forward service/api-gateway-ingress-nginx-controller 80:80 -n logfire-local
+  912  kubectl get pods -n logfire-local
+  913  kubectl port-forward service/api-gateway-ingress-nginx-controller :80 -n logfire-local
+  914  kubectl port-forward service/api-gateway-ingress-nginx-controller 80:80 -n logfire-local
+  915  sudo ss -nltp
+  916  kubectl get ingress
+  917  kubectl get ingress -n logfire-local
+  918  helm repo list
+  919  helm list --all-namespaces
+  920  kubectl get all -n dapr-system
+  921  kubectl get all -n logfire-local
+  922  git status
+  923  git branch
+  924  git checkout -b local
+  925  ls -la
+  926  git checkout main
+  927  ls -la
+  928  git pull origin main
+  929  ls -la
+  930  cat app-start.sh 
+  931  mv app-start.sh app-local-start.sh
+  932  ls -la
+  933  mv requirment-install.sh req-local.sh
+  934  kubectl get all -n logfire-local
+  935  kubectl get pods -n logfire-local
+  936  kubectl get pods -n logfire-local --watch
+  937  kubectl get pods -n logfire-local
+  938  cat app-start-local.sh 
+  939  k2s kubectl cluster-info
+  940  k3s kubectl cluster-info
+  941  kubectl create namespace dapr-system
+  942  k3s kubectl get svc
+  943  k3s kubectl get all -n logfire-local
+  944  sudo k3s kubectl get nodes
+  945  sudo k3s kubectl get pods --all-namespaces
+  946  helm repo list
+  947  cd /etc/rancher/k3s/
+  948  ls -la
+  949  cp k3s.yaml ~/.kube/config
+  950  kubectl
+  951  kubectl get pods
+  952  kubectl get pods --all-namespaces
+  953  cd
+  954  kubectl get pods --all-namespaces
+  955  cd microservices/
+  956  ls -la
+  957  cat req-local.sh 
+  958  helm repo list
+  959  kubectl get pods --all-namespaces
+  960  kubectl get pods --all-namespaces --watch
+  961  kubectl get pods --all-namespaces
+  962  kubectl get pods --all-namespaces --watch
+  963  kubectl get pods --all-namespaces
+  964  kubectl get pods --all -n dapr-system
+  965  kubectl get pods  -n dapr-system
+  966  kubectl get pods  -n logfire-local --watch
+  967  kubectl get pods  -n logfire-local
+  968  kubectl get pods  -n logfire-local --watch
+  969  kubectl get pods  -n logfire-local 
+  970  kubectl get pods  -n logfire-local --watch
+  971  kubectl get pods  -n logfire-local
+  972  cat app-start-local.sh 
+  973  nano app-start-local.sh 
+  974  ./app-start-local.sh 
+  975  nano app-start-local.sh 
+  976  kubectl get pods  -n logfire-local --watch
+  977  kubectl get pods  -n logfire-local 
+  978  which kubectl
+  979  sudo setcap CAP_NET_BIND_SERVICE=+eip /usr/local/bin/kubectl
+  980  kubectl get svc -n logfire-local
+  981  kubectl port-forward -n logfire-local  --address 0.0.0.0 service/api-gateway-ingress-nginx-controller 80:80
+  982  kubectl get ingress -A
+  983  kubectl delete -f deploy-local/deployment/ingress-local.yaml -n logfire-local
+  984  kubectl apply -f deploy-local/deployment/ingress-local.yaml -n logfire-local
+  985  kubectl get ingress -A
+  986  kubectl describe ing local-ingress -n logfire-local
+  987  kubectl port-forward -n logfire-local  --address 0.0.0.0 service/api-gateway-ingress-nginx-controller 80:80
+  988  kubectl port-forward -n logfire-local  --service/api-gateway-ingress-nginx-controller 80:80
+  989  kubectl port-forward -n logfire-local service/api-gateway-ingress-nginx-controller 80:80 
+  990  nano app-start-local.sh 
+  991  ./app-start-local.sh 
+  992  kubectl exec -it postgres-deployment-0 -n logfire-local sh 
+  993  minikube stop
+  994  minikube status
+  995  minikube delete
+  996  nano create-uuid-ossp-extension.sh
+  997  chmod +x create-uuid-ossp-extension.sh 
+  998  ./app-start-local.sh 
+  999  ls -la
+ 1000  ./create-uuid-ossp-extension.sh 
+ 1001  cat create-uuid-ossp-extension.sh 
+ 1002  nano create-uuid-ossp-extension.sh 
+ 1003  ./create-uuid-ossp-extension.sh 
+ 1004  nano create-uuid-ossp-extension.sh 
+ 1005  ./create-uuid-ossp-extension.sh 
+ 1006  nano create-uuid-ossp-extension.sh 
+ 1007  ./create-uuid-ossp-extension.sh 
+ 1008  nano create-uuid-ossp-extension.sh 
+ 1009  ./create-uuid-ossp-extension.sh 
+ 1010  nano create-uuid-ossp-extension.sh 
+ 1011  ./create-uuid-ossp-extension.sh 
+ 1012  cd Downloads/
+ 1013  ssh -i "microservice.pem" ubuntu@ec2-3-110-87-93.ap-south-1.compute.amazonaws.com
+ 1014  ssh -i "microservice.pem" ubuntu@ec2-3-110-87-93.ap-south-1.compute.amazonaws.com
+ 1015  ssh -i "microservice.pem" ubuntu@ec2-3-110-87-93.ap-south-1.compute.amazonaws.com
+ 1016  cd ../Do
+ 1017  cd
+ 1018  cd Downloads/
+ 1019  ssh -i "microservice.pem" ubuntu@ec2-3-110-87-93.ap-south-1.compute.amazonaws.com
+ 1020  ls -la
+ 1021  chmod 400 microservice.pem 
+ 1022  ssh -i "microservice.pem" ubuntu@ec2-3-110-87-93.ap-south-1.compute.amazonaws.com
+ 1023  cd
+ 1024  cd Downloads/
+ 1025  ssh -i "microservice.pem" ubuntu@ec2-3-110-87-93.ap-south-1.compute.amazonaws.com
+ 1026  cd
+ 1027  cd Downloads/
+ 1028  ssh -i "microservice.pem" ubuntu@ec2-3-110-87-93.ap-south-1.compute.amazonaws.com
+ 1029  cd
+ 1030  cd Downloads/
+ 1031  ssh -i "test-server.pem" ubuntu@ec2-13-235-134-138.ap-south-1.compute.amazonaws.com
+ 1032  ls -la
+ 1033  cd
+ 1034  ls -la
+ 1035  cd Downloads/
+ 1036  ls -la
+ 1037  ssh -i "microservice.pem" ec2-user@ec2-65-1-114-29.ap-south-1.compute.amazonaws.com
+ 1038  ssh -i "microservice.pem" ubuntu@ec2-13-127-12-242.ap-south-1.compute.amazonaws.com
+ 1039  cd microservices/
+ 1040  nano k3s.sh 
+ 1041  docker ps
+ 1042  k3s kubectl config get-contexts
+ 1043  docker ps
+ 1044  cat k3s.sh 
+ 1045  curl localhost:7070
+ 1046  curl localhost:7070/api
+ 1047  curl localhost:7070/api/auth
+ 1048  curl localhost:7070/livetail
+ 1049  ls -la
+ 1050  ./k3s-local.sh 
+ 1051  nano k3s-local.sh 
+ 1052  ./k3s-local.sh 
+ 1053  kubectl get nodes
+ 1054  docker image list
+ 1055  ls -la
+ 1056  cd de
+ 1057  cd deploy-local/
+ 1058  ls -la
+ 1059  cd deployment/
+ 1060  ls -la
+ 1061  pwd
+ 1062  cd ..
+ 1063  ls -la
+ 1064  cd gowebapp/
+ 1065  ls -la
+ 1066  cd web-api/
+ 1067  ls -la
+ 1068  pwd
+ 1069  cd ../..
+ 1070  ls -la
+ 1071  cd flink-filter-service/
+ 1072  ls -la
+ 1073  cd go-filter-service/
+ 1074  ls -la
+ 1075  pwd
+ 1076  ls -la
+ 1077  nano k3s-local.sh
+ 1078  ls -la
+ 1079  chmod +x k3s-local.sh 
+ 1080  kubectl get svc -A
+ 1081  k3s kubectl get svc -A
+ 1082  kubectl expose deploy api-gateway-ingress-nginx-controller --port=80 --target-port=80 --type=LoadBalancer -n logfire-local
+ 1083  k3s kubectl expose deploy api-gateway-ingress-nginx-controller --port=80 --target-port=80 --type=LoadBalancer -n logfire-local
+ 1084  kubectl port-forward service/api-gateway-ingress-nginx-controller 8080:80 -n logfire-local
+ 1085  k3s kubectl port-forward service/api-gateway-ingress-nginx-controller 8080:80 -n logfire-local
+ 1086  k3s kubectl port-forward service/api-gateway-ingress-nginx-controller 7070:80 -n logfire-local
+ 1087  cd microservices/
+ 1088  cat k3s.sh 
+ 1089  sudo /usr/local/bin/k3s-uninstall.sh
+ 1090  curl -sfL https://get.k3s.io | sh -s - --docker
+ 1091  export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
+ 1092  kubectl get nodes
+ 1093  sudo kubectl get nodes
+ 1094  cp -r /etc/rancher/k3s/k3s.yaml ~/.kube/config
+ 1095  sudo cp -r /etc/rancher/k3s/k3s.yaml ~/.kube/config
+ 1096  kubectl get nodes
+ 1097  sudo /usr/local/bin/k3s-uninstall.sh
+ 1098  curl -sfL https://get.k3s.io | sh -s - --docker
+ 1099  sudo chmod 777 /etc/rancher/k3s/k3s.yaml
+ 1100  kubectl get nodes
+ 1101  kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.10.3/manifests/namespace.yaml
+ 1102  kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.10.3/manifests/metallb.yaml
+ 1103  sudo apt install jq -y
+ 1104  cidr_block=$(docker network inspect k3s-server | jq '.[0].IPAM.Config[0].Subnet' | tr -d '"')
+ 1105  base_addr=${cidr_block%???}
+ 1106  first_addr=$(echo $base_addr | awk -F'.' '{print $1,$2,$3,240}' OFS='.')
+ 1107  range=$first_addr/29
+ 1108  sudo apt install jq -y
+ 1109  cidr_block=$(network inspect k3s-server | jq '.[0].IPAM.Config[0].Subnet' | tr -d '"')
+ 1110  base_addr=${cidr_block%???}
+ 1111  first_addr=$(echo $base_addr | awk -F'.' '{print $1,$2,$3,240}' OFS='.')
+ 1112  range=$first_addr/29
+ 1113  cat <<EOF | kubectl apply -f -
+ 1114  apiVersion: v1
+ 1115  kind: ConfigMap
+ 1116  metadata:
+ 1117    namespace: metallb-system
+ 1118    name: config
+ 1119  data:
+ 1120    config: |
+ 1121      address-pools:
+ 1122      - name: default
+ 1123        protocol: layer2
+ 1124        addresses:
+ 1125        - $range
+ 1126  EOF
+ 1127  echo $range
+ 1128  kubectl get svc -A
+ 1129  k3s kubectl config get-contexts | grep <cluster-name>
+ 1130  kubectl config get-contexts | grep cluster-name
+ 1131  k3s cluster list
+ 1132  k3s kubectl config get-contexts
+ 1133  kubectl config get-contexts
+ 1134  sudo apt install jq -y
+ 1135  cidr_block=$(docker network inspect default-cluster | jq '.[0].IPAM.Config[0].Subnet' | tr -d '"')
+ 1136  base_addr=${cidr_block%???}
+ 1137  first_addr=$(echo $base_addr | awk -F'.' '{print $1,$2,$3,240}' OFS='.')
+ 1138  range=$first_addr/29
+ 1139  sudo /usr/local/bin/k3s-uninstall.sh
+ 1140  curl -s https://raw.githubusercontent.com/rancher/k3d/main/install.sh | TAG=v5.0.1 bash
+ 1141  cd
+ 1142  curl -s https://raw.githubusercontent.com/rancher/k3d/main/install.sh | TAG=v5.0.1 bash
+ 1143  k3d cluster create k3s-demo-cluster --api-port 6550 --agents 1 --k3s-arg "--disable=traefik@server:0" --k3s-arg "--disable=servicelb@server:0" --no-lb --k3s-arg "--docker@server:0" --wait
+ 1144  sudo /usr/local/bin/k3s-uninstall.sh
+ 1145  k3d cluster list
+ 1146  k3d cluster create k3s-demo-cluster --api-port 6550 --agents 1 --k3s-arg "--disable=traefik@server:0" --k3s-arg "--disable=servicelb@server:0" --no-lb --k3s-arg "--docker" --wait
+ 1147  k3d cluster create k3s-demo-cluster --api-port 6550 --agents 1 --k3s-arg "--disable=traefik@server:0" --k3s-arg "--disable=servicelb@server:0" --no-lb --k3s-arg "--docker@server:0" --wait
+ 1148  sudo /usr/local/bin/k3s-uninstall.sh
+ 1149  curl -sfL https://get.k3s.io | sh -s - --docker
+ 1150  sudo chmod 777 /etc/rancher/k3s/k3s.yaml
+ 1151  kubectl get nodes
+ 1152  kubectl create namespace logfir-local
+ 1153  kubectl get ns
+ 1154  kubectl delete ns logfire-local
+ 1155  kubectl delete ns logfir-local
+ 1156  kubectl create namespace logfire-local
+ 1157  kubectl get ns
+ 1158  helm upgrade --install api-gateway ingress-nginx/ingress-nginx --namespace logfire-local  
+ 1159  cd microservices/
+ 1160  kubectl apply -f secrets -n logfire-local
+ 1161  kubectl apply -f postgres -n logfire-local
+ 1162  docker build -t logfire/gowebapi:latest gowebapp/web-api
+ 1163  docker build -t logfire/notification:latest gowebapp/notification
+ 1164  docker build -t logfire/livetail:latest gowebapp/livetail
+ 1165  docker build -t logfire/filter-service:latest gowebapp/filter-service
+ 1166  kubectl apply -f deploy-local/operators -n $namespace --wait
+ 1167  kubectl apply -f deploy-local/operators -n logfire-local --wait
+ 1168  kubectl apply -f deploy-local/deployment -n logfire-local --wait
+ 1169  kubectl exec -it postgres-deployment-0 -n logfire-local sh
+ 1170  kubectl logs gowebapi-deployment-76db8957bd-s7s8f -n logfire-local -f
+ 1171  kubectl logs api-gateway-ingress-nginx-controller-7d49ff94bb-2cxgr -n logfire-local -f
+ 1172  kubectl logs my-elasticsearch-es-default-0 -n logfire-local -f
+ 1173  kubectl describe pods my-elasticsearch-es-default-0 -n logfire-local -f
+ 1174  kubectl describe pods my-elasticsearch-es-default-0 -n logfire-local 
+ 1175  kubectl describe pods api-gateway-ingress-nginx-controller-7d49ff94bb-2cxgr -n logfire-local 
+ 1176  kubectl describe pods gowebapi-deployment-76db8957bd-s7s8f -n logfire-local 
+ 1177  kubectl get svc -A
+ 1178  sudo nano /etc/hosts
+ 1179  kubectl get svc -A
+ 1180  kubectl get ing -A
+ 1181  kubectl delete pod api-gateway-ingress-nginx-controller-7d49ff94bb-2cxgr -n logfire-local
+ 1182  kubectl logs api-gateway-ingress-nginx-controller-7d49ff94bb-nhzxz -n logfire-local -f
+ 1183  kubectl logs gowebapi-deployment-76db8957bd-s7s8f -n logfire-local -f
+ 1184  cat app-start-local.sh 
+ 1185  cd gowebapp/
+ 1186  ls -la
+ 1187  cd web-api/
+ 1188  ls -la
+ 1189  cd app/
+ 1190  ls -la
+ 1191  cd ..
+ 1192  ls -la
+ 1193  kubectl get pods -n logfire-local --watch
+ 1194  sudo kubectl get pods -n logfire-local --watch
+ 1195  k3s kubectl get pods -n logfire-local --watch
+ 1196  kubectl get pods -n logfire-local --watch
+ 1197  k3s kubectl get pods -n logfire-local --watch
+ 1198  kubectl get pods -n logfire-local --watch
+ 1199  k3s kubectl get pods -n logfire-local --watch
+ 1200  cd microservices/
+ 1201  cd li
+ 1202  ls -la
+ 1203  cd operators/
+ 1204  ls -la
+ 1205  cd ..
+ 1206  ls -la
+ 1207  cd deploy-local
+ 1208  ls -la
+ 1209  cd operators/
+ 1210  ls -la
+ 1211  cd ..
+ 1212  cd dep
+ 1213  cd deployment/
+ 1214  ls -la
+ 1215  cd ../../
+ 1216  cd gowebapp/
+ 1217  ls -la
+ 1218  cd livetail/
+ 1219  ls -la
+ 1220  pwd
+ 1221  cd ..
+ 1222  ls -la
+ 1223  cd filter-service/
+ 1224  ls -la
+ 1225  cd ..
+ 1226  ls -la
+ 1227  cd gowebapp/
+ 1228  ls -la
+ 1229  cd notification/
+ 1230  ls -la
+ 1231  pwd
+ 1232  cd ..
+ 1233  ls -la
+ 1234  cd
+ 1235  cd .ssh/
+ 1236  ls -la
+ 1237  cd microservices/
+ 1238  nano k3s.sh 
+ 1239  sudo docker ps
+ 1240  sudo docker image list
+ 1241  cat k3s.sh 
+ 1242  nano k3s.sh 
+ 1243  kubectl get all -n
+ 1244  kubectl get all -A
+ 1245  kubectl get pods -n logfire-local
+ 1246  kubectl describe pod my-cluster-kafka-0 -n logfire-local
+ 1247  kubectl get pods -n logfire-local
+ 1248  kubectl describe pod my-elasticsearch-es-default-0 -n logfire-local
+ 1249  kubectl get pods -n logfire-local --watch
+ 1250  kubectl get all -A
+ 1251  kubectl port-forward service/api-gateway-ingress-nginx-controller 8080:80 -n logfire-local
+ 1252  kubectl port-forward service/api-gateway-ingress-nginx-controller 7070:80 -n logfire-local
+ 1253  kubectl port-forward service/ingress-nginx-controller-loadbalancer 7070:80 -n logfire-local
+ 1254  kubectl port-forward service/ingress-nginx-controller-loadbalancer 7070:80 -n nginx-ingress
+ 1255  kubectl port-forward service/ingress-nginx-controller-loadbalancer 7070:80 -n ingress-nginx
+ 1256  kubectl port-forward service/ingress-nginx-controller-loadbalancer 8080:80 -n ingress-nginx
+ 1257  kubectl port-forward service/ingress-nginx-controller-loadbalancer 80:80 -n ingress-nginx
+ 1258  kubectl port-forward service/ingress-nginx-controller-loadbalancer 5000:80 -n ingress-nginx
+ 1259  kubectl port-forward service/ingress-nginx-controller-loadbalancer 4040:80 -n ingress-nginx
+ 1260  sudo apt-get update && sudo apt-get install -y socat
+ 1261  kubectl port-forward service/ingress-nginx-controller-loadbalancer 7070:80 -n ingress-nginx
+ 1262  sudo /usr/local/bin/k3s-uninstall.sh
+ 1263  sudo rm /usr/local/bin/k3s
+ 1264  cd
+ 1265  curl -s https://raw.githubusercontent.com/rancher/k3d/main/install.sh | TAG=v5.0.1 bash
+ 1266  k3d --help
+ 1267  k3d cluster create k3s-demo-cluster --api-port 6550 --agents 1 --k3s-arg "--disable=traefik@server:0" --k3s-arg "--disable=servicelb@server:0" --no-lb --wait
+ 1268  sudo rm /usr/local/bin/k3s
+ 1269  sudo /usr/local/bin/k3s-uninstall.sh
+ 1270  ls -la
+ 1271  which k3d
+ 1272  sudo rm -rf /usr/local/bin/k3d
+ 1273  which k3s
+ 1274  whereis k3s
+ 1275  whereis k3d
+ 1276  curl -s https://raw.githubusercontent.com/rancher/k3d/main/install.sh | TAG=v5.0.1 bash
+ 1277  k3s --help
+ 1278  k3d --help
+ 1279  k3d cluster create k3s-demo-cluster --api-port 6550 --agents 1 --k3s-arg "--disable=traefik@server:0" --k3s-arg "--disable=servicelb@server:0" --no-lb --wait
+ 1280  k3d cluster stop k3s-demo-cluster
+ 1281  k3d cluster delete k3s-demo-cluster
+ 1282  k3d cluster create k3s-demo-cluster --api-port 6550 --agents 1 --k3s-arg "--disable=traefik@server:0" --k3s-arg "--disable=servicelb@server:0" --no-lb --wait
+ 1283  kubectl get nodes
+ 1284  k3d kubectl get nodes
+ 1285  k3s kubectl get nodes
+ 1286  kubectl get nodes
+ 1287  kubectl get all
+ 1288  kubectl get all -A
+ 1289  kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.10.3/manifests/namespace.yaml
+ 1290  kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.10.3/manifests/metallb.yaml
+ 1291  sudo apt install jq -y
+ 1292  cidr_block=$(docker network inspect k3d-k3s-demo-cluster | jq '.[0].IPAM.Config[0].Subnet' | tr -d '"')
+ 1293  base_addr=${cidr_block%???}
+ 1294  first_addr=$(echo $base_addr | awk -F'.' '{print $1,$2,$3,240}' OFS='.')
+ 1295  range=$first_addr/29
+ 1296  range
+ 1297  echo $range
+ 1298  cat <<EOF | kubectl apply -f -
+ 1299  apiVersion: v1
+ 1300  kind: ConfigMap
+ 1301  metadata:
+ 1302    namespace: metallb-system
+ 1303    name: config
+ 1304  data:
+ 1305    config: |
+ 1306      address-pools:
+ 1307      - name: default
+ 1308        protocol: layer2
+ 1309        addresses:
+ 1310        - $range
+ 1311  EOF
+ 1312  kubectl get ns
+ 1313  kubectl get all -n metallb-system
+ 1314  kubectl get cm -n metallb-system
+ 1315  kubectl describe cm config
+ 1316  kubectl describe cm config -n metallb-system
+ 1317  kubectl create deploy nginx --image=nginx
+ 1318  kubectl expose deploy nginx --port=80 --target-port=80 --type=LoadBalancer
+ 1319  kubectl get svc nginx
+ 1320  kubectl get pods -n logfire-local --watch
+ 1321  docker ps
+ 1322  cd microservices/
+ 1323  ./k3s.sh 
+ 1324  ls -la
+ 1325  chmod +x build-image.sh
+ 1326  ./build-image.sh
+ 1327  docker image list
+ 1328  kubectl get svc -n logfire-local
+ 1329  helm uninstall api-gateway -n logfire-local
+ 1330  kubectl get svc -n logfire-local
+ 1331  https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.47.0/deploy/static/provider/baremetal/deploy.yaml
+ 1332  https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.47.0/deploy/static/provider/baremetal/deploy.yaml 
+ 1333  kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.47.0/deploy/static/provider/baremetal/deploy.yaml -n logfire-local
+ 1334  kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.47.0/deploy/static/provider/baremetal/deploy.yaml 
+ 1335  kubectl get svc -n logfire-local
+ 1336  kubectl get svc -A
+ 1337  cd 
+ 1338  nano nginx-loadbalancer.yaml
+ 1339  kubectl apply -f nginx-loadbalancer.yaml 
+ 1340  ls -al
+ 1341  nano ingress.yaml
+ 1342  kubectl apply -f ingress.yaml 
+ 1343  kubectl get svc -A
+ 1344  kubectl get ing -A
+ 1345  kubectl describe ing test-nginx-ingress
+ 1346  kubectl describe ing test-nginx-ingress -n logfire-local
+ 1347  kubectl get svc -A
+ 1348  curl localhost/api/auth
+ 1349  curl localhost:7070/api/auth
+ 1350  kubectl get pods -n logfire-local
+ 1351  kubectl get svc -A
+ 1352  kubectl get pods -n logfire-local --watch
+ 1353  docker image list
+ 1354  curl localhost:80
+ 1355  curl localhost
+ 1356  kubectl delete deploy nginx
+ 1357  kubectl delete svc nginx
+ 1358  helm repo list
+ 1359  helm upgrade --install api-gateway ingress-nginx/ingress-nginx --namespace logfire-local  
+ 1360  kubectl create namespace logfire-local
+ 1361  helm upgrade --install api-gateway ingress-nginx/ingress-nginx --namespace logfire-local  
+ 1362  kubectl get svc 
+ 1363  kubectl get svc -A
+ 1364  docker image list
+ 1365  kubectl apply -f secrets -n logfire-local
+ 1366  cd microservices/
+ 1367  kubectl apply -f secrets -n logfire-local
+ 1368  #kubectl apply -f postgres -n logfire-local
+ 1369  kubectl apply -f postgres -n logfire-local
+ 1370  cd postgres/
+ 1371  ls -la
+ 1372  nano postgres.yaml 
+ 1373  kubectl get pods -n logfire-local
+ 1374  kubectl apply -f postgres -n logfire-local --validate=false
+ 1375  cd ..
+ 1376  kubectl apply -f postgres -n logfire-local --validate=false
+ 1377  kubectl get pods -n logfire-local
+ 1378  kubectl exec -it postgres-deployment-0 -n logfire-local sh
+ 1379  kubectl apply -f gowebapp -n logfire-local
+ 1380  k3d cluster list
+ 1381  k3d cluster stop k3s-demo-cluster
+ 1382  k3d cluster delete k3s-demo-cluster
+ 1383  k3d cluster create k3s-demo-cluster --api-port 6550 --agents 1 --k3s-arg "--disable=traefik@server:0" --k3s-arg "--disable=servicelb@server:0" --no-lb --docker --wait
+ 1384  k3d cluster create k3s-demo-cluster --api-port 6550 --agents 1 --k3s-arg "--disable=traefik@server:0" --k3s-arg "--disable=servicelb@server:0" --k3s-arg "--docker" --no-lb --wait
+ 1385  k3d cluster create k3s-demo-cluster --api-port 6550 --agents 1 --k3s-arg "--disable=traefik@server:0" --k3s-arg "--disable=servicelb@server:0" --k3s-arg "--docker@server:0" --no-lb --wait
+ 1386  k3d cluster create k3s-demo-cluster --api-port 6550 --agents 1 --k3s-arg "--disable=traefik@server:0" --k3s-arg "--disable=servicelb@server:0" --k3s-arg "--docker@server:0" --no-lb 
+ 1387  k3d cluster stop k3s-demo-cluster
+ 1388  k3d cluster delete k3s-demo-cluster
+ 1389  k3d cluster create k3s-demo-cluster --api-port 6550 --agents 1 --k3s-arg "--disable=traefik@server:0" --k3s-arg "--disable=servicelb@server:0" --k3s-arg "--docker@server:0" --no-lb 
+ 1390  k3d cluster delete k3s-demo-cluster
+ 1391  k3d cluster stop k3s-demo-cluster
+ 1392  k3d cluster delete k3s-demo-cluster
+ 1393  k3d --help
+ 1394  which k3s
+ 1395  which k3d
+ 1396  sudo rm -rf /usr/local/bin/k3d
+ 1397  which k3d
+ 1398  whereis k3d
+ 1399  systemctl start k3s.service
+ 1400  curl -sfL https://get.k3s.io | sh -s - --docker
+ 1401  kubectl get nodes
+ 1402  sudo kubectl get nodes
+ 1403  sudo k3s kubectl get nodes
+ 1404  k3s kubectl get nodes
+ 1405  export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
+ 1406  k3s kubectl get nodes
+ 1407  kubectl get nodes
+ 1408  sudo chmod 777 /etc/rancher/k3s/k3s.yaml
+ 1409  cp -r /etc/rancher/k3s/k3s.yaml ~/.kube/config
+ 1410  kubectl get nodes
+ 1411  kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.10.3/manifests/namespace.yaml
+ 1412  kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.10.3/manifests/metallb.yaml
+ 1413  kubectl get svc -A
+ 1414  kubectl get nodes
+ 1415  sudo apt install jq -y
+ 1416  cidr_block=$(docker network inspect k3d-k3s-demo-cluster | jq '.[0].IPAM.Config[0].Subnet' | tr -d '"')
+ 1417  base_addr=${cidr_block%???}
+ 1418  first_addr=$(echo $base_addr | awk -F'.' '{print $1,$2,$3,240}' OFS='.')
+ 1419  range=$first_addr/29
+ 1420  echo $range
+ 1421  cat <<EOF | kubectl apply -f -
+ 1422  apiVersion: v1
+ 1423  kind: ConfigMap
+ 1424  metadata:
+ 1425    namespace: metallb-system
+ 1426    name: config
+ 1427  data:
+ 1428    config: |
+ 1429      address-pools:
+ 1430      - name: default
+ 1431        protocol: layer2
+ 1432        addresses:
+ 1433        - $range
+ 1434  EOF
+ 1435  kubectl create deploy nginx --image=nginx
+ 1436  kubectl expose deploy nginx --port=80 --target-port=80 --type=LoadBalancer
+ 1437  kubectl get svc nginx
+ 1438  curl 172.18.0.241
+ 1439  kubectl delete deploy nginx
+ 1440  kubectl delete svc nginx
+ 1441  kubectl create namespace logfire-local
+ 1442  helm upgrade --install api-gateway ingress-nginx/ingress-nginx --namespace logfire-local 
+ 1443  kubectl get svc -A
+ 1444  kubectl apply -f secrets -n logfire-local
+ 1445  #kubectl apply -f postgres -n logfire-local 
+ 1446  kubectl apply -f postgres -n logfire-local 
+ 1447  kubectl exec -it postgres-deployment-0 -n logfire-local sh
+ 1448  kubectl apply -f gowebapp -n logfire-local
+ 1449  kubectl get svc -A
+ 1450  curl 172.18.0.241
+ 1451  kubectl expose deploy api-gateway-ingress-nginx-controller --port=80 --target-port=80 --type=LoadBalancer
+ 1452  kubectl expose deploy api-gateway-ingress-nginx-controller --port=80 --target-port=80 --type=LoadBalancer -n logfire-local
+ 1453  kubectl port-forward service/api-gateway-ingress-nginx-controller 80:80 -n logfire-local
+ 1454  kubectl port-forward service/api-gateway-ingress-nginx-controller 8080:80 -n logfire-local
+ 1455  kubectl port-forward service/api-gateway-ingress-nginx-controller 7070:80 -n logfire-local
+ 1456  kubectl expose deploy api-gateway-ingress-nginx-controller --port=80 --target-port=80 --type=LoadBalancer -n logfire-local
+ 1457  kubectl expose deploy api-gateway-ingress-nginx-controller --port=7070 --target-port=80 --type=LoadBalancer -n logfire-local
+ 1458  kubectl delete -f gowebapp -n logfire-local
+ 1459  ls -la
+ 1460  kubectl apply -f deploy-local/operators -n $namespace --wait
+ 1461  kubectl apply -f deploy-local/operators -n logfire-local --wait
+ 1462  kubectl apply -f deploy-local/deployment -n logfire-local --wait
+ 1463  kubectl describe pod my-elasticsearch-es-default-0 -n logfire-local
+ 1464  kubectl delete -f deploy-local/deployment/elasticsearch.yaml -n logfire-local
+ 1465  kubectl apply -f deploy-local/deployment/elasticsearch.yaml -n logfire-local
+ 1466  kubectl describe pod my-elasticsearch-es-default-0 -n logfire-local
+ 1467  kubectl delete -f deploy-local/deployment/elasticsearch.yaml -n logfire-local
+ 1468  kubectl apply -f deploy-local/deployment/elasticsearch.yaml -n logfire-local
+ 1469  kubectl describe pod my-elasticsearch-es-default-0 -n logfire-local
+ 1470  history
+ 1471  kubectl get svc -A
+ 1472  cat /etc/hosts
+ 1473  sudo k3s server --docker
+ 1474  sudo systemctl stop k3s
+ 1475  sudo k3s server --docker
+ 1476  sudo systemctl stop k3s
+ 1477  sudo k3s server --docker --disable traefik
+ 1478  sudo systemctl stop k3s
+ 1479  sudo systemctl status k3s
+ 1480  cat k3s.sh 
+ 1481  kubectl get ing -n logfire-local
+ 1482  kubectl apply -f ingress/local-ingress.yaml -n logfire-local
+ 1483  kubectl get ing -n logfire-local
+ 1484  kubectl describe ing dapr-ingress
+ 1485  kubectl describe ing dapr-ingress -n logfire-local
+ 1486  kubectl delete -f ingress/local-ingress.yaml -n logfire-local
+ 1487  kubectl apply -f deploy-local/deployment/ingress-local.yaml -n logfire-local
+ 1488  kubectl get ing -n logfire-local
+ 1489  kubectl describe ing local-ingress -n logfire-local
+ 1490  kubectl get ing -n logfire-local
+ 1491  ls -la
+ 1492  curl localhost/api/auth
+ 1493  curl localhost:7070/api/auth
+ 1494  ls -la
+ 1495  cd ingress/
+ 1496  ls -la
+ 1497  cat local-ingress.yaml 
+ 1498  curl localhost:7070/api/auth
+ 1499  curl localhost:5000/api/auth
+ 1500  curl localhost:4040/api/auth
+ 1501  curl localhost:7070/api/auth
+ 1502  kubectl get pods -n logfire-local
+ 1503  kubectl logs gowebapi-deployment-965866569-hplt4 -n logfire-local
+ 1504  curl localhost:7070/api/auth
+ 1505  sudo nano /etc/hosts
+ 1506  curl localhost:7070/api/auth
+ 1507  kubectl logs pods api-gateway-ingress-nginx-controller-7d49ff94bb-9fg82 -n logfire-local
+ 1508  kubectl logs pod api-gateway-ingress-nginx-controller-7d49ff94bb-9fg82 -n logfire-local
+ 1509  kubectl logs api-gateway-ingress-nginx-controller-7d49ff94bb-9fg82 -n logfire-local
+ 1510  curl localhost:7070/api/auth
+ 1511  cd ..
+ 1512  ls -la
+ 1513  cat app-start-local.sh 
+ 1514  cat deploy-local.sh 
+ 1515  nano deploy-local.sh 
+ 1516  nano test-local.sh
+ 1517  cd microservices/
+ 1518  cd helm-chart/
+ 1519  ls -la
+ 1520  cd configmap/
+ 1521  ls -la
+ 1522  cd
+ 1523  sudo /usr/local/bin/k3s-uninstall.sh
+ 1524  ./install-local.sh 
+ 1525  ssh root@135.181.89.102
+ 1526  cd helm-chart/
+ 1527  pwd
+ 1528  cd
+ 1529  cat deploy-local.sh 
+ 1530  pr -n deploy-local.sh 
+ 1531  ssh root@135.181.89.102
+ 1532  ls -la
+ 1533  ./install-local.sh 
+ 1534  sudo /usr/local/bin/k3s-uninstall.sh
+ 1535  ./install-local.sh 
+ 1536  kubectl get nodes
+ 1537  cd microservices/
+ 1538  cd
+ 1539  ./deploy-local.sh 
+ 1540  ssh root@135.181.89.102
+ 1541  exit
+ 1542  cat install-local.sh 
+ 1543  kubectl get pods -n logfire-local
+ 1544  ssh root@135.181.89.102
+ 1545  ls -la
+ 1546  rm -rf microservices/
+ 1547  mkdir folder
+ 1548  git clone https://github.com/abhiKrs/microservices.git
+ 1549  ls -la
+ 1550  rm -rf microservices/
+ 1551  cd folder/
+ 1552  git clone https://github.com/abhiKrs/microservices.git
+ 1553  ls -la
+ 1554  cd microservices/
+ 1555  cd ..
+ 1556  rm -rf microservices/
+ 1557  git clone https://github.com/logfire-sh/microservices.git
+ 1558  ls -la
+ 1559  cd microservices/
+ 1560  ls -la
+ 1561  rm -rf .git .github/
+ 1562  git init
+ 1563  git remote add origin https://github.com/abhiKrs/microservices.git
+ 1564  git add .
+ 1565  git commit -m "update"
+ 1566  git push
+ 1567  git push origin main
+ 1568  git branch
+ 1569  git push origin master
+ 1570  cd ..
+ 1571  rm -rf microservices/
+ 1572  git clone https://github.com/logfire-sh/microservices.git
+ 1573  cd microservices/
+ 1574  ls -la
+ 1575  rm -rf .git
+ 1576  git init
+ 1577  git branch
+ 1578  git remote add origin https://github.com/abhiKrs/microservices.git
+ 1579  git add .
+ 1580  git commit -m "update"
+ 1581  git push 
+ 1582  git branch
+ 1583  git push origin master
+
+######################################################################################################################
+
+root@Live-Rancher-Server:~# history
+    1  apt-get install
+    2  apt-get update
+    3  curl -sfL https://get.k3s.io | sh -s - --docker
+    4  apt-get install docker.io
+    5  systemctl status k3s.service
+    6  kubectl get all
+    7  kubectl get all -n kube-system
+    8  curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
+    9  ./get_helm.sh
+   10  helm repo add rancher-stable https://releases.rancher.com/server-charts/stable
+   11  kubectl create namespace cattle-system
+   12  kubectl create -f https://github.com/jetstack/cert-manager/releases/download/v1.8.2/cert-manager.yaml
+   13  kubectl get all -n cert-manager
+   14  helm install rancher rancher-<CHART_REPO>/rancher   --namespace cattle-system   --set replicas=3   --set ingress.tls.source=letsEncrypt   --set letsEncrypt.email=hanifa@constient.com   --set letsEncrypt.ingress.class=nginx
+   15  clear
+   16  helm install rancher https://releases.rancher.com/server-charts/stable   --namespace cattle-system   --set replicas=3   --set ingress.tls.source=letsEncrypt   --set letsEncrypt.email=hanifa@constient.com   --set letsEncrypt.ingress.class=nginx
+   17  helm list
+   18  export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
+   19  helm list
+   20  vim ~/.bashrc
+   21  source ~/.bashrc
+   22  helm repo add rancher-stable https://releases.rancher.com/server-charts/stable
+   23  helm install rancher-stable   --namespace cattle-system   --set replicas=3   --set ingress.tls.source=letsEncrypt   --set letsEncrypt.email=hanifa@constient.com   --set letsEncrypt.ingress.class=nginx
+   24  helm repo list
+   25  helm install rancher rancher-stable   --namespace cattle-system   --set replicas=3   --set ingress.tls.source=letsEncrypt   --set letsEncrypt.email=hanifa@constient.com   --set letsEncrypt.ingress.class=nginx
+   26  helm update
+   27  helm repo update
+   28  helm repo list
+   29  helm install rancher-stable  https://releases.rancher.com/server-charts/stable   --namespace cattle-system   --set replicas=3   --set ingress.tls.source=letsEncrypt   --set letsEncrypt.email=hanifa@constient.com   --set letsEncrypt.ingress.class=nginx
+   30  helm install rancher-stable  http://releases.rancher.com/server-charts/stable   --namespace cattle-system   --set replicas=3   --set ingress.tls.source=letsEncrypt   --set letsEncrypt.email=hanifa@constient.com   --set letsEncrypt.ingress.class=nginx
+   31  helm install rancher-stable  rancher-latest/rancher   --namespace cattle-system   --set replicas=3   --set ingress.tls.source=letsEncrypt   --set letsEncrypt.email=hanifa@constient.com   --set letsEncrypt.ingress.class=nginx
+   32  helm repo add rancher-stable https://releases.rancher.com/server-charts/stable
+   33  helm install rancher-stable  rancher-stable/rancher   --namespace cattle-system   --set replicas=3   --set ingress.tls.source=letsEncrypt   --set letsEncrypt.email=hanifa@constient.com   --set letsEncrypt.ingress.class=nginx
+   34  kube -v
+   35  ls -la
+   36  host
+   37  hostname
+   38  kubectl get nodes
+   39  kubectl get pods -n logfire-local
+   40  kubectl get pods
+   41  history
+   42  kubectl version
+   43  kubectl version --short
+   44  ls -la
+   45  cd /etc/helm
+   46  cat get_helm.sh 
+   47  rancher --version
+   48  rancher
+   49  helm install rancher rancher-stable/rancher 
+   50  kubectl
+   51  kubectl get nodes
+   52  helm install rancher rancher-stable/rancher \
+   53  helm install rancher rancher-stable/rancher --namespace cattle-system
+   54  ls -la
+   55  nano .bashrc 
+   56  source .bashrc 
+   57  helm install rancher rancher-stable/rancher 
+   58  helm repo list
+   59  cd /etc/rancher/
+   60  ls -la
+   61  cd k3s/
+   62  ls -la
+   63  nano k3s.yaml 
+   64  cd
+   65  kubectl -n cattle-system get deploy rancher
+   66  helm install rancher rancher-latest/rancher --version 2.5.4 --namespace cattle-system
+   67  helm install rancher rancher-stable/rancher --version 2.5.4 --namespace cattle-system
+   68  helm install rancher rancher-stable/rancher  --version 2.5.4
+   69  helm install rancher rancher-stable/rancher --version 2.5.4 --namespace cattle-system
+   70  helm repo list
+   71  kubectl -n cattle-system get deploy rancher
+   72  kubectl get pods -n cattle-system
+   73  helm delete rancher rancher-stable/rancher --version 2.5.4 --namespace cattle-system
+   74  helm delete rancher rancher-stable/rancher  --namespace cattle-system
+   75  helm delete -f rancher rancher-stable/rancher  --namespace cattle-system
+   76  helm delete -f rancher-stable/rancher  --namespace cattle-system
+   77  helm delete  rancher-stable/rancher  --namespace cattle-system
+   78  kubectl delete rancher rancher-stable/rancher --version 2.5.4 --namespace cattle-system
+   79  kubectl delete -f rancher rancher-stable/rancher --version 2.5.4 --namespace cattle-system
+   80  kubectl delete rancher-stable/rancher --version 2.5.4 --namespace cattle-system
+   81  kubectl delete -f rancher-stable/rancher --version 2.5.4 --namespace cattle-system
+   82  kubectl get pods -n cattle-system
+   83  helm install rancher rancher-stable/rancher --version 2.5.4 --namespace cattle-system
+   84  kubectl get pods -n cattle-system
+   85  kubectl get pods -n cattle-system --watch
+   86  kubectl get pods -n cattle-system
+   87  helm show values rancher-stable/rancher --version 2.5.4 > rancher-values.yaml
+   88  ls -la
+   89  nano rancher-values.yaml 
+   90  kubectl delete -f rancher-stable/rancher --version 2.5.4 --namespace cattle-system
+   91  kubectl get pods -n cattle-system
+   92  kubectl delete rancher-stable/rancher --version 2.5.4 --namespace cattle-system
+   93  kubectl get pods -n cattle-system
+   94  helm uninstall rancher -n cattle-system
+   95  kubectl get pods -n cattle-system
+   96  kubectl delete namespace cattle-system
+   97  helm repo add rancher-stable https://releases.rancher.com/server-charts/stable
+   98  ls -la
+   99  helm install rancher rancher-stable/rancher --version 2.5.4 --namespace cattle-system   --set hostname=rancher.your-domain.com
+  100  kubectl create namespace cattle-system
+  101  ls -la
+  102  cat rancher-values.yaml 
+  103  helm uninstall rancher -n cattle-system
+  104  helm install rancher rancher-stable/rancher --version 2.5.4 --namespace cattle-system 
+  105  kubectl get pods -n cattle-system
+  106  helm uninstall rancher -n cattle-system
+  107  helm install rancher rancher-stable/rancher --version 2.5.4 --namespace cattle-system   --set hostname=rancher.your-domain.com
+  108  kubectl get pods -n cattle-system
+  109  kubectl get pods -n cattle-system --watch
+  110  kubectl get pods
+  111  kubectl get pods -n cattle-system 
+  112  kubectl get pods -n cattle-system --watch
+  113  kubectl describe pods rancher-777c9597df-l4499 -n cattle-system
+  114  kubectl logs rancher-777c9597df-l4499 -n cattle-system
+  115  kubectl logs rancher-777c9597df-l4499 -n cattle-system -f
+  116  helm uninstall rancher -n cattle-system
+  117  kubectl get pods -n cattle-system --watch
+  118  helm install rancher rancher-stable/rancher --version 2.5.4 --namespace cattle-system
+  119  kubectl get pods -n cattle-system --watch
+  120  helm uninstall rancher -n cattle-system
+  121  helm install rancher rancher-stable/rancher --version 2.5.4 --namespace cattle-system   --set hostname=rancher.your-domain.com
+  122  kubectl get pods -n cattle-system --watch
+  123  kubectl describe pods rancher-777c9597df-fs24m -n cattle-system
+  124  kubectl logs rancher-777c9597df-fs24m -n cattle-system
+  125  kubectl logs rancher-777c9597df-fs24m -n cattle-system -f
+  126  helm uninstall rancher -n cattle-system
+  127  kubectl get pods -n cattle-system --watch
+  128  helm install rancher rancher-stable/rancher --version 2.5.4 --namespace cattle-system   --set hostname=rancher.constient.com
+  129  kubectl get pods -n cattle-system --watch
+  130  kubectl get pods -n cattle-system 
+  131  helm uninstall rancher -n cattle-system
+  132  helm install rancher rancher-stable/rancher --version 2.5.4 --namespace cattle-system
+  133  kubectl get pods -n cattle-system 
+  134  kubectl describe pods rancher-777c9597df-srdk7 -n cattle-system
+  135  kubectl logs rancher-777c9597df-srdk7 -n cattle-system
+  136  kubectl get nodes
+  137  kubectl get pods
+  138  helm install rancher rancher-stable/rancher --version 2.5.4 --namespace cattle-system
+  139  helm uninstall rancher -n cattle-system
+  140  kubectl get pods -n cattle-system 
+  141  helm install rancher rancher-stable/rancher --version 2.5.4 --namespace cattle-system   --set hostname=rancher.constient.com
+  142  kubectl get pods -n cattle-system 
+  143  kubectl describe pods rancher-777c9597df-7kp25 -n cattle-system
+  144  kubectl logs rancher-777c9597df-7kp25 -n cattle-system
+  145  sudo rancher --version
+  146  sudo tail -f /var/log/rancher/rancher.log
+  147  cd /var/log/
+  148  ls -la
+  149  cd containers/
+  150  ls -la
+  151  cd ..
+  152  ls -la
+  153  cd pods/
+  154  ls -la
+  155  tail -f cattle-system_rancher-777c9597df-7kp25_12b23657-a755-4458-a8bd-88b9173aee16
+  156  cd cattle-system_rancher-777c9597df-7kp25_12b23657-a755-4458-a8bd-88b9173aee16
+  157  ls -la
+  158  cd rancher/
+  159  ls -la
+  160  cd
+  161  tail -f /var/lib/docker/containers/ebab9daa6542c0aae84e86d42b87a30cc2b903c0a1c8825c8451a4b33cca8042/ebab9daa6542c0aae84e86d42b87a30cc2b903c0a1c8825c8451a4b33cca8042-json.log
+  162  cd /var/log/pods
+  163  ls -la
+  164  cd cattle-system_rancher-777c9597df-44658_2a294b58-be75-4b7b-b450-c6bbe70c68e5
+  165  ls -la
+  166  cd rancher/
+  167  ls -la
+  168  cd log
+  169  tail -f 6.log 
+  170  cd ..
+  171  ls -la
+  172  cd cattle-system_rancher-777c9597df-kq8c8_5f63c035-8831-4843-91e5-7e8d02703c33
+  173  ls -la
+  174  cd rancher/
+  175  ls -al
+  176  tail -f 4.log 
+  177  cd ..
+  178  cd /var/lib/containerd/
+  179  ls -la
+  180  cd /var/log/pods/
+  181  ls -la
+  182  cd cattle-system_rancher-777c9597df-44658_2a294b58-be75-4b7b-b450-c6bbe70c68e5
+  183  ls -la
+  184  cd rancher/
+  185  ls -la
+  186  tail -f /var/lib/docker/containers/3fd7061d84639aa3d97c9461b74651ae991269353046e714ae9654c0122d77da/3fd7061d84639aa3d97c9461b74651ae991269353046e714ae9654c0122d77da-json.log
+  187  cd ..
+  188  ls -la
+  189  sudo rancher --version
+  190  rancher --version
+  191  rancher
+  192  helm rancher --version
+  193  kubectl rancher --version
+  194  kubectl get nodes
+  195  kubectl get pods -n cattle-system
+  196  kubectl get svc
+  197  kubectl get svc -n cattle-system
+  198  sudo nano /etc/environment
+  199  source /etc/environment
+  200  rancher --version
+  201  sudo nano /etc/environment
+  202  source /etc/environment
+  203  rancher --version
+  204  sudo rancher --version
+  205  sudo nano /etc/environment
+  206  source /etc/environment
+  207  rancher --version
+  208  sudo nano /etc/environment
+  209  source /etc/environment
+  210  rancher --version
+  211  which rancher
+  212  whereis rancher
+  213  cd /etc/rancher/
+  214  ls -la
+  215  cd k3s/
+  216  ls -la
+  217  cat k3s.yaml 
+  218  cd
+  219  which rancher
+  220  whereis rancher
+  221  ls -la
+  222  nano .bashrc 
+  223  source .bashrc 
+  224  rancher --version
+  225  nano .bashrc 
+  226  source .bashrc 
+  227  sudo nano /etc/environment
+  228  source /etc/environment
+  229  rancher --version
+  230  kubectl get pods -n cattle-system
+  231  helm uninstall rancher -n cattle-system
+  232  kubectl get pods -n cattle-system
+  233  helm install rancher rancher-stable/rancher --version 2.5.4 --namespace cattle-system   --set hostname=rancher.clusters.logfire.sh
+  234  kubectl get pods -n cattle-system
+  235  kubectl get pods -n cattle-system --watch
+  236  helm uninstall rancher -n cattle-system
+  237  helm install rancher rancher-stable/rancher --version 2.5.4 --namespace cattle-system   --set hostname=clusters.logfire.sh
+  238  kubectl get pods -n cattle-system --watch
+  239  kubectl get pods -n cattle-system 
+  240  helm uninstall rancher -n cattle-system
+  241  helm install rancher rancher-stable/rancher --version 2.6.11 --namespace cattle-system   --set hostname=clusters.logfire.sh
+  242  ls -la
+  243  cat rancher-values.yaml 
+  244  ls -la
+  245  nano rancher-values.yaml 
+  246  cat rancher-values.yaml 
+  247  kubectl get pods -n cattle-system 
+  248  kubectl describe pods rancher-777c9597df-5zc9j -n cattle-system
+  249  kubectl logs rancher-777c9597df-5zc9j -n cattle-system
+  250  kubectl get pods -n cattle-system 
+  251  kubectl logs rancher-777c9597df-kq8c8 -n cattle-system -f
+  252  kubectl describe pods rancher-777c9597df-kq8c8 -n cattle-system
+  253  docker ps
+  254  docker image list
+  255  k get nodes
+  256  kubectl get pods -n cattle-system 
+  257  kubectl get nodes
+  258  kubectl getpods -n cattle-system
+  259  kubectl get pods -n cattle-system
+  260  helm install rancher rancher-stable/rancher --namespace cattle-system --set hostname=clusters.logfire.sh
+  261  kubectl get pods -n cattle-system
+  262  helm install rancher rancher-stable/rancher --version 2.5.4 --namespace cattle-system   --set hostname=clusters.logfire.sh
+  263  kubectl get pods -n cattle-system
+  264  kubectl get pods -n cattle-system --watch
+  265  helm uninstall rancher -n cattle-system
+  266  helm install rancher rancher-stable/rancher --version 2.5.4 --namespace cattle-system   --set hostname=clusters.logfire.sh
+  267  kubectl get pods -n cattle-system --watch
+  268  kubectl get pods -n cattle-system 
+  269  kubectl get pods -n cattle-system --watch
+  270  helm uninstall rancher -n cattle-system
+  271  kubectl get pods -n cattle-system --watch
+  272  kubectl get pods -n cattle-system 
+  273  helm install rancher rancher-stable/rancher --version 2.5.4 --namespace cattle-system   --set hostname=clusters.logfire.sh
+  274  kubectl get pods -n cattle-system 
+  275  kubectl get pods -n cattle-system --watch
+  276  kubectl get endpoints rancher -n cattle-system
+  277  kubectl get secret -n cattle-system tls-rancher-ingress
+  278  kubectl get pods -n cattle-system --watch
+  279  kubectl get secret -n cattle-system | grep tls-rancher-ingress
+  280  kubectl get deployment rancher -n cattle-system
+  281  kubectl logs -f deployment/rancher -c rancher -n cattle-system
+  282  kubectl describe rancher
+  283  kubectl describe rancher -n cattle-system
+  284  kubectl describe deployment/rancher -n cattle-system
+  285  kubectl cluster-info
+  286  ls -la
+  287  nano rancher-values.yaml 
+  288  kubectl get pods -n cattle-system
+  289  helm uninstall rancher -n cattle-system
+  290  kubectl get pods -n cattle-system
+  291  helm repo list
+  292  helm repo update
+  293  #helm install rancher rancher-stable/rancher --version 2.5.4 --namespace cattle-system   --set hostname=clusters.logfire.sh
+  294  helm install rancher rancher-stable/rancher   --namespace cattle-system   --set hostname=clusters.logfire.sh   --set replicas=3
+  295  helm install rancher rancher-stable/rancher \ --version 2.5.4
+  296  helm install rancher rancher-stable/rancher   --namespace cattle-system   --set hostname=clusters.logfire.sh   --set replicas=3
+  297  helm install rancher rancher-stable/rancher \ 
+  298  --version 2.5.4    --namespace cattle-system   --set hostname=clusters.logfire.sh   --set replicas=3
+  299  helm install rancher rancher-stable/rancher --version 2.5.4 --namespace cattle-system   --set hostname=clusters.logfire.sh
+  300  kubectl get pods -n cattle-system
+  301  helm uninstall rancher -n cattle-system
+  302  helm install rancher rancher-stable/rancher   --namespace cattle-system   --set hostname=clusters.logfire.sh   --set replicas=3   --set 'kubernetesVersion=1.24.0'
+  303  kubectl version
+  304  curl -sfL https://get.k3s.io | sh -s - --version v1.24.0+k3s1
+  305  nano .bashrc 
+  306  sudo /usr/local/bin/k3s-uninstall.sh
+  307  curl -sfL https://get.k3s.io | sh -s - --version v1.24.0+k3s1
+  308  journalctl -xeu k3s.service
+  309  sudo systemctl daemon-reload
+  310  sudo systemctl restart k3s.service
+  311  sudo systemctl status k3s.service
+  312  sudo /usr/local/bin/k3s-uninstall.sh
+  313  curl -sfL https://get.k3s.io | sh -s - 
+  314  kubectl version
+  315  kubectl get nodes
+  316  helm install rancher rancher-stable/rancher   --namespace cattle-system   --set hostname=clusters.logfire.sh   --set replicas=3   --set 'kubernetesVersion=1.24.0'
+  317  kubectl cluster-info
+  318  helm install rancher rancher-stable/rancher   --namespace cattle-system   --set hostname=clusters.logfire.sh   --set replicas=3   --set 'kubernetesVersion=1.24.0'
+  319  cd /etc/rancher/
+  320  ls -la
+  321  cd k3s/
+  322  ls -la
+  323  cat k3s.yaml 
+  324  cd
+  325  sudo systemctl stop k3s
+  326  sudo /usr/local/bin/k3s-uninstall.sh
+  327  curl -sfL https://get.k3s.io | INSTALL_K3S_VERSION=1.24.0; sh -
+  328  sudo systemctl stop k3s
+  329  curl -sfL https://get.k3s.io | sh -s - 
+  330  curl -sfL https://get.k3s.io | INSTALL_K3S_VERSION="1.24.0"; sh -
+  331  kubectl version
+  332  kubectl get pods
+  333  kubectl get nodes
+  334  helm install rancher rancher-stable/rancher   --namespace cattle-system   --set hostname=clusters.logfire.sh   --set replicas=3   --set 'kubernetesVersion=1.24.0'
+  335  helm install rancher rancher-stable/rancher --version 2.5.4 --namespace cattle-system   --set hostname=clusters.logfire.sh
+  336  exit
+  337  kubectl cluster-info
+  338  kubectl cluster-info dump
+  339  exit
+  340  kubectl get namespaces
+  341  helm list -n cattle-system
+  342  helm status rancher -n cattle-system
+  343  kubectl get nodes
+  344  kubectl api-resources | grep rancher
+  345  kubectl get pods -n kube-system -l k8s-app=kube-dns
+  346  kubectl logs -n kube-system coredns-597584b69b-wpjjq -f
+  347  kubectl logs -n kube-system coredns-597584b69b-wpjjq 
+  348  kubectl get pods dnsutils
+  349  kubectl get ingress
+  350  kubectl get ingress -n cattle-system
+  351  kubectl get secrets
+  352  kubectl get secrets -n cattle-system
+  353  kubectl get services -n cattle-system
+  354  kubectl get secret -n cattle-system tls-rancher-ingress
+  355  kubectl get secret -n cattle-system 
+  356  kubectl get secret -n cattle-system  tls-rancher-ingress
+  357  kubectl get secret -n cattle-system  | grep tls-rancher-ingress
+  358  kubectl get endpoints rancher -n cattle-system
+  359  kubectl get deployment rancher -n cattle-system
+  360  kubectl logs -f deployment/rancher -c rancher -n cattle-system
+  361  ls /etc/coredns/custom
+  362  sudo mkdir /etc/coredns/custom
+  363  cd /etc/
+  364  ls -la
+  365  cd
+  366  kubectl get ingress
+  367  kubectl get ingress -n cattle-system
+  368  kubectl get secrets
+  369  kubectl get secrets -n cattle-system
+  370  kubectl get services -n cattle-system
+  371  kubectl get pods -n kube-system | grep metrics-server
+  372  kubectl delete pod -n kube-system metrics-server-5f9f776df5-8tk2r
+  373  kubectl get pods -n kube-system | grep metrics-server
+  374  kubectl get pods -n kube-system | grep metrics-server --watch
+  375  kubectl get pods -n kube-system | grep metrics-server
+  376  kubectl describe apiservice v1beta1.metrics.k8s.io
+  377  kubectl get pods -n kube-system | grep metrics-server
+  378  kubectl logs -n kube-system metrics-server-5f9f776df5-jjxlc
+  379  kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+  380  kubectl delete pod -n kube-system metrics-server-5f9f776df5-8tk2r
+  381  kubectl get pods -n kube-system | grep metrics-server
+  382  kubectl delete pod -n metrics-server-5f9f776df5-jjxlc
+  383  kubectl logs -n kube-system metrics-server-5f9f776df5-jjxlc
+  384  kubectl get pods -n kube-system | grep metrics-server
+  385  kubectl delete pod -n kube-system metrics-server-5f9f776df5-jjxlc
+  386  kubectl get pods -n kube-system | grep metrics-server
+  387  kubectl describe apiservice v1beta1.metrics.k8s.io
+  388  kubectl get pods -n kube-system 
+  389  kubectl logs metrics-server-5f9f776df5-p4jzm -n cattle-system -f
+  390  kubectl logs metrics-server-5f9f776df5-p4jzm -n kube-system -f
+  391  kubectl get pods -n kube-system -l k8s-app=metrics-server
+  392  kubectl top pods -n kube-system -l k8s-app=metrics-server
+  393  kubectl delete deployment metrics-server -n kube-system
+  394  kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+  395  kubectl get pods -n kube-system -l k8s-app=metrics-server
+  396  kubectl top pods -n kube-system -l k8s-app=metrics-server
+  397  kubectl logs metrics-server-8ff8f88c6-p9f26 -n kube-system -f
+  398  ls -la
+  399  kubectl get pods --namespace cert-manager
+  400  kubectl -n cattle-system rollout status deploy/rancher
+  401  kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.10.1/cert-manager.yaml
+  402  kubectl -n $certmanager get all
+  403  kubectl get ns
+  404  helm install rancher rancher-stable/rancher --version 2.5.4 --namespace cattle-system   --set hostname=clusters.logfire.sh
+  405  kubectl create namespaces cattle-system
+  406  kubectl create -f namespaces cattle-system
+  407  kubectl create  namespace cattle-system
+  408  helm install rancher rancher-stable/rancher --version 2.5.4 --namespace cattle-system   --set hostname=clusters.logfire.sh
+  409  kubectl get pods -n cattle-system
+  410  kubectl get pods -n cattle-system --watch
+  411  kubectl get pods -n kube-system -l k8s-app=metrics-server
+  412  kubectl logs -n kube-system metrics-server-5f9f776df5-fds2p
+  413  kubectl delete deployment metrics-server -n kube-system
+  414  kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+  415  kubectl get pods -n kube-system -l k8s-app=metrics-server
+  416  kubectl get pods -n kube-system 
+  417  kubectl get secret -n cattle-system tls-rancher-ingress
+  418  kubectl get secret -n cattle-system | grep tls-rancher-ingress
+  419  kubectl get endpoints rancher -n cattle-system
+  420  kubectl get deployment rancher -n cattle-system
+  421  kubectl logs -f deployment/rancher -c rancher -n cattle-system
+  422  kubectl sescribe deployment rancher 
+  423  kubectl describe deployment rancher 
+  424  kubectl describe deployment/rancher -c rancher -n cattle-system
+  425  kubectl describe deployment/rancher  -n cattle-system
+  426  helm install rancher rancher-stable/rancher --version 2.5.4 --namespace cattle-system   --set hostname=clusters.logfire.sh
+  427  helm uninstall rancher -n cattle-system
+  428  helm install rancher rancher-stable/rancher --version 2.5.4 --namespace cattle-system   --set hostname=clusters.logfire.sh
+  429  kubectl get pods -n cattle-system
+  430  kubectl get pods -n cattle-system --watch
+  431  kubectl get pods -n cattle-system 
+  432  kubectl get pods -n cattle-system --watch
+  433  helm uninstall rancher -n cattle-system
+  434  helm install rancher rancher-stable/rancher --version 2.5.4 --namespace cattle-system   --set hostname=clusters.logfire.sh
+  435  kubectl get pods -n cert-manager
+  436  kubectl apply -f https://github.com/jetstack/cert-manager/releases/download/v1.5.4/cert-manager.crds.yaml
+  437  helm install rancher rancher-stable/rancher --version 2.5.4 --namespace cattle-system --set hostname=clusters.logfire.sh
+  438  kubectl create namespace cattle-system
+  439  helm install rancher rancher-stable/rancher --version 2.5.4 --namespace cattle-system --set hostname=clusters.logfire.sh
+  440  kubectl get pods -n cert-manager
+  441  kubectl get pods
+  442  kubectl get pods -n cattle-system
+  443  helm uninstall rancher -n cattle-system
+  444  kubectl get pods -n cattle-system
+  445  kubectl version
+  446  kubectl get endpoints rancher -n cattle-system
+  447  sudo systemctl stop k3s
+  448  sudo /usr/local/bin/k3s-uninstall.sh
+  449  whereis rancher
+  450  docker ps
+  451  docker image list
+  452  docker rmi --all --force
+  453  docker rmi -f $(docker images -aq)
+  454  docker image list
+  455  docker ps
+  456  docker ps -a
+  457  docker rm -vf $(docker ps -aq)
+  458  docker ps -a
+  459  sudo systemctl daemon-reload
+  460  cat /etc/os-release 
+  461  curl -sfL https://get.k3s.io | INSTALL_K3S_VERSION=1.24.0; sh -
+  462  kubectl
+  463  curl -sfL https://get.k3s.io | sh -s - --docker
+  464  kubectl get nodes
+  465  docker version
+  466  helm repo list
+  467  helm install rancher rancher-stable/rancher --version 2.5.4 --namespace cattle-system --set hostname=clusters.logfire.sh
+  468  kubectl cluster-info
+  469  kubectl cluster-info dump
+  470  kubectl get deployment rancher -n cattle-system
+  471  kubectl get svc rancher -n cattle-system
+  472  kubectl get pods -l app=rancher -n cattle-system
+  473  kubectl describe svc rancher -n cattle-system
+  474  kubectl describe endpoints rancher -n cattle-system
+  475  kubectl edit svc rancher -n cattle-system
+  476  kubectl get pods -n cattle-system
+  477  kubectl get pods -n cattle-system -watch
+  478  kubectl get pods -n cattle-system --watch
+  479  kubectl delete deployment rancher -n cattle-system
+  480  kubectl apply deployment rancher -n cattle-system
+  481  kubectl apply -f deployment rancher -n cattle-system
+  482  kubectl delete svc rancher -n cattle-system
+  483  kubectl get pods -n cattle-system -l app=rancher
+  484  kubectl get svc -n cattle-system rancher
+  485  kubectl edit svc rancher -n cattle-system
+  486  kubectl apply svc rancher -n cattle-system
+  487  kubectl apply -f svc rancher -n cattle-system
+  488  kubectl apply -h svc rancher -n cattle-system
+  489  kubectl delete pod rancher-777c9597df-vzbzc -n cattle-system
+  490  kubectl delete pod rancher-777c9597df-8r69g -n cattle-system
+  491  kubectl delete pod rancher rancher-777c9597df-5l999 -n cattle-system
+  492  kubectl get pods -n cattle-system
+  493  kubectl get pods -n cattle-system --watch
+  494  kubectl describe pods rancher-777c9597df-cwqmj -n cattle-sytem
+  495  history
+  496  kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.11.0/cert-manager.yaml
+  497  kubectl get namespace
+  498  kubectl get pods --namespace cert-manager
+  499  helm repo list
+  500  helm install rancher rancher-stable/rancher   --namespace cattle-system   --set hostname=clusters.logfire.sh   --set replicas=3
+  501  helm install rancher rancher-stable/rancher   --namespace cattle-system   --set hostname=clusters.logfire.sh   --set replicas=3  --version 2.3.6
+  502  kubectl get pods -n cattle-system
+  503  helm install rancher rancher-stable/rancher --version 2.5.4 --namespace cattle-system   --set hostname=clusters.logfire.sh
+  504  kubectl get pods -n cattle-system
+  505  helm uninstall rancher -n cattle-system
+  506  kubectl get ingress
+  507  kubectl get ingress -n cattle-system
+  508  kubectl get pods -n cattle-system
+  509  kubectl get ingress -A
+  510  kubectl create --edit -f https://raw.githubusercontent.com/cert-manager/website/master/content/docs/tutorials/acme/example/production-issuer.yaml -n cattle-system
+  511  kubectl get issuer -A 
+  512  kubectl describe issuer letsencrypt-prod -n cattle-system
+  513  kubectl create --edit -f https://raw.githubusercontent.com/cert-manager/website/master/content/docs/tutorials/acme/example/ingress-tls.yaml -n cattle-system
+  514  kubectl get certificate -n cattle-system
+  515  kubectl describe  certificate quickstart-example-tls -n cattle-system
+  516  kubectl get secret -n cattle-system
+  517  kubectl get certificate -n cattle-system
+  518  kubectl delete -f https://raw.githubusercontent.com/cert-manager/website/master/content/docs/tutorials/acme/example/ingress-tls.yaml -n cattle-system
+  519  kubectl delete -f https://raw.githubusercontent.com/cert-manager/website/master/content/docs/tutorials/acme/example/production-issuer.yaml -n cattle-system
+  520  kubectl get secret -n cattle-system
+  521  kubectl delete secret letsencrypt-prod -n cattle-system
+  522  kubectl create --edit -f https://raw.githubusercontent.com/cert-manager/website/master/content/docs/tutorials/acme/example/production-issuer.yaml
+  523  kubectl get secret -n cattle-system
+  524  kubectl delete -f https://raw.githubusercontent.com/cert-manager/website/master/content/docs/tutorials/acme/example/production-issuer.yaml -n cattle-system
+  525  kubectl create --edit -f https://raw.githubusercontent.com/cert-manager/website/master/content/docs/tutorials/acme/example/staging-issuer.yaml -n cattle-system
+  526  kubectl get secret -n cattle-system
+  527  https://raw.githubusercontent.com/cert-manager/website/master/content/docs/tutorials/acme/example/production-issuer.yaml -n cattle-system
+  528  kubectl create --edit -f https://raw.githubusercontent.com/cert-manager/website/master/content/docs/tutorials/acme/example/production-issuer.yaml -n cattle-system
+  529  kubectl get secret -n cattle-system
+  530  kubectl create --edit -f https://raw.githubusercontent.com/cert-manager/website/master/content/docs/tutorials/acme/example/ingress-tls.yaml -n cattle-system
+  531  kubectl get secret -n cattle-system
+  532  kubectl get certificate -n cattle-system
+  533  kubectl describe certificate quickstart-example-tls -n cattle-system
+  534  kubectl get certificate -n cattle-system
+  535  kubectl describe secret quickstart-example-tls -n cattle-system
+  536  kubectl create --edit -f https://raw.githubusercontent.com/cert-manager/website/master/content/docs/tutorials/acme/example/ingress-tls-final.yaml
+  537  kubectl create --edit -f https://raw.githubusercontent.com/cert-manager/website/master/content/docs/tutorials/acme/example/ingress-tls-final.yaml -n cattle-system
+  538  kubectl delete -f https://raw.githubusercontent.com/cert-manager/website/master/content/docs/tutorials/acme/example/ingress-tls-final.yaml -n cattle-system
+  539  kubectl create --edit -f https://raw.githubusercontent.com/cert-manager/website/master/content/docs/tutorials/acme/example/ingress-tls-final.yaml -n cattle-system
+  540  kubectl get certificate -n cattle-system
+  541  kubectl get secret -n cattle-system
+  542  kubectl delete secret quickstart-example-tls -n cattle-system
+  543  kubectl get secret -n cattle-system
+  544  helm install rancher rancher-stable/rancher   --namespace cattle-system   --set hostname=clusters.logfire.sh   --set replicas=3  --version 2.5.4
+  545  kubectl get pods -n cattle-system
+  546  kubectl describe pod rancher-777c9597df-jp8dw -n cattle-system
+  547  kubectl -n cattle-system rollout status deploy/rancher
+  548  history
+  549  kubectl -n cattle-system rollout status deploy/rancher
+  550  kubectl get all -n cert-manger
+  551  kubectl get all -n cert-manager
+  552  kubectl describe svc
+  553  kubectl get svc -A
+  554  kubectl edit svc rancher -n cattle-system
+  555  kubectl get all -n cert-manager
+  556  kubectl edit svc cert-manager -n cert-manger
+  557  helm list --all-namespaces
+  558  helm uninstall rancher -n cattle-system
+  559  helm list --all-namespaces
+  560  helm install rancher rancher-stable/rancher --namespace cattle-system --set hostname= clusters.logfire.sh --set replicas=3 --set ingress.tls.source=letsEncrypt --set letsEncrypt.email=abhishek@constient.com--set letsEncrypt.ingress.class=nginx
+  561  helm install rancher rancher-stable/rancher --namespace cattle-system --set hostname=clusters.logfire.sh --set replicas=3 --set ingress.tls.source=letsEncrypt --set letsEncrypt.email=abhishek@constient.com--set letsEncrypt.ingress.class=nginx
+  562  helm install rancher rancher-stable/rancher --namespace cattle-system --set hostname=clusters.logfire.sh --set replicas=3 --set ingress.tls.source=letsEncrypt --set letsEncrypt.email=abhishek@constient.com--set letsEncrypt.ingress.class=nginx --version 2.5.4
+  563  helm install rancher rancher-stable/rancher --namespace cattle-system --set hostname=clusters.logfire.sh --set replicas=3 --set ingress.tls.source=letsEncrypt --set letsEncrypt.email=abhishek@constient.com--set version 2.5.4
+  564  helm install rancher rancher-stable/rancher --namespace cattle-system --set hostname=clusters.logfire.sh --set replicas=3 --set ingress.tls.source=letsEncrypt --set letsEncrypt.email=abhishek@constient.com --set version 2.5.4
+  565  helm install rancher rancher-stable/rancher --namespace cattle-system --set hostname=clusters.logfire.sh --set replicas=3 --set ingress.tls.source=letsEncrypt --set letsEncrypt.email=abhishek@constient.com --set version=2.5.4
+  566  helm install rancher rancher-stable/rancher --namespace cattle-system --set hostname=clusters.logfire.sh --set replicas=3 --set ingress.tls.source=letsEncrypt --set letsEncrypt.email=abhishek@constient.com --set version=2.3.6
+  567  helm repo update
+  568  helm install rancher rancher-stable/rancher --namespace cattle-system --set hostname=clusters.logfire.sh --set replicas=3 --set ingress.tls.source=letsEncrypt --set letsEncrypt.email=abhishek@constient.com --set version=2.5.4
+  569  helm repo add rancher-latest https://releases.rancher.com/server-charts/latest
+  570  helm repo update
+  571  helm install rancher rancher-latest/rancher --namespace cattle-system --set hostname=clusters.logfire.sh --set replicas=3 --set ingress.tls.source=letsEncrypt --set letsEncrypt.email=abhishek@constient.com--set letsEncrypt.ingress.class=nginx
+  572  helm install rancher rancher-latest/rancher --namespace cattle-system --set hostname=clusters.logfire.sh --set replicas=3 --set ingress.tls.source=letsEncrypt --set letsEncrypt.email=abhishek@constient.com --set letsEncrypt.ingress.class=nginx
+  573  helm install rancher rancher-latest/rancher --namespace cattle-system --set hostname=clusters.logfire.sh --set replicas=3 --set ingress.tls.source=letsEncrypt --set letsEncrypt.email=abhishek@constient.com --set letsEncrypt.ingress.class=nginx --set version=2.5.4
+  574  helm install rancher rancher-latest/rancher --namespace cattle-system --set hostname=clusters.logfire.sh --set replicas=3 --set ingress.tls.source=letsEncrypt --set letsEncrypt.email=abhishek@constient.com --set letsEncrypt.ingress.class=nginx --set version=2.3.6
+  575  helm install rancher rancher-latest/rancher --namespace cattle-system --set hostname=clusters.logfire.sh --set replicas=3 --set ingress.tls.source=letsEncrypt --set letsEncrypt.email=abhishek@constient.com --set letsEncrypt.ingress.class=nginx --set version=2.6.11
+  576  helm repo list
+  577  helm install rancher rancher-latest/rancher --version 2.5.4 --namespace cattle-system   --set hostname=clusters.logfire.sh
+  578  kubectl get pods -n cattle-system
+  579  helm uninstall rancher -n cattle-system
+  580  kubectl get pods -n cattle-system
+  581  helm install rancher rancher-latest/rancher --version 2.5.4 --namespace cattle-system   --set hostname=clusters.logfire.sh --set replicas=1
+  582  kubectl get pods -n cattle-system
+  583  kubectl get pods -n cattle-system --watch
+  584  helm uninstall rancher -n cattle-system
+  585  kubectl -n cattle-system rollout status deploy/rancher
+  586  kubectl logs rancher-7d8987bffd-wmkvm -n cattle-system
+  587  kubectl logs rancher-7d8987bffd-jdsln -n cattle-system
+  588  kubectl logs rancher-7d8987bffd-vx74g -n cattle-system
+  589  kubectl logs rancher-7d8987bffd-vx74g -n cattle-system -f
+  590  kubectl get certificate -A
+  591  curl https://get.k3s.io | INSTALL_K3S_VERSION=v1.19.7+k3s1 sh -
+  592  kubectl get pods -n cattle-system --watch
+  593  kubectl get nodes
+  594  exit
+  595  kubectl get pods -n cattle-system
+  596  kubectl describe rancher-777c9597df-wggs5 -n cattle-system
+  597  kubectl describe pod rancher-777c9597df-wggs5 -n cattle-system
+  598  kubectl get nodes
+  599  kubectl get endpoints 
+  600  kubectl get endpoints -n cattle-system
+  601  helm replo list
+  602  helm repo list
+  603  helm list --all-namespaces
+  604  helm uninstall rancher -n cattle-system
+  605  kubectl get nodes
+  606  sudo /usr/local/bin/k3s-uninstall.sh
+  607  kubectl cluster-info
+  608  kubectl get nodes
+  609  curl -sfL https://get.k3s.io | sh -s - --docker  --disable traefik  servicelb
+  610  kubectl get nodes
+  611  kubectl get pods
+  612  kubectl get pods -A
+  613  kubectl get svc -A
+  614  kubectl get nodes
+  615  kubectl cluster-info
+  616  kubectl cluster-info dump
+  617  kubectl create namespace logfire-local
+  618  helm upgrade --install api-gateway ingress-nginx/ingress-nginx --namespace logfire-local  
+  619  helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+  620  helm repo update
+  621  helm upgrade --install api-gateway ingress-nginx/ingress-nginx --namespace logfire-local  
+  622  kubectl get svc -A
+  623  helm repo list
+  624  kubectl get namespaces
+  625  kubectl create namespace cattle-system
+  626  kubectl logs rancher-777c9597df-jp8dw -n cattle-system
+  627  kubectl get pods -n cattle-system
+  628  kubectl get pods -n cattle-system --watch
+  629  kubectl get pods -n cattle-system 
+  630  kubectl logs pods rancher-777c9597df-4s4xk -n cattle-system
+  631  kubectl logs rancher-777c9597df-4s4xk -n cattle-system
+  632  kubectl logs rancher-777c9597df-4s4xk -n cattle-system -f
+  633  kubectl describe pods rancher-777c9597df-4s4xk -n cattle-system
+  634  kubectl cluster-info
+  635  kubectl cluster-info dump
+  636  kubectl cluster-info
+  637  curl https://127.0.0.1:6443/api/v1/namespaces/kube-system/services/https:metrics-server:https/proxy
+  638  curl https://127.0.0.1:6443/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+  639  curl https://127.0.0.1:6443
+  640  helm install rancher rancher-latest/rancher   --namespace cattle-system   --set hostname=clusters.logfire.sh    --set replicas=3   --set ingress.tls.source=letsEncrypt   --set letsEncrypt.email=abhishek@constient.com   --set letsEncrypt.ingress.class=nginx
+  641  helm install rancher rancher-latest/rancher --namespace cattle-system --set hostname=clusters.logfire.sh  --set replicas=3 --set ingress.tls.source=letsEncrypt --set letsEncrypt.email=abhishek@constient.com --set letsEncrypt.ingress.class=nginx
+  642  helm install rancher rancher-stable/rancher --namespace cattle-system --set hostname=clusters.logfire.sh  --set replicas=3 --set ingress.tls.source=letsEncrypt --set letsEncrypt.email=abhishek@constient.com --set letsEncrypt.ingress.class=nginx
+  643  helm install rancher rancher-latest/rancher  --namespace cattle-system  --set hostname=clusters.logfire.sh   --set replicas=3  --set ingress.tls.source=letsEncrypt  --set letsEncrypt.email=abhishek@constient.com  --set letsEncrypt.ingress.class=nginx
+  644  helm install rancher rancher-latest/rancher  --namespace cattle-system  --set hostname=clusters.logfire.sh   --set replicas=3  --set ingress.tls.source=letsEncrypt  --set letsEncrypt.email=abhishek@constient.com  --set letsEncrypt.ingress.class=nginx
+  645  helm install rancher rancher-latest/rancher  --namespace cattle-system  --set hostname=clusters.logfire.sh   --set replicas=3  --set ingress.tls.source=letsEncrypt  --set letsEncrypt.email=abhishek@constient.com  --set letsEncrypt.ingress.class=nginx  --version 2.5.4
+  646  kubectl get pods -n cattle-system
+  647  kubectl get pods -n cattle-system --watch
+  648  exit
+  649  history
+  650  sudo /usr/local/bin/k3s-uninstall.sh
+  651  kubectl get nodes
+  652  sudo /usr/local/bin/k3s-uninstall.sh
+  653  kubectl get nodes
+  654  helm repo add rancher-stable https:// releases.rancher.com/server-charts/stable
+  655  helm repo list
+  656  helm repo update
+  657  kubectl create namespace cattle-system
+  658  kubectl
+  659  history
+  660  curl -sfL https://get.k3s.io | sh -s - --docker  --disable traefik  servicelb
+  661  kubectl get namepsaces -A
+  662  kubectl get namepsace -A
+  663  kubectl
+  664  kubectl get nodes
+  665  kubectl create namespace cattle-system
+  666  kubectl apply --validate=false -f https://github.com/jetstack/cert-manager/releases/download/v1.0.4/cert-manager.crds.yaml
+  667  kubectl create namespace cert-manager
+  668  helm repo add jetstack https://charts.jetstack.io
+  669  helm repo update
+  670  helm install   cert-manager jetstack/cert-manager   --namespace cert-manager   --version v1.0.4
+  671  hostname=rancher.kimconnect.com
+  672  helm install rancher rancher-stable/rancher   --namespace cattle-system   --set hostname=clusters.logfire.sh
+  673  sudo /usr/local/bin/k3s-uninstall.sh
+  674  curl https://get.k3s.io | INSTALL_K3S_VERSION=v1.19.7+k3s1 sh - --docker  --disable traefik  servicelb
+  675  sudo /usr/local/bin/k3s-uninstall.sh
+  676  curl https://get.k3s.io | INSTALL_K3S_VERSION=v1.19.7+k3s1 sh -s --docker  --disable traefik  servicelb
+  677  curl https://get.k3s.io | INSTALL_K3S_VERSION=v1.19.7+k3s1 sh -
+  678  sudo /usr/local/bin/k3s-uninstall.sh
+  679  curl -sfL https://get.k3s.io | sh -s - --docker  --disable traefik  servicelb
+  680  helm install rancher rancher-stable/rancher --version 2.5.4 --namespace cattle-system   --set hostname=clusters.logfire.sh
+  681  kubectl get nodes
+  682  sudo /usr/local/bin/k3s-uninstall.sh
+  683  helm repo list
+  684  helm install rancher rancher-stable/rancher \
+  685  helm install rancher rancher-stable/rancher 
+  686  helm install jetstack
+  687  helm repo list
+  688  kubectl create namespace cattle-system
+  689  kubectl apply --validate=false -f https://github.com/jetstack/cert-manager/releases/download/v1.0.4/cert-manager.crds.yaml
+  690  curl https://get.k3s.io | INSTALL_K3S_VERSION=v1.19.7+k3s1 sh -
+  691  docker ps -a
+  692  docker rm -vf $(docker ps -aq)
+  693  docker rmi -f $(docker images -aq)
+  694  curl https://get.k3s.io | INSTALL_K3S_VERSION=v1.19.7+k3s1 sh -
+  695  kubectl get nodes
+  696  sudo k3s kubectl get node 
+  697  sudo systemctl restart k3s
+  698  sudo /usr/local/bin/k3s-uninstall.sh
+  699  docker rmi -f $(docker images -aq)
+  700  docker rm -vf $(docker ps -aq)
+  701  curl https://get.k3s.io | INSTALL_K3S_VERSION=v1.19.7+k3s1 sh - --docker  --disable traefik  servicelb
+  702  curl https://get.k3s.io | INSTALL_K3S_VERSION=v1.19.7+k3s1 sh -s --docker  --disable traefik  servicelb
+  703  sudo /usr/local/bin/k3s-uninstall.sh
+  704  curl -sfL https://get.k3s.io | sh -s - --docker  --disable traefik  servicelb
+  705  sudo systemctl restart k3s
+  706  sudo systemctl status k3s
+  707  kubectl get nodes
+  708  kubectl create namespace logfire-local
+  709  helm upgrade --install api-gateway ingress-nginx/ingress-nginx --namespace logfire-local 
+  710  kubectl get svc -A
+  711  helm repo add jetstack https://charts.jetstack.io
+  712  helm install   cert-manager jetstack/cert-manager   --namespace cert-manager   --version v1.0.4
+  713  kubectl create namespace cert-manager
+  714  helm install   cert-manager jetstack/cert-manager   --namespace cert-manager   --version v1.0.4
+  715  kubectl get -A -n cert-manager
+  716  kubectl get all-namespaces
+  717  kubectl get secret -n cattle-system
+  718  kubectl get secret -n cert-manager
+  719  helm install rancher rancher-stable/rancher --version 2.5.4 --namespace cattle-system   --set hostname=clusters.logfire.sh
+  720  history
+  721  sudo /usr/local/bin/k3s-uninstall.sh
+  722  kubectl
+  723  helm repo list
+  724  kubectl apply --validate=false -f https://github.com/jetstack/cert-manager/releases/download/v1.0.4/cert-manager.crds.yaml
+  725  curl -sfL https://get.k3s.io | sh -s - --docker  --disable traefik  servicelb
+  726  kubectl apply --validate=false -f https://github.com/jetstack/cert-manager/releases/download/v1.0.4/cert-manager.crds.yaml
+  727  kubectl create namespace cert-manager
+  728  helm repo add jetstack https://charts.jetstack.io
+  729  helm repo update
+  730  helm install   cert-manager jetstack/cert-manager   --namespace cert-manager   --version v1.0.4
+  731  helm install rancher rancher-stable/rancher --version 2.5.4 --namespace cattle-system   --set hostname=clusters.logfire.sh
+  732  kubectl create namespace cattle-system
+  733  helm install rancher rancher-stable/rancher --version 2.5.4 --namespace cattle-system   --set hostname=clusters.logfire.sh
+  734  kubectl get pods -n cattle-system
+  735  kubectl get pods -n cattle-system --watch
+  736  sudo /usr/local/bin/k3s-uninstall.sh
+  737  exit
+  738  kubectl logs rancher-777c9597df-7x4d9 -n cattle-system
+  739  kubectl get all -n cert-manger
+  740  kubectl get all -n cert-manager
+  741  curl https://get.k3s.io | INSTALL_K3S_VERSION=v1.19.7+k3s1 sh - --docker  --disable traefik  servicelb
+  742  sudo apt-get install curl
+  743  curl https://get.k3s.io | INSTALL_K3S_VERSION=v1.19.7+k3s1 sh - --docker  --disable traefik  servicelb
+  744  curl https://get.k3s.io | INSTALL_K3S_VERSION=v1.19.7+k3s1 sh -s-  --docker  --disable traefik  servicelb
+  745  curl https://get.k3s.io | INSTALL_K3S_VERSION=v1.19.7+k3s1 sh- --docker  --disable traefik  servicelb
+  746  curl https://get.k3s.io | INSTALL_K3S_VERSION=v1.19.7+k3s1 sh - --docker  --disable traefik  servicelb
+  747  curl -sfL https://get.k3s.io | sh -s - --docker  --disable traefik  servicelb
+  748  kubectl get nodes
+  749  kubectl create namespace logfire-local
+  750  helm upgrade --install api-gateway ingress-nginx/ingress-nginx --namespace logfire-local
+  751  kubectl get svc -A
+  752  helm repo list
+  753  kubectl get secret -n cattle-system
+  754  kubectl get secret -n cert-manager
+  755  kubectl create --edit -f https://raw.githubusercontent.com/cert-manager/website/master/content/docs/tutorials/acme/example/ingress-tls.yaml -n cattle-system
+  756  kubectl delete -f https://raw.githubusercontent.com/cert-manager/website/master/content/docs/tutorials/acme/example/ingress-tls.yaml -n cattle-system
+  757  kubectl create namespace cattle-system
+  758  kubectl delete -f https://raw.githubusercontent.com/cert-manager/website/master/content/docs/tutorials/acme/example/ingress-tls.yaml -n cattle-system
+  759  kubectl create --edit -f https://raw.githubusercontent.com/cert-manager/website/master/content/docs/tutorials/acme/example/ingress-tls.yaml -n cattle-system
+  760  kubectl get secret -n cattle-system
+  761  kubectl get secrets -n cattle-system
+  762  kubectl get ingress -n cattle-system
+  763  kubectl create --edit -f https://raw.githubusercontent.com/cert-manager/website/master/content/docs/tutorials/acme/example/production-issuer.yaml -n cattle-system
+  764  kubectl create --edit -f https://raw.githubusercontent.com/cert-manager/website/master/content/docs/tutorials/acme/example/ingress-tls-final.yaml -n cattle-system
+  765  kubectl delete -f https://raw.githubusercontent.com/cert-manager/website/master/content/docs/tutorials/acme/example/ingress-tls-final.yaml -n cattle-system
+  766  kubectl create --edit -f https://raw.githubusercontent.com/cert-manager/website/master/content/docs/tutorials/acme/example/ingress-tls-final.yaml -n cattle-system
+  767  kubectl get secret -n cattle-system
+
+
+####################################################################################################################3
+
+root@kubernetes-Workernode-1:~# history
+    1  apt update && apt upgrade -y && apt full-upgrade -y && apt install vim -y
+    2  reboot
+    3  wget https://raw.githubusercontent.com/0hlov3/kubernetes-on-hetzner/main/k8s-ubuntu-install/install.sh && chmod +x install.sh && ./install.sh
+    4  kubeadm join 65.108.84.60:6443 --token 9djui8.308bnq3evp49us4w         --discovery-token-ca-cert-hash sha256:1091ea0ad234742fb9e86184991528b8d75e48bd9bb4cc0b4fb24910ca4f649b
+    5  kubectl get nodes
+    6  apt-get install hcloud-cli
+    7  ls -la
+    8  cd /opt/
+    9  ls -la
+   10  docker image list
+   11  lsof -Pi :443
+   12  kubectl get pods
+   13  kubectl get pod -o wide -n logfire-local
+
+
+#####################################################################################################################
+
+
+1001  vim postgres-pvc-pv.yaml 
+ 1002  kubectl get pods -n logfire-local
+ 1003  kubectl logs -f postgres-deployment-0 -n logfire-local
+ 1004  kubectl logs -f postgres-postgres-prod1-deployment-0 -n logfire-local
+ 1005  kubectl get all -n logfire-local
+ 1006  kubectl get ing -n logfire-local
+ 1007  kubectl get all pods -n logfire-local
+ 1008  kubectl get  pods -n logfire-local
+ 1009  kubectl logs -f gowebapi-deployment-7fc846787-fsbjz -n logfire-local
+ 1010  helm uninstall postgres -n logfire-local
+ 1011  kubectl get pods -n logfire-local
+ 1012  cd /opt/microservices/deploy-local/
+ 1013  ls
+ 1014  cd deployment/
+ 1015  ls
+ 1016  mkdir postgres
+ 1017  mv postgres* postgres/
+ 1018  cd postgres/
+ 1019  ls
+ 1020  cd ..
+ 1021  kubectl apply -f postgres/ -n logfire-local
+ 1022  vim postgres/postgres.yaml 
+ 1023  kubectl apply -f postgres/ -n logfire-local
+ 1024  kubectl get pods -n logfire-local
+ 1025  kubectl delete pod gowebapi-deployment-7fc846787-fsbjz -n logfire-local
+ 1026  kubectl get pods -n logfire-local
+ 1027  ls
+ 1028  vim goweb-api.yaml 
+ 1029  kubectl delete -f gowebapi-deployment-7fc846787-mpxvb -n logfire-local
+ 1030  kubectl delete pod gowebapi-deployment-7fc846787-mpxvb -n logfire-local
+ 1031  kubectl get pods -n logfire-local
+ 1032  kubectl logs -f gowebapi-deployment-7fc846787-m2ccn -n logfire-local
+ 1033  ls
+ 1034  kubectl delete -f postgres/ -n logfire-local
+ 1035  cd ../../helm-chart/
+ 1036  ls
+ 1037  cd postgres-prod/
+ 1038  ls
+ 1039  vim templates/service.yaml 
+ 1040  vim templates/deployment.yaml 
+ 1041  vim templates/pv-claim.yaml 
+ 1042  cd ..
+ 1043  kubectl delete -f ../deploy-local/deployment/postgres/ -n logfire-local
+ 1044  kubectl apply -f configmap/sqlconfig.yaml -n logfirre-local
+ 1045  kubectl apply -f configmap/sqlconfig.yaml -n logfire-local
+ 1046  helm install postgres postgres-prod/ -n logfire-local
+ 1047  kubectl get pods -n logfire-local
+ 1048  kubectl logs -f postgres-deployment-0 -n logfire-local
+ 1049  kubectl get pods -n logfire-local
+ 1050  kubectl logs -f pod/gowebapi-deployment-7fc846787-m2ccn -n logfire-local
+ 1051  kubectl delete pod gowebapi-deployment-7fc846787-m2ccn -n logfire-local
+ 1052  kubectl get pods -n logfire-local
+ 1053  kubectl logs -f gowebapi-deployment-7fc846787-p8sc6 -n logfire-local
+ 1054  kubectl get pods -n logfire-local
+ 1055  kubectl logs -f gowebapi-deployment-7fc846787-p8sc6 -n logfire-local
+ 1056  kubectl get pods -n logfire-local
+ 1057  kubectl logs -f gowebapi-deployment-7fc846787-p8sc6 -n logfire-local
+ 1058  kubectl get services --n logfire-local
+ 1059  kubectl get services -n logfire-local
+ 1060  kubectl get all -n logfire-local
+ 1061  kubectl logs -f pod/gowebapi-deployment-7fc846787-p8sc6 -n logfire-local
+ 1062  kubectl get all -n logfire-local
+ 1063  kubectl logs -f pod/gowebapi-deployment-7fc846787-p8sc6 -n logfire-local
+ 1064  cd postgres-prod/
+ 1065  ls
+ 1066  vim values.yaml 
+ 1067  ls
+ 1068  vim templates/service.yaml 
+ 1069  vim templates/deployment.yaml 
+ 1070  helm uninstall postgres
+ 1071  helm uninstall postgres -n logfire-local
+ 1072  kubectl app -f ../../deploy-local/deployment/postgres/ -n logfire-local
+ 1073  kubectl get pods -n logfire-local
+ 1074  kubectl delete pod gowebapi-deployment-7fc846787-p8sc6 -n logfire-local
+ 1075  kubectl get pods -n logfire-local
+ 1076  kubectl delete pod gowebapi-deployment-7fc846787-zch5g -n logfire-local
+ 1077  kubectl get pods -n logfire-local
+ 1078  kubectl logs -f gowebapi-deployment-7fc846787-dkttx -n logfire-local
+ 1079  cd ../../
+ 1080  cd deploy-local/deployment/
+ 1081  ls
+ 1082  cd postgres/
+ 1083  ls
+ 1084  cd ..
+ 1085  git pull
+ 1086  ls
+ 1087  history
+ 1088  docker build -t logfire/gowebapi:latest
+ 1089  ls
+ 1090  docker build -t logfire/gowebapi:latest  itshanifas/gowebapi:latest
+ 1091  docker build -t logfire/gowebapi:latest itshanifas/gowebapi:latest
+ 1092  docker build -t logfire/gowebapi:latest gowebapp/web-api
+ 1093  docker image tag logfire/gowebapi:latest itshanifas/gowebapi:latest
+ 1094  docker push itshanifas/gowebapi:latest
+ 1095  ls
+ 1096  cd deploy-local/
+ 1097  ls
+ 1098  cd deployment/
+ 1099  ls
+ 1100  kubectl delete -f goweb-api.yaml -n logfire-local
+ 1101  kubectl get pods -n logfire-local
+ 1102  kubectl apply -f goweb-api.yaml -n logfire-local
+ 1103  kubectl get pods -n logfire-local
+ 1104  kubectl logs -f gowebapi-deployment-7fc846787-2vszh -n logfire-local
+ 1105  kubectl delete -f postgres/ -n logfire-local
+ 1106  kubectl apply -f postgres/postgres-config.yaml -n logfire-local
+ 1107  cd ../../
+ 1108  cd helm-chart/
+ 1109  helm install postgres postgres-prod/ -n logfire-local
+ 1110  kubectl get pods -n logfire-local
+ 1111  kubectl logs -f postgres-deployment-0 -n logfire-local
+ 1112  kubectl get pods -n logfire-local
+ 1113  kubectl logs -f gowebapi-deployment-7fc846787-2vszh -n logfire-local
+ 1114  kubectl delete pod gowebapi-deployment-7fc846787-2vszh -n logfire-local
+ 1115  kubectl get pods -n logfire-local
+ 1116  kubectl delete pod  gowebapi-deployment-7fc846787-bh86x -n logfire-local
+ 1117  kubectl get pods -n logfire-local
+ 1118  kubectl logs -f gowebapi-deployment-7fc846787-bzq59 -n logfire-local
+ 1119  ls
+ 1120  cd ../deploy-local/
+ 1121  ls
+ 1122  cd deployment/
+ 1123  ls
+ 1124  cd postgres/
+ 1125  ls
+ 1126  vim postgres.yaml 
+ 1127  vim psql-service.yaml
+ 1128  mv psql-service.yaml ../
+ 1129  ls
+ 1130  cd ..
+ 1131  awk 'FNR==1 && NR!=1  {print "---"}{print}' postgres/*.yaml | helmify postgres-prod1
+ 1132  helm uninstall postgres 
+ 1133  helm uninstall postgres  -n logfire-local
+ 1134  kubectl apply -f psql-service.yaml -n logfire-local
+ 1135  helm install postgres postgres-prod1/ -n logfire-local
+ 1136  kubectl get pods -n logfire-local
+ 1137  kubectl describe postgres-postgres-prod1-deployment-0 -n logfire-local
+ 1138  kubectl describe pod postgres-postgres-prod1-deployment-0 -n logfire-local
+ 1139  kubectl get pvc -n logfire-local
+ 1140  ls
+ 1141  mv psql-service.yaml postgres/
+ 1142  helm uninstall postgres -n logfire-local
+ 1143  cd ../../
+ 1144  ls
+ 1145  cd helm-chart/
+ 1146  ls
+ 1147  cd postgres-prod/
+ 1148  ls
+ 1149  vim templates/service.yaml 
+ 1150  mv templates/service.yaml ../../
+ 1151  ls
+ 1152  helm uninstall postgres -n logfire-local
+ 1153  cd ..
+ 1154  kubectl apply -f configmap/sqlconfig.yaml -n logfire-local
+ 1155  ls
+ 1156  cd ..
+ 1157  ls
+ 1158  kubectl apply -f service.yaml -n logfire-local
+ 1159  vim service.yaml 
+ 1160  kubectl apply -f deploy-local/deployment/postgres/psql-service.yaml -n logfire-local
+ 1161  kubectl get pods -n logfire-local
+ 1162  helm install postgres helm-chart/postgres-prod/ -n logfire-local
+ 1163  kubectl get pods -n logfire-local
+ 1164  kubectl delete pod gowebapi-deployment-7fc846787-bzq59 -n logfire-local
+ 1165  kubectl get pods -n logfire-local
+ 1166  kubectl delete pod gowebapi-deployment-7fc846787-mgtxx -n logfire-local
+ 1167  kubectl get pods -n logfire-local
+ 1168  kubectl delete logs-f gowebapi-deployment-7fc846787-w894r -n logfire-local
+ 1169  kubectl delete logs -f gowebapi-deployment-7fc846787-w894r -n logfire-local
+ 1170  kubectl logs -f gowebapi-deployment-7fc846787-w894r -n logfire-local
+ 1171  ls
+ 1172  cp -r deploy-local/deployment/postgres/psql-service.yaml helm-chart/configmap/
+ 1173  git add .
+ 1174  git commit -m "added postgres service in configmap"
+ 1175  git push origin
+ 1176  cd /opt/microservices/deploy-local/deployment/
+ 1177  vim filter-service.yaml 
+ 1178  sudo su
+ 1179  cd /opt/microservices/
+ 1180  ls
+ 1181  cd helm-chart/
+ 1182  kubectl get all -n logfire-local
+ 1183  kubectl get ing -n logfire-local
+ 1184  kubectl edit ing -n logfire-local
+ 1185  kubectl get services -n logfire-local
+ 1186  cd webapp-chart/
+ 1187  ls
+ 1188  vim templates/livetail.yaml 
+ 1189  vim ../../deploy-local/deployment/livetail.yaml 
+ 1190  vim ../../deploy-local/deployment/notification.yaml 
+ 1191  vim ../../deploy-local/deployment/filter-service.yaml 
+ 1192  vim templates/livetail.yaml 
+ 1193  vim templates/filterservice.yaml 
+ 1194  vim templates/deployment1.yaml 
+ 1195  cd ..
+ 1196  helm uninstall webapp -n logfire-local
+ 1197  kubectl delete -f ../deploy-local/deployment/goweb-api.yaml 
+ 1198  kubectl delete -f ../deploy-local/deployment/goweb-api.yaml  -n logfire-local
+ 1199  kubectl get services -n logfire-local
+ 1200  kubectl get all -n logfire-local
+ 1201  kubectl apply -f webapp webapp-chart/ -n logfire-local
+ 1202  helm install webapp webapp-chart/ -n logfire-local
+ 1203  kubectl get all -n logfire-local
+ 1204  kubectl logs -f pod/gowebapi-deployment-68c4bfd76d-h9zxg -n logfire-local
+ 1205  kubectl apply -f configmap/ -n logfire-local
+ 1206  kubectl logs -f pod/gowebapi-deployment-68c4bfd76d-h9zxg -n logfire-local
+ 1207  kubectl get pods -n logfire-local
+ 1208  kubectl logs -f filterservice-deployment-5f85bbcbcc-gvmrm -n logfire-local
+ 1209  kubectl edit ing -n logfire-local
+ 1210  kubectl logs -f pod/gowebapi-deployment-68c4bfd76d-h9zxg -n logfire-local
+ 1211  kubectl get services -n logfire-local
+ 1212  vim webapp-chart/templates/gowebapi.yaml 
+ 1213  helm uninstall webapp -n logfire-local
+ 1214  helm install webapp -n logfire-local
+ 1215  helm install webapp  webapp-chart/ -n logfire-local
+ 1216  kubectl get all -n logfire-local
+ 1217  cd /opt/microservices/
+ 1218  ls
+ 1219  cd helm-chart/
+ 1220  ls
+ 1221  cd webapp-chart/
+ 1222  ls
+ 1223  kubectl get all -n logfire-local
+ 1224  kubect get logs -f pod/filterservice-deployment-5f85bbcbcc-h2l8q -n logfire-local
+ 1225  kubectl get logs -f pod/filterservice-deployment-5f85bbcbcc-h2l8q -n logfire-local
+ 1226  kubectl logs -f pod/filterservice-deployment-5f85bbcbcc-h2l8q -n logfire-local
+ 1227  kubectl edit ing -n logfire-local
+ 1228  kubectl get services -n logfire-local
+ 1229  kubectl logs -f filterservice -n logfire-local
+ 1230  kubectl describe filterservice -n logfire-local
+ 1231  kubectl describe service/filterservice -n logfire-local
+ 1232  ls
+ 1233  kubectl edit ing -n logfire-local
+ 1234  kubectl get services -n logfire-local
+ 1235  kubectl edit ing -n logfire-local
+ 1236  cd ../../deploy-local/deployment/
+ 1237  ls
+ 1238  cd /opt/old-microservices/ingress/
+ 1239  ls
+ 1240  vim dapr-prod-ingress.yaml 
+ 1241  kubectl apply -f dapr-prod-ingress.yaml -n logfire-local
+ 1242  kubectl edit ing -n logfire-local
+ 1243  kubectl get all -n logfire-local
+ 1244  cp -r /opt/old-microservices/ingress/dapr-prod-ingress.yaml /opt/microservices/helm-chart/webapp-chart/
+ 1245  cd /opt/microservices/helm-chart/
+ 1246  cp -r webapp-chart/dapr-prod-ingress.yaml  .
+ 1247  ls
+ 1248  mkdir ingress-prod
+ 1249  mv dapr-prod-ingress.yaml ingress-prod/
+ 1250  awk 'FNR==1 && NR!=1  {print "---"}{print}' ingress-prod/*.yaml | helmify ingress-prodchart
+ 1251  ls
+ 1252  vim ingress-prodchart/values.yaml 
+ 1253  vim ingress-prodchart/templates/prod-ingress.yaml 
+ 1254  vim ingress-prod/dapr-prod-ingress.yaml 
+ 1255  vim ingress-prodchart/templates/prod-ingress.yaml 
+ 1256  kubectl dhet ing -n logfire-local
+ 1257  kubectl get ing -n logfire-local
+ 1258  ls
+ 1259  rm -rf ingress-prod/
+ 1260  cd configmap/
+ 1261  ls
+ 1262  cp -r /opt/old-microservices/secret.yaml .
+ 1263  ls
+ 1264  cd ..
+ 1265  ls
+ 1266  cd kafka
+ 1267  ls
+ 1268  cd ..
+ 1269  rm -rf kafka/
+ 1270  cd operators/
+ 1271  ls
+ 1272  cd ..
+ 1273  rm -rf operators/
+ 1274  ls
+ 1275  mv postgres-prod/ postgres-prodchart/
+ 1276  ls
+ 1277  git status
+ 1278  git pull
+ 1279  git add .
+ 1280  git commit -m "edited ingress controller to add filter service"
+ 1281  git push origin
+ 1282  git status
+ 1283  ls
+ 1284  clear
+ 1285  cd /opt/microservices/helm-chart/
+ 1286  ls
+ 1287  history
+ 1288  cd /opt/microservices/helm-chart/
+ 1289  ls
+ 1290  cd ingress-prodchart/
+ 1291  ls
+ 1292  vim templates/prod-ingress.yaml 
+ 1293  cd ..
+ 1294  history
+ 1295  ls
+ 1296  kubectl get ing -n logfire-local
+ 1297  helm uninstall ingress
+ 1298  helm uninstall ingress -n logfire-local
+ 1299  helm uninstall prod-ingress -n logfire-local
+ 1300  helm list
+ 1301  helm list -n logfire-local
+ 1302  helm uninstall api-gateway -n logfire-local
+ 1303  helm install api-gateway ingress-prodchart/ -n logfire-local
+ 1304  kubectl get ing -n logfire-local
+ 1305  helm uninstall prod-gateway ingress-prodchart/ -n logfire-local
+ 1306  helm uninstall prod-ingress ingress-prodchart/ -n logfire-local
+ 1307  helm list -n logfire-local
+ 1308  helm list --all-namespaces
+ 1309  kubectl get ing -n logfire-local
+ 1310  kubectl delete ing prod-ingress -n logfire-local
+ 1311  kubectl get ing
+ 1312  kubectl get ing -n logfire-local
+ 1313  helm install prod-ingress ingress-prodchart/ -n logfire-local
+ 1314  kubectl get ing -n logfire-local
+ 1315  lsof -Pi :80
+ 1316  apt-get remove apache2
+ 1317  lsof -Pi :80
+ 1318  kubectl get ing-n logfire-local
+ 1319  kubectl get ing -n logfire-local
+ 1320  kubectl get all -n logfire-local
+ 1321  helm upgrade --install api-gateway --namespace logfire-local --wait
+ 1322  helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+ 1323  helm install api-gateway ingress-nginx/ingress-nginx --namespace logfire-local --wait
+ 1324  kubectl get all -n logfire-local
+ 1325  cd /opt/microservices/helm-chart/ingress-prodchart/
+ 1326  ls
+ 1327  vim templates/prod-ingress.yaml 
+ 1328  kubectl get service -n logfire-local
+ 1329  kubectl edit service api-gateway-ingress-nginx-controller -n logfire-local
+ 1330  vim templates/prod-ingress.yaml 
+ 1331  kubectl get ing -n logfire-local
+ 1332  kubectl describe ingress prod-ingress -n logfire-local
+ 1333  cd /opt/microservices/
+ 1334  ls
+ 1335  cd helm-chart/
+ 1336  ls
+ 1337  cd ingress-prodchart/
+ 1338  vim templates/prod-ingress.yaml 
+ 1339  helm uninstall prod-ingress -n logfire-local
+ 1340  helm install prod-ingress -n logfire-local
+ 1341  helm install prod-ingress ../ingress-prodchart/ -n logfire-local
+ 1342  kubectl get ing -n logfire-local
+ 1343  kubectl edit ing -n logfire-local
+ 1344  vim templates/prod-ingress.yaml 
+ 1345  cd /opt/microservices/helm-chart/
+ 1346  ls
+ 1347  cd ingress-prodchart/
+ 1348  ls
+ 1349  vim templates/prod-ingress.yaml 
+ 1350  vim /opt/old-microservices/ingress/dapr-ingress.yaml 
+ 1351  vim templates/prod-ingress.yaml 
+ 1352  helm uninstall prod-ingress -n logfire-local
+ 1353  helm install prod-ingress ../ingress-prodchart/ -n logfire-local
+ 1354  kubectl get ing -n logfire-local
+ 1355  vim templates/prod-ingress.yaml 
+ 1356  helm uninstall prod-ingress ../ingress-prodchart/ -n logfire-local
+ 1357  helm install prod-ingress ../ingress-prodchart/ -n logfire-local
+ 1358  kubectl get ing -n logfire-local
+ 1359  vim templates/prod-ingress.yaml 
+ 1360  git pull
+ 1361  git status
+ 1362  git add .
+ 1363  git commit -m "added http ingress rule"
+ 1364  git push 
+ 1365  cd /opt/microservices/helm-chart/
+ 1366  ls
+ 1367  helm upgrade prod-ingress ingress-prodchart/ -n logfire-local
+ 1368  kubectl get ing -n logfire-local
+ 1369  helm ls -n logfire-local
+ 1370  ls
+ 1371  helm search mysql
+ 1372  helm search hub mysql
+ 1373  ls
+ 1374  cd /opt/microservices/
+ 1375  ls
+ 1376  cd helm-chart/
+ 1377  ls
+ 1378  history
+ 1379  cd /opt/microservices/
+ 1380  ls
+ 1381  cd helm-chart/
+ 1382  ls
+ 1383  unzip operators.zip 
+ 1384  ls
+ 1385  cd operators/
+ 1386  ls
+ 1387  cd ..
+ 1388  ls
+ 1389  cp -r operators/ /opt/microservices/helm-chart/
+ 1390  cd /opt/microservices/
+ 1391  cd helm-chart/
+ 1392  ls
+ 1393  git pull
+ 1394  git add .
+ 1395  git commit -m "added missing operator folder"
+ 1396  git push
+ 1397  kubectl get sc
+ 1398  kubect describe sc hcloud-volumes
+ 1399  kubectl describe sc hcloud-volumes
+ 1400  cd /opt/microservices/
+ 1401  ls
+ 1402  cd helm-chart/
+ 1403  ls
+ 1404  vim deploy.md 
+ 1405  cd ..
+ 1406  cd get-started/
+ 1407  ls
+ 1408  vim deploy.sh 
+ 1409  cd /opt/microservices/get-started/
+ 1410  ls
+ 1411  vim deploy.sh 
+ 1412  rm -rf .deploy.sh.swp 
+ 1413  vim deploy.sh 
+ 1414  sh deploy.sh 
+ 1415  vim deploy.sh 
+ 1416  sh deploy.sh 
+ 1417  vim deploy.sh 
+ 1418  sh deploy.sh 
+ 1419  vim deploy.sh 
+ 1420  sh deploy.sh 
+ 1421  vim deploy.sh 
+ 1422  sh deploy.sh 
+ 1423  vim deploy.sh 
+ 1424  vim requirment-install.sh 
+ 1425  vim application-start.sh 
+ 1426  ls
+ 1427  vim deploy.sh 
+ 1428  sh deploy.sh 
+ 1429  vim deploy.sh 
+ 1430  sh deploy.sh 
+ 1431  vim deploy.sh 
+ 1432  sh deploy.sh 
+ 1433  vim deploy.sh 
+ 1434  sh deploy.sh 
+ 1435  vim deploy.sh 
+ 1436  sh deploy.sh 
+ 1437  vim deploy.sh 
+ 1438  sh deploy.sh 
+ 1439  vim deploy.sh 
+ 1440  sh deploy.sh 
+ 1441  vim deploy.sh 
+ 1442  sh deploy.sh 
+ 1443  vim deploy.sh 
+ 1444  sh deploy.sh 
+ 1445  vim deploy.sh 
+ 1446  sh deploy.sh 
+ 1447  vim deploy.sh 
+ 1448  sh deploy.sh 
+ 1449  vim deploy.sh 
+ 1450  sh deploy.sh 
+ 1451  vim deploy.sh 
+ 1452  sh deploy.sh 
+ 1453  vim deploy.sh 
+ 1454  vim application-start.sh 
+ 1455  vim deploy.sh 
+ 1456  sh deploy.sh 
+ 1457  vim deploy.sh 
+ 1458  cd ..
+ 1459  git pull
+ 1460  git add .
+ 1461  git commit -n "deployment-script"
+ 1462  git commit -m "deployment-script"
+ 1463  git push
+ 1464  vim get-started/deploy.sh 
+ 1465  cd /opt/microservices/
+ 1466  ls
+ 1467  cd helm-chart/
+ 1468  ls
+ 1469  cd ingress-prodchart/
+ 1470  ls
+ 1471  vim templates/prod-ingress.yaml 
+ 1472  helm upgrade prod-ingress ../ingress-prodchart/ -n logfire-local
+ 1473  kubectl get ing -n logfire-local
+ 1474  vim templates/prod-ingress.yaml 
+ 1475  helm upgrade prod-ingress ../ingress-prodchart/ -n logfire-local
+ 1476  kubectl get ing -n logfire-local
+ 1477  cd /opt/microservices/get-started/
+ 1478  ls
+ 1479  vim requirment-install.sh 
+ 1480  vim application-start.sh 
+ 1481  ls
+ 1482  vim deploy.sh
+ 1483  vim application-start.sh 
+ 1484  vim requirment-install.sh 
+ 1485  vim deploy.sh
+ 1486  sh deploy.sh 
+ 1487  vim deploy.sh
+ 1488  cd /opt/microservices/helm-chart/
+ 1489  ls
+ 1490  cd ingress-prodchart/
+ 1491  ls
+ 1492  vim templates/prod-ingress.yaml 
+ 1493  cd /opt/microservices/helm-chart/
+ 1494  ls
+ 1495  vim ingress-prodchart/templates/prod-ingress.yaml 
+ 1496  helm upgrade prod-ingress ../ingress-prodchart/ -n logfire-local
+ 1497  ls
+ 1498  helm upgrade prod-ingress ingress-prodchart/ -n logfire-local
+ 1499  vim ingress-prodchart/templates/prod-ingress.yaml 
+ 1500  helm upgrade prod-ingress ingress-prodchart/ -n logfire-local
+ 1501  vim ingress-prodchart/templates/prod-ingress.yaml 
+ 1502  kubectl get pods -n logfire-local
+ 1503  kubectl logs -f gowebapi-deployment-68c4bfd76d-64988 -n logfire-local
+ 1504  cd /opt/microservices/gowebapp/web-api/app/source/controller/
+ 1505  vim sendLog.go 
+ 1506  cd ../../
+ 1507  cd ..
+ 1508  docker build -t logfire/gowebapi:latest gowebapp/web-api
+ 1509  helm uninstall webapp -n logfire-local
+ 1510  vim helm-chart/webapp-chart/templates/gowebapi.yaml 
+ 1511  vim helm-chart/webapp-chart/templates/deployment1.yaml 
+ 1512  helm install webapp  helm-chart/webapp-chart/ -n logfire-local
+ 1513  kubectl get all -n logfire-local
+ 1514  kubectl logs -f pod/gowebapi-deployment-68c4bfd76d-wsvpv -n logfire-local
+ 1515  vim gowebapp/web-api/app/source/controller/sendLog.go 
+ 1516  kubectl describe pod/gowebapi-deployment-68c4bfd76d-wsvpv -n logfire-local
+ 1517  docker images
+ 1518  kubectl get ing -n logfire-local
+ 1519  vim helm-chart/ingress-prodchart/templates/prod-ingress.yaml 
+ 1520  helm upgrade prod-ingress helm-chart/ingress-prodchart/ -n logfire-local
+ 1521  kubectl get ing -n logfire-local
+ 1522  kubectl pods -n logfire-local
+ 1523  kubectl get pods -n logfire-local
+ 1524  kubectl logs -f gowebapi-deployment-68c4bfd76d-wsvpv -n logfire-local
+ 1525  kubectl get pods -n logfire-local
+ 1526  kubectl logs -f kafka-kafka-chart-my-cluster-kafka-0 -n logfire-local
+ 1527  kubectl get services -n logfire-local
+ 1528  cd helm-chart/
+ 1529  ls
+ 1530  cd kafka-chart/
+ 1531  ls
+ 1532  vim templates/my-cluster.yaml 
+ 1533  vim values.yaml 
+ 1534  ls
+ 1535  vim values.yaml 
+ 1536  cd templates/
+ 1537  ls
+ 1538  vim my-cluster.yaml 
+ 1539  ll
+ 1540  cd ..
+ 1541  ls
+ 1542  cd ..
+ 1543  ls
+ 1544  cd configmap/
+ 1545  ls
+ 1546  cd /opt/microservices/
+ 1547  ls
+ 1548  vim deploy-local/deployment/kafka-persistent-single.yaml 
+ 1549  cd deploy-local/deployment/
+ 1550  l
+ 1551  vim kafka-persistent-single.yaml 
+ 1552  kubectl get all -n logfire-local
+ 1553  cd ..
+ 1554  cd helm-chart/
+ 1555  kubectl update kafka kafka-chart/ -n logfire-local
+ 1556  kubectl upgrade kafka kafka-chart/ -n logfire-local
+ 1557  helm upgrade kafka kafka-chart/ -n logfire-local
+ 1558  kubectl get all -n logfire-local
+ 1559  kubectl logs -f pod/gowebapi-deployment-68c4bfd76d-wsvpv -n logfire-local
+ 1560  cd /opt/microservices/helm-chart/
+ 1561  ls
+ 1562  vim ingress-prodchart/templates/prod-ingress.yaml 
+ 1563  helm upgrade prod-ingress helm-chart/ingress-prodchart/ -n logfire-local
+ 1564  helm upgrade prod-ingress ingress-prodchart/ -n logfire-local
+ 1565  im ingress-prodchart/templates/prod-ingress.yaml 
+ 1566  vim ingress-prodchart/templates/prod-ingress.yaml 
+ 1567  helm upgrade prod-ingress ingress-prodchart/ -n logfire-local
+ 1568  kubectl get ing -n logfie-local
+ 1569  kubectl get ing -n logfire-local
+ 1570  kubectl describe ing prod-ingress -n logfire-local
+ 1571  kubectl describe ing prod-ingress2 -n logfire-local
+ 1572  clear
+ 1573  kubectl describe ing prod-ingress2 -n logfire-local
+ 1574  kubectl get pods -n logfire-local
+ 1575  kubectl logs -f gowebapi-deployment-68c4bfd76d-wsvpv -n logfire-local
+ 1576  vim ingress-prodchart/templates/prod-ingress.yaml 
+ 1577  helm upgrade prod-ingress ingress-prodchart/ -n logfire-local
+ 1578  kubectl logs -f gowebapi-deployment-68c4bfd76d-wsvpv -n logfire-local
+ 1579  cd /opt/microservices/
+ 1580  git pull
+ 1581  git add .
+ 1582  git commit -n "modify ingress and kafka helm file"
+ 1583  git commit -m "modify ingress and kafka helm file"
+ 1584  git push origin
+ 1585  ls
+ 1586  cd get-started/
+ 1587  ls
+ 1588  vim k3s-local.sh 
+ 1589  vim install.sh
+ 1590  vim requirment-install.sh 
+ 1591  vim install.sh 
+ 1592  git add .
+ 1593  git commit -n "added install.sh file"
+ 1594  git commit -m "added install.sh file"
+ 1595  ls
+ 1596  mv build-image.sh ../draft/
+ 1597  mv k3s-local.sh ../draft/
+ 1598  mv req-local.sh ../draft/
+ 1599  mv requirment-install.sh ../draft/
+ 1600  mv app* ../draft/
+ 1601  ls
+ 1602  git add .
+ 1603  git commit -m "moving files to draft and added install.sh"
+ 1604  git push origin
+ 1605  cd /opt/microservices/deploy-local/deployment/
+ 1606  ls
+ 1607  vim postgres/postgres.yaml 
+ 1608  cd /opt/old-microservices/
+ 1609  ls
+ 1610  cd gowebapp/
+ 1611  ls
+ 1612  vim goweb-api.yaml 
+ 1613  kubectl get all -n logfire-local
+ 1614  kubectl logs -f pod/gowebapi-deployment-68c4bfd76d-wsvpv -n logfire-local
+ 1615  kubectl get ing -n logfire-local
+ 1616  kubectl edit ing prod-ingress2 -n logfire-local
+ 1617  kubectl get all -n logfire-local
+ 1618  kubectl logs -f pod/livetail-deployment-774566644-2bh9l -n logfire-local
+ 1619  cd /opt/old-microservices/gowebapp/
+ 1620  ls
+ 1621  vim goweb-api.yaml 
+ 1622  ls
+ 1623  cd ~/.ssh
+ 1624  ssh-keygen -t rsa -b 4096 -C "hanifa@constient.com"
+ 1625  ls
+ 1626  cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+ 1627  cat ~/.ssh/id_rsa
+ 1628  ls
+ 1629  docker login -u dockercgs
+ 1630  ls
+ 1631  cd /opt/microservices/helm-chart/
+ 1632  ls
+ 1633  cd webapp-chart/templates/
+ 1634  ls
+ 1635  vim deployment1.yaml
+ 1636  kubectl get all -n logfire-local
+ 1637  cd /opt/microservices/helm-chart/webapp-chart/
+ 1638  ls
+ 1639  kubectl describe pod/notification-deployment-764f967c6f-c4ztp -n logfire-local
+ 1640  vim templates/deployment1.yaml
+ 1641  mv templates/deployment1.yaml_old ../
+ 1642  ls
+ 1643  helm list -n logfire-local
+ 1644  cd ..
+ 1645  helm upgrade webapp webapp-chart/ -n logfire-local
+ 1646  helm list -n logfire-local
+ 1647  kubectl get all -n logfire-local
+ 1648  helm list -n logfire-local
+ 1649  cd /opt/microservices/helm-chart/
+ 1650  ls
+ 1651  cd webapp-chart/templates/
+ 1652  vim deployment1.yaml 
+ 1653  helm list -n logfire-local
+ 1654  kubectl get all -n logfire-local
+ 1655  cp -r /opt/microservices/helm-chart/webapp-chart/
+ 1656  l
+ 1657  cp -r /opt/microservices/helm-chart/webapp-chart/templates/deployment1.yaml .
+ 1658  cd /opt/microservices/
+ 1659  git status
+ 1660  ls
+ 1661  git stash
+ 1662  git pull
+ 1663  ls
+ 1664  cd scripts/
+ 1665  ls
+ 1666  cd ..
+ 1667  cd helm-chart/webapp-chart/
+ 1668  ls
+ 1669  cd ..
+ 1670  ls
+ 1671  cp -r webapp-chart/ webapp-prodchart/
+ 1672  mv webapp-chart/ webapp-devchart/
+ 1673  ls
+ 1674  rm -rf webapp-prodchart/templates/deployment1.yaml 
+ 1675  cp -r ~/deployment1.yaml webapp-prodchart/templates/
+ 1676  ls
+ 1677  cd /opt/microservices/
+ 1678  ls
+ 1679  cd helm-chart/
+ 1680  ls
+ 1681  kubectl get secrets -n logfire-local
+ 1682  kubectl edit secret api-logfire-prod-tls-secret -n logfire-local
+ 1683  vim secrets.yaml
+ 1684  kubectl get secrets -n logfire-local
+ 1685  kubectl edit secret dockersecret -n logfire-local
+ 1686  cd /opt/microservices/helm-chart/
+ 1687  ls
+ 1688  cd configmap/
+ 1689  ls
+ 1690  vim docker-secrets.yaml
+ 1691  kubectl apply -f docker-secrets.yaml 
+ 1692  vim docker-secrets.yaml
+ 1693  kubectl apply -f docker-secrets.yaml 
+ 1694  ls
+ 1695  vim secret.yaml 
+ 1696  cd /opt/microservices/
+ 1697  git pull
+ 1698  git add .
+ 1699  git commit -m "added webapp helm chart for production"
+ 1700  git push
+ 1701  kubectl logs -f pod/gowebapi-deployment-6694c779bf-8nn2z -n logfire-local
+ 1702  kubectl get pods -n logfire-local
+ 1703  kubectl logs -f pod/notification-deployment-6ffb6459c7-gpltb -n logfire-local
+ 1704  kubectl get services -n logfire-local
+ 1705  cd /opt/microservices/
+ 1706  ls
+ 1707  cd deploy-local/deployment/
+ 1708  ls
+ 1709  vim notification.yaml 
+ 1710  cd ../../helm-chart/
+ 1711  ls
+ 1712  cd webapp-devchart/
+ 1713  ls
+ 1714  cd ../webapp-prodchart/
+ 1715  ls
+ 1716  cd templates/
+ 1717  ls
+ 1718  vim livetail.yaml 
+ 1719  vim notification.yaml
+ 1720  vim deployment1.yaml 
+ 1721  cd ../../
+ 1722  ls
+ 1723  helm upgrade webapp webapp-prodchart/ -n logfire-local
+ 1724  kubectl get services -n logfire-local
+ 1725  kubectl logs -f pod/notification-deployment-6ffb6459c7-gpltb -n logfire-local
+ 1726  cd /opt/microservices/
+ 1727  git status
+ 1728  git pull
+ 1729  git add .
+ 1730  cd /opt/microservices/helm-chart/
+ 1731  ls
+ 1732  cp -r webapp-prodchart/templates/notification.yaml webapp-devchart/templates/
+ 1733  git add .
+ 1734  git commit -m "Added notification service"
+ 1735  git push 
+ 1736  kubectl get pods -n logfire-local
+ 1737  kubectl exec -it postgres-deployment-0 sh /
+ 1738  docker container ps
+ 1739  clear
+ 1740  kubectl get pods-n logfire-local
+ 1741  kubectl get pods -n logfire-local
+ 1742  kubectl exec -it pod/postgres-deployment-0 -n logfire-local bash
+ 1743  cd /opt/microservices/
+ 1744  ls
+ 1745  cd scripts/
+ 1746  ls
+ 1747  vim install.sh 
+ 1748  sh install.sh 
+ 1749  vim install.sh 
+ 1750  kubectl get all -n logfire-local
+ 1751  kubectl get all -n kube-system
+ 1752  cd /opt/old-microservices/metallb/
+ 1753  ls
+ 1754  vim metalb-configmap.yaml 
+ 1755  vim metallb.yaml 
+ 1756  kubectl get secrets -n kube-system
+ 1757  kubectl get secrets 
+ 1758  kubectl get secrets -n logfire-local
+ 1759  kubectl get secrets -n metallb-system
+ 1760  kubectl get ing -n logfire-local
+ 1761  kubectl get services -n logfire-local
+ 1762  history
+ 1763  cd /opt/microservices/
+ 1764  ls
+ 1765  git pull
+ 1766  ls
+ 1767  uname -a
+ 1768  lsb_release -a
+ 1769  kubectl get pods -n logfire-local
+ 1770  kubectl exec -it postgres-deployment-0 -n logfire-local sh
+ 1771  kubectl get all -n logfire-local
+ 1772  cd /opt/microservices/
+ 1773  ls
+ 1774  cd helm-chart/
+ 1775  ls
+ 1776  cd ..
+ 1777  cd redis
+ 1778  ls
+ 1779  kubectl apply -f ../redis/ -n logfire-local
+ 1780  kubectl delete -f ../redis/ -n logfire-local
+ 1781  kubectl create ns redis
+ 1782  kubectl delete -f ../redis/
+ 1783  kubectl apply -f ../redis/
+ 1784  kubectl get all -n redis
+ 1785  cd ..
+ 1786  cd scala/
+ 1787  ls
+ 1788  cat README.md 
+ 1789  git pull
+ 1790  kubectl create -f https://github.com/jetstack/cert-manager/releases/download/v1.8.2/cert-manager.yaml
+ 1791  helm repo add flink-operator-repo https://downloads.apache.org/flink/flink-kubernetes-operator-1.4.0/
+ 1792  helm repo update
+ 1793  kubectl get pods -n logfire-local
+ 1794  helm install flink-kubernetes-operator flink-operator-repo/flink-kubernetes-operator --namespace logfire-local
+ 1795  kubectl get all -n cert-manager
+ 1796  kubectl get validatingwebhooks 
+ 1797  kubectl get validatingwebhooks -n cert-manager
+ 1798  kubectl get validatingwebhookconfigurations.admissionregistration.k8s.io 
+ 1799  kubectl delete validatingwebhookconfigurations.admissionregistration.k8s.io certmgr-cert-manager-webhook
+ 1800  helm install flink-kubernetes-operator flink-operator-repo/flink-kubernetes-operator --namespace logfire-local
+ 1801  helm uninstall flink-kubernetes-operator flink-operator-repo/flink-kubernetes-operator --namespace logfire-local
+ 1802  helm install flink-kubernetes-operator flink-operator-repo/flink-kubernetes-operator --namespace logfire-local
+ 1803  kubectl get validatingwebhookconfigurations.admissionregistration.k8s.io 
+ 1804  kubectl delete ns cert-manager
+ 1805  kubectl create -f https://github.com/jetstack/cert-manager/releases/download/v1.8.2/cert-manager.yaml
+ 1806  kubectl get pods -n cert-manager
+ 1807  helm install flink-kubernetes-operator flink-operator-repo/flink-kubernetes-operator --namespace logfire-local
+ 1808  helm uninstall flink-kubernetes-operator flink-operator-repo/flink-kubernetes-operator --namespace logfire-local
+ 1809  helm install flink-kubernetes-operator flink-operator-repo/flink-kubernetes-operator --namespace logfire-local
+ 1810  kubectl get pods -n cert-manager
+ 1811  kubectl get all -n cert-manager
+ 1812  kubectl get all -n logfire-local
+ 1813  kubectl get certificates
+ 1814  kubectl get certificates --
+ 1815  kubectl get certificates --A
+ 1816  kubectl get certificates -A
+ 1817  helm uninstall flink-kubernetes-operator flink-operator-repo/flink-kubernetes-operator --namespace logfire-local
+ 1818  helm install flink-kubernetes-operator flink-operator-repo/flink-kubernetes-operator --namespace logfire-local
+ 1819  kubectl get validatingwebhookconfigurations.admissionregistration.k8s.io 
+ 1820  kubectl get mutatingwebhookconfigurations.admissionregistration.k8s.io
+ 1821  kubectl delete mutatingwebhookconfigurations.admissionregistration.k8s.io certmgr-cert-manager-webhook
+ 1822  helm uninstall flink-kubernetes-operator flink-operator-repo/flink-kubernetes-operator --namespace logfire-local
+ 1823  helm install flink-kubernetes-operator flink-operator-repo/flink-kubernetes-operator --namespace logfire-local
+ 1824  kubectl get all -n logfire-local
+ 1825  kubectl describe pod/flink-kubernetes-operator-ff4cf976d-7prm6 -n logfire-local
+ 1826  kubectl logs -f pod/flink-kubernetes-operator-ff4cf976d-7prm6 -n logfire-local
+ 1827  kubectl get pods -n logfire-local
+ 1828  kubectl logs -f pod/flink-kubernetes-operator-ff4cf976d-7prm6 -n logfire-local
+ 1829  kubectl describe pod/flink-kubernetes-operator-ff4cf976d-7prm6 -n logfire-local
+ 1830  kubectl get secrets -n logfire-local
+ 1831  kubectl delete ns cert-manager
+ 1832  kubectl get validatingwebhookconfigurations.admissionregistration.k8s.io 
+ 1833  kubectl delete validatingwebhookconfigurations.admissionregistration.k8s.io cert-manager-webhook flink-operator-logfire-local-webhook-configuration
+ 1834  kubectl get mutatingwebhookconfigurations.admissionregistration.k8s.io
+ 1835  kubectl delete mutatingwebhookconfigurations.admissionregistration.k8s.io cert-manager-webhook flink-operator-logfire-local-webhook-configuration
+ 1836  kubectl get mutatingwebhookconfigurations.admissionregistration.k8s.io
+ 1837  kubectl get validatingwebhookconfigurations.admissionregistration.k8s.io 
+ 1838  kubectl get all -n cert-manager
+ 1839  cat README.md 
+ 1840  kubectl create -f https://github.com/jetstack/cert-manager/releases/download/v1.8.2/cert-manager.yaml
+ 1841  kubectl get all -n cert-manager
+ 1842  kubectl get validatingwebhookconfigurations.admissionregistration.k8s.io 
+ 1843  kubectl get mutatingwebhookconfigurations.admissionregistration.k8s.io
+ 1844  helm uninstall flink-kubernetes-operator flink-operator-repo/flink-kubernetes-operator --namespace logfire-local
+ 1845  helm install flink-kubernetes-operator flink-operator-repo/flink-kubernetes-operator --namespace logfire-local
+ 1846  kubectl get pods -n logfire-local
+ 1847  kubectl describe pod/flink-kubernetes-operator-ff4cf976d-c9g7l -n logfire-local
+ 1848  helm uninstall flink-kubernetes-operator flink-operator-repo/flink-kubernetes-operator --namespace logfire-local
+ 1849  kubectl delete -f https://github.com/jetstack/cert-manager/releases/download/v1.8.2/cert-manager.yaml
+ 1850  kubectl create -f https://github.com/jetstack/cert-manager/releases/download/v1.8.2/cert-manager.yaml
+ 1851  kubectl get pods -n cert- manager
+ 1852  kubectl get pods -n cert-manager
+ 1853  helm uninstall flink-kubernetes-operator flink-operator-repo/flink-kubernetes-operator --namespace logfire-local
+ 1854  helm install flink-kubernetes-operator flink-operator-repo/flink-kubernetes-operator --namespace logfire-local
+ 1855  kubecl get pods -n logfire-local
+ 1856  kubectl get pods -n logfire-local
+ 1857  kubectl logs -f flink-kubernetes-operator-ff4cf976d-rvkqv -n logfire-local
+ 1858  cat README.md 
+ 1859  sbt assemblyPackageDependency
+ 1860  echo "deb https://repo.scala-sbt.org/scalasbt/debian all main" | sudo tee /etc/apt/sources.list.d/sbt.list
+ 1861  echo "deb https://repo.scala-sbt.org/scalasbt/debian /" | sudo tee /etc/apt/sources.list.d/sbt_old.list
+ 1862  curl -sL "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x2EE0EA64E40A89B84B2DF73499E82A75642AC823" | sudo apt-key add
+ 1863  sudo apt-get update
+ 1864  sudo apt-get install sbt
+ 1865  cat README.md 
+ 1866  sbt assemblyPackageDependency
+ 1867  apt-get install java
+ 1868  apt-get install openjdk11
+ 1869  sudo apt-get install openjdk-11-jdk
+ 1870  sbt assemblyPackageDependency
+ 1871  cat README.md 
+ 1872  sbt assembly
+ 1873  cat README.md 
+ 1874  docker build -t logfire/flink -f scala/flink.Dockerfile scala/
+ 1875  cd ..
+ 1876  docker build -t logfire/flink -f scala/flink.Dockerfile scala/docker build -t logfire/flink -f scala/flink.Dockerfile scala/
+ 1877  cat scala/README.md 
+ 1878  kubectl apply -f scala/flink-session-cluster.yaml -n logfire-local
+ 1879  helm install cp-schema-registry kafka/cp-schema-registry --namespace logfire-local --set kafka.external=true --set kafka.address=my-cluster-kafka-brokers:9092
+ 1880  docker build -t logfire/filter-service -f scala/Dockerfile scala/
+ 1881  helm upgrade --install filter-service scala/helm/filter-service -n logfire-local
+ 1882  kubectl get pods -n logfire-local
+ 1883  kubectl get svc -n logfire-local
+ 1884  cd helm-chart/ingress-prodchart/
+ 1885  ls
+ 1886  cd templates/
+ 1887  ls
+ 1888  vim prod-ingress.yaml 
+ 1889  helm upgrade prod-ingress /opt/microservices/helm-chart/ingress-prodchart/ -n logfire-local
+ 1890  kubectl get svc -n logfire-local
+ 1891  kubectl describe svc api-gateway-ingress-nginx-controller -n logfire-local
+ 1892  clear
+ 1893  kubectl get pod -n logfire-local
+ 1894  kubectl get pod -n redis
+ 1895  kubectl get nodes
+ 1896  ls
+ 1897  ~/.ssh
+ 1898  cat ~/.ssh/authorized_keys
+ 1899  nano ~/.ssh/authorized_keys
+ 1900  kubectl get pods
+ 1901  kubectl get pods -n logfire-local
+ 1902  hostname
+ 1903  hostname -f
+ 1904  kubectl get pods -n logfire-local
+ 1905  kubectl get ing -A
+ 1906  kubectl describe ing prod-ingress -n logfire-local
+ 1907  kubectl get service -n logfire-local
+ 1908  kubectl get all -n logfire-local
+ 1909  cd /opt/microservices/
+ 1910  ls
+ 1911  cd helm-chart/
+ 1912  ls
+ 1913  cd /opt/microservices/helm-chart/
+ 1914  ls
+ 1915  cd webapp-prodchart/
+ 1916  ls
+ 1917  vi templates/deployment1.yaml 
+ 1918  sbt -v
+ 1919  sbt --help
+ 1920  kubectl get ing -n logfire-local
+ 1921  kubectl describe ing prod-ingress -n logfire-local
+ 1922  kubectl get svc -n logfire-local
+ 1923  kubectl get ns
+ 1924  kubectl get all -n redis
+ 1925  kubectl get pod -n logfire-local
+ 1926  kubectl logs gowebapi-deployment-6694c779bf-8nn2z -n logfire-local -f
+ 1927  kubectl get ing -n logfire-local
+ 1928  kubectl describe ing  -n logfire-local
+ 1929  kubectl get ing -n logfire-local
+ 1930  kubectl describe ing prod-ingress2 -n logfire-local
+ 1931  ls
+ 1932  cd /opt/microservices
+ 1933  ls
+ 1934  kubectl get svc -n logfire-local
+ 1935  git status
+ 1936  git branch
+ 1937  git pull
+ 1938  kubectl get ing -n logfire-local
+ 1939  kubectl get all -n redis
+ 1940  ls
+ 1941  cd redis
+ 1942  ls
+ 1943  cat redis.yaml
+ 1944  cd ..
+ 1945  kubectl get ing -n logfire-local
+ 1946  kubectl describe ing prod-ingress -n logfire-local
+ 1947  cd /opt/microservices/
+ 1948  git pull
+ 1949  cd scala/
+ 1950  ls
+ 1951  mkdir flink-session
+ 1952  mv flink-session-cluster.yaml flink-session/
+ 1953  awk 'FNR==1 && NR!=1  {print "---"}{print}' flink-session/*.yaml | helmify flink-chart
+ 1954  ls
+ 1955  git status
+ 1956  mv flink-session/flink-session-cluster.yaml ../
+ 1957  rm -rf flink-session/
+ 1958  ls
+ 1959  git add .
+ 1960  git commit -m "added flink chart"
+ 1961  git push
+ 1962  kubectl get svc -n redis
+ 1963  cd /opt/microservices/
+ 1964  git pull
+ 1965  cd scala/
+ 1966  cd
+ 1967  source <(kubectl completion bash)
+ 1968  echo "source <(kubectl completion bash)" >> ~/.bashrc
+ 1969  echo "alias k=kubectl" >> ~/.bashrc
+ 1970  echo "complete -o default -F __start_kubectl k"  >> ~/.bashrc
+ 1971  source ~/.bashrc 
+ 1972  k get pods
+ 1973  k get pods -A
+ 1974  cd /opt/microservices/
+ 1975  (cd scala && sbt assemblyPackageDependency)
+ 1976  (cd scala && sbt assembly)
+ 1977  docker build -t logfire/flink -f scala/flink.dev.Dockerfile scala/
+ 1978  kubectl apply -f scala/flink-session-cluster.yaml -n logfire-local
+ 1979  docker build -t logfire/filter-service -f scala/filterService.dev.Dockerfile scala/
+ 1980  k get pods
+ 1981  k get pods -A
+ 1982  k get svc -n redis 
+ 1983  k get svc -n logfire-local 
+ 1984  git pull
+ 1985  helm upgrade --install filter-service scala/helm/filter-service --namespace logfire-local --set redis.host=redis-service
+ 1986  k get pods -n lo
+ 1987  k get pods -n logfire-local 
+ 1988  k logs -f -n logfire-local filter-service-5fcccfdb96-gjsph 
+ 1989  helm upgrade --install filter-service scala/helm/filter-service --namespace logfire-local --set redis.host=redis-service.redis.svc.cluster.local
+ 1990  k logs -f -n logfire-local filter-service-54cb6c5bb4-tr4bl 
+ 1991  kubectl apply -f scala/flink-session-cluster.yaml -n logfire-local
+ 1992  k get pods -A
+ 1993  k get pods -n logfire-local 
+ 1994  (cd scala && sbt assembly)
+ 1995  rm scala/filter-job/src/main/scala/sh/logfire/flink/filter/FilterRequestClient.scala 
+ 1996  (cd scala && sbt assembly)
+ 1997  docker build -t logfire/flink -f scala/flink.dev.Dockerfile scala/
+ 1998  git status
+ 1999  git restore scala/filter-job/src/main/scala/sh/logfire/flink/filter/FilterRequestClient.scala
+ 2000  history
+root@kubernetes-master:~# 
+
+
